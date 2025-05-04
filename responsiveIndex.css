@@ -1,0 +1,426 @@
+@media only screen and (min-width: 300px) and (max-width: 767px){
+  /*    <!--      index.php     -->      */
+
+  .plani-pare {
+    padding-top: 5%;
+  }
+
+  .sherbimet-globeShopsKarta h3 {
+    font-size: 1rem;
+  }
+
+  .fundi-menu {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    text-align: center;
+  }
+
+  .pagesa {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .kartat-kategoriVecuar {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 2rem;
+  }
+
+  .sherbimet-globeShops {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .markatMeTeMira {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    overflow: hidden;
+  }
+
+  #kartaGjere-infoPosht {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .kartaMadhe-kutiaInfos {
+    padding: 5px;
+  }
+
+  .naviLart {
+    display: none;
+  }
+
+  .naviPosht {
+    align-items: baseline;
+    justify-content: space-around;
+    position: relative;
+    height: 120px;
+    padding: 10px 20px;
+    gap: 3%;
+  }
+
+  .fundiDy-flex {
+    overflow: hidden;
+  }
+
+  .butoniDyqani {
+    display: none;
+  }
+
+  .kartaGjere-foto > img {
+    width: 100%;
+    position: relative;
+  }
+
+  #kartaMadheID {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 500px;
+  }
+
+  .kartat-e-medha {
+    margin-top: 40px;
+    grid-auto-columns: calc((100% / 1) - 5%);
+  }
+
+  .avantazhet h4 {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .kartat-vogla {
+    margin-bottom: 30px;
+    grid-template-columns: repeat(2, auto);
+    gap: 2rem;
+  }
+
+  .kartat-plani-pare {
+    grid-auto-columns: calc((100% / 1));
+  }
+
+  .plani-pare-siper {
+    padding: 0 10px;
+  }
+
+  .plani-pare-siper p {
+    margin-left: 10px;
+  }
+
+  .baneriBrendshem > a {
+    font-size: 0.8rem;
+  }
+
+  .baneri-zi > a {
+    font-size: 0.7rem;
+  }
+
+  .karta-vogel {
+    padding: 15px 5px 5px 5px;
+  }
+
+  .karta-vogel > p {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .butonatDjathtas > button,
+  .butonatDjathtas > a {
+    font-size: 1rem;
+  }
+
+  .navbarButoniMajtas {
+    display: inline;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: transparent;
+  }
+
+  .butonatDjathtas {
+    display: flex;
+  }
+
+  .responsive-row > a > img {
+    width: 120px;
+    height: 35px;
+  }
+
+  .responsive-row {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+
+  .navbarButoni {
+    width: 40px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+  .navbarButoni > p {
+    display: none;
+  }
+
+  .navMobile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .navbarKerkimi {
+    width: 80%;
+    position: absolute;
+    bottom: 6px;
+  }
+  .submenu {
+    display: none;
+  }
+
+  /*    <!--      index.php     -->      */
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+   /*    <!--      index.php     -->      */
+   .kartat-kategoriVecuar {
+    padding-bottom: 30px;
+    grid-template-columns: repeat(4, auto);
+    gap: 2px;
+  }
+
+  .plani-pare-posht a,
+  .plani-pare-posht:last-child {
+    padding-top: 30px;
+  }
+
+  .kategoria-vecuar {
+    padding: 7% 0;
+  }
+
+  .plani-pare > p {
+    padding-top: 25px;
+  }
+
+  .markatMeTeMira {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    overflow: hidden;
+  }
+
+  .sherbimet-globeShops {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .kartaGjere-foto {
+    width: 287%;
+    position: relative;
+  }
+
+  .kartaGjere-foto > img {
+    width: 115%;
+    position: absolute;
+    height: 400px;
+  }
+
+  #kartaGjere-infoPosht {
+    display: block;
+    margin-top: 15%;
+  }
+
+  .kartat-e-medha {
+    grid-auto-columns: calc((100% / 2) - 5%);
+  }
+
+  .kartat-plani-pare {
+    grid-auto-columns: calc((100% / 2) - 10%);
+  }
+
+  .kartat-vogla {
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .naviLart {
+    display: none;
+  }
+
+  .naviPosht {
+    padding: 20px 30px 20px 30px;
+  }
+
+  .navbarButoniMajtas {
+    display: none;
+  }
+
+  .butonatDjathtas > button > i {
+    font-weight: bold;
+  }
+
+  .butonatDjathtas > a > .ph::before {
+    font-weight: 900;
+  }
+
+  .butonatDjathtas > button,
+  .butonatDjathtas > a {
+    font-size: 1rem;
+  }
+
+  .responsive-row {
+    flex-direction: row-reverse;
+  }
+
+  .navbarButoni > p {
+    display: none;
+  }
+
+  .navbarButoni {
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 0 0;
+    border: none;
+  }
+
+  .zgjidhDyqanin {
+    display: none;
+  }
+
+  .navbarButoniMajtas {
+    display: inline;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: transparent;
+  }
+
+  .navMobile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .navbarKerkimi {
+    width: 74%;
+  }
+
+  .submenu {
+    grid-template-columns: repeat(2, auto);
+    width: 635px;
+  }
+
+  .fundi-menu {
+    gap: 30px;
+  }
+
+  .pagesa {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /*    <!--      index.php     -->      */
+
+}
+
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  /*    <!--      index.php     -->      */
+  .kartat-plani-pare {
+    grid-auto-columns: calc((100% / 3) - 1%);
+  }
+
+  .naviLart {
+    padding: 15px 5px 15px 5px;
+  }
+
+  .baneri-blu {
+    display: flex;
+    max-width: -webkit-fill-available;
+  }
+
+  #kartaMadheID {
+    height: 350px;
+  }
+
+  .kartaGjere-kutia {
+    padding: 0% 3% 0 1%;
+  }
+
+  #kartaGjere-infoPosht {
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .kartaGjere-foto {
+    width: 220%;
+    position: relative;
+    right: 23px;
+  }
+
+  .kartaGjere-foto > img {
+    width: 119%;
+    position: relative;
+  }
+
+  .markatMeTeMira {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .kartat-vogla {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 1rem;
+  }
+
+  .karta-vogel img {
+    width: 100%;
+    height: 70%;
+  }
+
+  .karta-vogel p {
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+
+  .kartat-kategoriVecuar {
+    grid-template-columns: repeat(5, 163px);
+  }
+
+  .p-faqia,
+  .faqjaPare,
+  .klub-section,
+  .fundiDy {
+    padding: 2rem 7%;
+  }
+
+  .naviPosht {
+    padding: 0 7% 7px 7%;
+  }
+
+  .pagesa {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .fundi-menu {
+    gap: 15px;
+  }
+
+  /*    <!--      index.php     -->      */
+
+}
