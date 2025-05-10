@@ -1,3 +1,8 @@
+
+.p-faqia {
+  padding: 2rem 11%;
+}
+
 .navi {
   background-color: #007fa4;
 }
@@ -181,10 +186,11 @@
 /* <!-- KARTA MADHE --> */
 .mbeshtjellesi-kartave,
 .seksioni-plani-pare {
+  margin-top: 20px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  scrollbar-width: 0;
+  /* scrollbar-width: 0; */
 }
 
 .mbeshtjellesi-kartave::-webkit-scrollbar,
