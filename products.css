@@ -1,0 +1,326 @@
+/*-------------------------- PRODUCTS PAGE ------------------------- */
+
+.products-container {
+  padding: 1rem 5%;
+  display: flex;
+  color: #3a3a3a;
+}
+.products-container hr {
+  color: gainsboro;
+  /* width: 100%; */
+  opacity: 30%;
+}
+.marka-majtas {
+  width: 31%;
+}
+.products-butonat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0 8px;
+  margin: 8px 0;
+}
+
+#content-1 {
+  display: flex;
+  gap: 15px;
+}
+
+#content-1 input {
+  padding: 15px;
+  width: 80%;
+}
+
+.toggle-section {
+  display: block;
+}
+
+.itemconfiguration {
+  width: 100%;
+  height: 200px;
+  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-radius: 10px;
+}
+
+.itemconfiguration::-webkit-scrollbar {
+  width: 7px; /* Set the width of the scrollbar */
+}
+.itemconfiguration::-webkit-scrollbar-track {
+  background: transparent; /* Track background */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+.itemconfiguration::-webkit-scrollbar-thumb {
+  background-color: #ddd; /* Thumb color */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+.products-butonat:hover {
+  background-color: gainsboro;
+}
+.products-butonat svg {
+  rotate: 90deg;
+  padding: 0;
+}
+.products-butonat p {
+  font-size: 0.9rem;
+  padding: 0;
+  color: #3b3b3b;
+  font-weight: 600;
+}
+
+.range input {
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  width: 100%;
+  border: solid 2px #525252;
+  border-radius: 5px;
+}
+
+/* <!-- Range Selector   --> */
+.kontenieri-filter2 {
+  margin-top: 20px;
+  width: 100%;
+  height: 1%;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.rreshkitesi {
+  height: 8px;
+  border-radius: 5px;
+  background-color: #ddd;
+  position: relative;
+  left: 2px;
+}
+
+.rreshkitesi .progresi {
+  height: 10px;
+  position: absolute;
+  left: 1px;
+  right: 2px;
+  border-radius: 5px;
+  background-color: red;
+}
+
+.inputi-range {
+  position: relative;
+}
+
+.inputi-range input {
+  position: absolute;
+  top: -7px;
+  height: 5px;
+  width: 100%;
+  pointer-events: none;
+  -webkit-appearance: none;
+  background: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  height: 17px;
+  width: 17px;
+  pointer-events: auto;
+  background-color: red;
+  border-radius: 50%;
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-moz-range-thumb {
+  height: 17px;
+  width: 17px;
+  border: none;
+  pointer-events: auto;
+  background-color: red;
+  border-radius: 50%;
+  -moz-appearance: none;
+}
+/* <!-- Range Selector   --> */
+
+.products-col-btn label {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  font-size: 0.8rem;
+  padding: 6px 0;
+  margin: 0;
+  cursor: pointer;
+}
+.products-col-btn input {
+  width: 22px;
+  height: 22px;
+  margin-right: 14px;
+}
+.products-col-btn img {
+  width: 37%;
+  height: 25px;
+}
+
+/*-------------------- PRODUCTS DJATHTAS ---------------------*/
+.products-djathtas-container {
+  width: 100%;
+  padding: 0 0 0 4%;
+}
+.products-rrezultate {
+  display: flex;
+  align-items: center;
+  line-height: 0.3;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.products-rrezultate button {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: transparent;
+  border: solid 2px dimgray;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.products-rrezultate svg {
+  rotate: 90deg;
+}
+.products-rrezultate h3 {
+  font-size: 1.8rem;
+}
+.products-rrezultate p {
+  font-size: 1.2rem;
+}
+.products-rrezultate a {
+  text-decoration: underline;
+  color: #000000;
+}
+
+.button-tabele {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.tabela {
+  display: none; /* Hidden by default */
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute; /* Positioned below the button */
+  min-width: 177px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  top: 60px;
+}
+
+.tabela p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 30px;
+}
+
+.tabela p.active {
+  background-color: #008bff;
+}
+
+.tabela p:hover {
+  background-color: #008bff;
+}
+
+.kategori-banner-card {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.products-card-majtas {
+  padding: 0;
+  margin: 0;
+}
+.products-card {
+  display: flex;
+  width: 96.2%;
+  overflow: hidden;
+  height: 380px;
+  /*border: solid 2px #e8e8e8;*/
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  margin-top: 4rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.products-card-majtas {
+  width: 100%;
+}
+
+.products-card-product {
+  display: flex;
+  gap: 10%;
+}
+.products-card-product > img {
+  width: 25%;
+}
+.products-card-product > div {
+  font-size: 0.9rem;
+  line-height: 0.4;
+}
+.products-card-djathtas {
+  line-height: 0;
+  padding-top: 1rem;
+}
+.products-card-djathtas a {
+  line-height: normal;
+  font-size: 0.8rem;
+  color: #525252;
+}
+.products-card-djathtas p {
+  font-size: 0.8rem;
+  color: #525252;
+}
+.products-card-djathtas h4 {
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+.products-card-djathtas h3 {
+  color: #007fa4;
+  font-size: 1.8rem;
+}
+.products-card-djathtas > .opsionet-dorezimi {
+  padding: 0;
+  margin: 0;
+}
+.products-card-djathtas > .opsionet-dorezimi > p,
+.products-card-djathtas > .opsionet-koleksioni-falas > p {
+  padding: 0;
+  margin: 0;
+  font-size: 0.73rem;
+}
+
+.products-card-djathtas > .opsionet-koleksioni-falas > h4 {
+  padding: 0;
+  margin: 0;
+  font-size: 0.8rem;
+}
+.products-card-djathtas > .opsionet-dorezimi > h4 {
+  margin-top: 2rem;
+}
+.products-card-djathtas > .opsionet-koleksioni-falas span {
+  font-size: 0.8rem;
+}
+.products-card-reviewsIMG {
+  display: flex;
+  padding: 10px 0 0 0;
+  align-items: center;
+}
+.products-card-reviewsIMG > img {
+  width: 20%;
+  height: 30px;
+}
