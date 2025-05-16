@@ -183,7 +183,47 @@
     display: none;
   }
 
-  /*    <!--      index.php     -->      */
+  /*    <!--  end off    index.php     -->      */
+
+
+  /*    <!--      products.php     -->      */
+  .marka-majtas {
+    display: none !important ;
+    background-color: black;
+  }
+
+  .kartaMadhe-info > p {
+    width: 33%;
+    font-size: 10px;
+    padding: 3px;
+  }
+
+  .products-card-majtas .informacioni-produktit {
+    display: none;
+  }
+
+  .products-card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .products-card-product > img {
+    width: 70%;
+  }
+
+  .products-card-product {
+    width: 100%;
+    justify-content: center;
+  }
+  .products-card h3 {
+    display: block;
+  }
+
+  .tabela {
+    min-width: 155px;
+    top: 50px;
+  }
+   /*    <!--   end off   products.php     -->      */
 
 }
 
@@ -329,7 +369,58 @@
     grid-template-columns: repeat(4, 1fr);
   }
 
-  /*    <!--      index.php     -->      */
+  /*    <!--  end off    index.php     -->      */
+
+   /*    <!--      products.php     -->      */
+
+  .products-rrezultate {
+    line-height: 1.3;
+  }
+
+  .products-card {
+    height: 415px;
+    padding-top: 10px;
+  }
+
+  .products-card-product > div {
+    width: 135px;
+    line-height: 13px;
+    margin-top: 70px;
+  }
+
+  .products-card-product {
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .products-card-reviewsIMG > img {
+    width: 30%;
+    height: 24px;
+  }
+
+  .products-card-majtas h3 {
+    margin-block-start: auto;
+  }
+
+  .products-col-btn img {
+    width: 50%;
+    height: 28px;
+  }
+
+  .products-col-btn label p {
+    line-height: 10px;
+  }
+
+  .marka-majtas {
+    display: none;
+  }
+
+  .products-card-product > img {
+    width: 38%;
+  }
+  /*      <!-- end off      products.php     -->      */
 
 }
 
@@ -421,6 +512,73 @@
     gap: 15px;
   }
 
-  /*    <!--      index.php     -->      */
+  /*    <!--    end off  index.php     -->      */
+
+   /*    <!--      products.php     -->      */
+
+  .products-card {
+    height: 480px;
+  }
+
+  .products-rrezultate {
+    line-height: 30px;
+  }
+
+  .products-card-reviewsIMG > img {
+    width: 25%;
+    height: 25px;
+  }
+
+  .products-card-majtas {
+    padding: 0 5px;
+  }
+
+  .products-card-product > img {
+    height: 170px;
+    width: 110px;
+    padding: 30px 0 0 0;
+  }
+
+  .products-card-reviewsIMG {
+    position: relative;
+    bottom: 65px;
+  }
+
+  .products-card-djathtas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 3rem;
+    width: 100%;
+  }
+
+  .tabela {
+    min-width: 115px;
+  }
+
+  .products-card-djathtas > .opsionet-dorezimi > h4 {
+    margin-top: 1rem;
+  }
+
+  .products-card-product > div {
+    line-height: 1;
+  }
+
+  .products-card-product {
+    gap: 10%;
+  }
+
+  .products-col-btn label {
+    line-height: 15px;
+  }
+
+  #content-1 input::placeholder {
+    font-size: 14px;
+  }
+
+  #content-1 input {
+    width: 65%;
+  }
+   /*    <!--      end off    products.php     -->      */
 
 }
