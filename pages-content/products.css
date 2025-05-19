@@ -1,251 +1,4 @@
 
-/*------------- PRODUKTI  ------------*/
-
-.marka-zgjedhur {
-  display: flex;
-  align-items: center;
-  color: rgb(85, 85, 85);
-}
-
-.marka-zgjedhur a {
-  color: rgb(85, 85, 85);
-}
-
-.marka-zgjedhur svg {
-  fill: #404040;
-  width: 25px;
-  height: 25px;
-}
-
-.mbeshtjellsi-produktit {
-  display: flex;
-  padding: 0.5rem 11%;
-}
-
-.slideri-produktit {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-.slideri-produktit button {
-  padding: 8px 12px;
-  background-color: rgb(242, 242, 242);
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.slideri-produktit {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-
-.slideri-produktit-lart {
-  display: flex;
-  align-items: center;
-}
-
-.slideri-produktit-posht {
-  margin: 3% 0 0 7%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-}
-
-.slideri-produktit-posht > img {
-  width: 100px;
-  padding: 10px;
-  border: solid 2px rgb(191, 191, 191);
-  border-radius: 5px;
-}
-
-.slideri-produktit-posht > button {
-  margin: 0 20px 0 0;
-}
-
-.opsionet-blerja-produktit {
-  display: flex;
-  padding-top: 50px;
-  text-align: end;
-  width: 60%;
-  flex-direction: column;
-}
-
-.opsionet-blerja-produktit > p {
-  color: rgb(58, 58, 58);
-  font-size: 13px;
-}
-
-.opsionet-blerja-produktit > p svg {
-  width: 13px;
-}
-
-.opsionet-blerja-produktit > h3 {
-  color: #007fa4;
-  padding: 0;
-  margin: 0;
-  font-size: 2.5rem;
-  font-style: italic;
-  font-weight: 900;
-  letter-spacing: -4px;
-}
-
-.opsionet-blerja-produktit > a {
-  color: #3a3a3a;
-  font-size: 0.7rem;
-  padding-bottom: 50px;
-}
-
-.opsionet-blerja-produktit hr {
-  width: 100%;
-  opacity: 30%;
-  color: #e7e7e7;
-  z-index: -1;
-}
-
-.opsionet-dorezimi {
-  text-align: start;
-  line-height: 150%;
-  padding: 20px 0;
-  align-items: center;
-}
-
-.opsionet-dorezimi > h4 {
-  display: flex;
-  justify-content: space-between;
-  color: green;
-  margin: 0;
-}
-
-.opsionet-dorezimi p,
-span {
-  color: rgb(85, 85, 85);
-  font-size: 0.9rem;
-  margin: 0;
-}
-
-.opsionet-koleksioni-falas h4 {
-  color: rgb(85, 85, 85);
-  font-size: 0.9rem;
-
-  margin: 0;
-}
-
-.opsionet-koleksioni-falas {
-  display: flex;
-  flex-direction: column;
-  text-align: start;
-  line-height: 150%;
-  padding: 0 0 20px 0;
-}
-
-.opsionet-koleksioni-falas > p {
-  font-size: 0.9rem;
-  color: rgb(85, 85, 85);
-  margin: 0;
-}
-
-.opsionet-koleksioni-falas p > span {
-  font-weight: 900;
-  color: black;
-  margin: 0;
-}
-
-.opsionet-shto-shporte {
-  display: flex;
-  gap: 2%;
-}
-
-.opsionet-shto-shporte > button:first-child {
-  background-color: #007fa4;
-  color: #ffffff;
-  width: 100%;
-  border: none;
-  border-radius: 6px;
-}
-
-.opsionet-shto-shporte > button:last-child {
-  background-color: transparent;
-  border: solid 2px black;
-  border-radius: 6px;
-}
-.opsionet-blerja-cmimet {
-  margin-top: 30px;
-}
-.opsionet-blerja-cmimet h4,
-.opsionet-blerja-cmimet h5 {
-  color: rgb(85, 85, 85);
-  font-size: 0.9rem;
-  margin: 50px 0 0 0;
-}
-.opsionet-blerja-cmimet p {
-  color: rgb(85, 85, 85);
-}
-.opsionet-blerja-cmimet h5 {
-  text-decoration: underline;
-}
-.opsionet-blerja-cmimet a {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 0.9rem;
-  text-decoration: none;
-}
-.opsionet-blerja-cmimet > div {
-  display: flex;
-  text-align: start;
-  align-items: center;
-  justify-content: space-between;
-}
-.opsionet-blerja-cmimet > div * {
-  padding: 10px 0;
-  margin: 0;
-}
-
-.opsionet-blerja-cmimet > div input {
-  width: 22px;
-  height: 22px;
-  margin: 0 10px 0 0;
-  accent-color: black;
-}
-.produkti-pershkrimi {
-  padding: 4rem 17%;
-}
-.produkti-pershkrimi h3,
-.produkti-pershkrimi h4 {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-}
-.produkti-pershkrimi {
-  color: rgb(85, 85, 85);
-}
-.pershkrimi-produktit > button {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  border-radius: 3px;
-}
-.pershkrimi-produktit > button:hover {
-  background-color: rgb(221, 221, 221);
-}
-.pershkrimi-produktit svg {
-  rotate: 90deg;
-  padding: 0;
-  margin: 0;
-}
-.info-produktit {
-  position: absolute;
-  opacity: 0;
-  visibility: hidden;
-}
 
 /*-------------------------- PRODUCTS PAGE ------------------------- */
 
@@ -268,7 +21,7 @@ span {
   align-items: center;
   width: 100%;
   cursor: pointer;
-  background-color: white;
+  background: linear-gradient(90deg, #ffb703, white);
   border: none;
   border-radius: 4px;
   padding: 0 8px;
@@ -495,6 +248,7 @@ input[type="range"]::-moz-range-thumb {
   padding: 0;
   margin: 0;
 }
+
 .products-card {
   display: flex;
   width: 96.2%;
@@ -522,6 +276,39 @@ input[type="range"]::-moz-range-thumb {
   font-size: 0.9rem;
   line-height: 0.4;
 }
+
+/*u shtuan per here te fundit*/
+.kartaMadhe-info {
+  display: flex;
+  gap: 5px;
+  padding: 0 10px;
+}
+
+.kartaMadhe-info > p {
+  border: 3px solid #ffb703;
+  border-radius: 1rem;
+  padding: 3px 5px;
+  font-size: 0.7rem;
+  color: rgb(53, 53, 53);
+}
+
+.kartaMadhe-infoDyte > p {
+  font-size: 1rem;
+  font-stretch: expanded;
+  color: rgb(53, 53, 53);
+}
+
+.kartaMadhe-infoDyte > h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.kartaMadhe-infoDyte > h3 {
+  font-weight: 900;
+  font-size: 1.6rem;
+  font-style: oblique;
+}   /*u shtuan per here te fundit*/
+
 .products-card-djathtas {
   line-height: 0;
   padding-top: 1rem;
@@ -565,6 +352,55 @@ input[type="range"]::-moz-range-thumb {
 .products-card-djathtas > .opsionet-koleksioni-falas span {
   font-size: 0.8rem;
 }
+
+.opsionet-dorezimi {
+  text-align: start;
+  line-height: 150%;
+  padding: 20px 0;
+  align-items: center;
+}
+
+.opsionet-dorezimi > h4 {
+  display: flex;
+  justify-content: space-between;
+  color: green;
+  margin: 0;
+}
+
+.opsionet-dorezimi p,
+span {
+  color: rgb(85, 85, 85);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.opsionet-koleksioni-falas h4 {
+  color: rgb(85, 85, 85);
+  font-size: 0.9rem;
+
+  margin: 0;
+}
+
+.opsionet-koleksioni-falas {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  line-height: 150%;
+  padding: 0 0 20px 0;
+}
+
+.opsionet-koleksioni-falas > p {
+  font-size: 0.9rem;
+  color: rgb(85, 85, 85);
+  margin: 0;
+}
+
+.opsionet-koleksioni-falas p > span {
+  font-weight: 900;
+  color: black;
+  margin: 0;
+}
+
 .products-card-reviewsIMG {
   display: flex;
   padding: 50px 0 0 0;
@@ -573,4 +409,23 @@ input[type="range"]::-moz-range-thumb {
 .products-card-reviewsIMG > img {
   width: 20%;
   height: 30px;
+}
+
+.opsionet-shto-shporte {
+  display: flex;
+  gap: 2%;
+}
+
+.opsionet-shto-shporte > button:first-child {
+  background-color: #ffb703;
+  color: #ffffff;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+}
+
+.opsionet-shto-shporte > button:last-child {
+  background-color: transparent;
+  border: solid 2px black;
+  border-radius: 6px;
 }
