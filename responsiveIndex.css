@@ -223,7 +223,196 @@
     min-width: 155px;
     top: 50px;
   }
-   /*    <!--   end off   products.php     -->      */
+   /*    <!--   end off   product.php     -->      */
+
+
+   /*    <!--   end off   product.php     -->      */
+
+    .mbeshtjellsi-produktit {
+    flex-direction: column;
+  }
+
+  .slideri-produktit-lart {
+    justify-content: center;
+  }
+
+  .slideri-produktit-posht {
+    justify-content: center;
+    margin: 10px 10px 0 0;
+  }
+
+  .slideri-produktit-lart img {
+    width: 70%;
+  }
+
+  .slideri-produktit-posht > img {
+    width: 15%;
+  }
+
+  .slideri-produktit-posht > button {
+    margin: 0;
+  }
+
+  #slideri-kontentit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .opsionet-blerja-produktit {
+    width: 100%;
+    display: flex;
+  }
+
+  .fundi-menu {
+    gap: 20px;
+  }
+
+  .opsionet-blerja-cmimet > div * {
+    display: flex;
+    font-size: 11px;
+  }
+
+  .opsionet-blerja-cmimet > div input {
+    width: 15px;
+    height: 15px;
+  }
+
+   /*    <!--   end off   product.php     -->      */
+
+
+
+    /*    <!--      suporti-klientit.php     -->      */
+
+  .elementet-baneri {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .inputi {
+    width: 100%;
+  }
+
+  .inputi ::placeholder {
+    font-size: 12px;
+  }
+
+  .inputi input {
+    width: 180px;
+    height: 30px;
+  }
+
+  .inputi button {
+    width: 30px;
+    height: 35px;
+  }
+
+  .info {
+    height: 80px;
+  }
+
+  #prevBtn {
+    width: 25px;
+    height: 25px;
+  }
+
+  #nextBtn {
+    width: 25px;
+    height: 25px;
+  }
+
+  .info p {
+    font-size: 13px;
+  }
+
+  .mbeshtjellesi {
+    width: 70%;
+  }
+
+  .carousel p {
+    padding: 0 2px;
+  }
+
+  .divi-banerit h2 {
+    font-size: 10px;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .baneri-dyte {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .kontenti {
+    width: 100%;
+  }
+
+  .toggle-checkbox {
+    display: none;
+  }
+
+  .kontenti label {
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .kontenti .answer {
+    display: none;
+    margin-top: 10px;
+  }
+
+  .kontenti span {
+    font-size: 12px;
+  }
+
+  .toggle-checkbox:checked + label + .answer {
+    display: block;
+    width: 90%;
+  }
+
+  .informacioni-kartave {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .kartat-suportit {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5px;
+  }
+
+  .kartat-suportit i {
+    padding: 30px 10px;
+    font-size: 2rem;
+  }
+
+  .kartat-suportit p {
+    font-size: 12px;
+  }
+
+  .hoveri {
+    display: none !important ;
+    background-color: red;
+  }
+
+  .suport-kontakt {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    height: 180px;
+    gap: 15px;
+  }
+
+  .diviMadh {
+    display: none;
+  }
 
 }
 
@@ -422,6 +611,108 @@
   }
   /*      <!-- end off      products.php     -->      */
 
+
+   /*    <!--      product.php     -->      */
+
+  .mbeshtjellsi-produktit {
+    flex-direction: column;
+  }
+
+  .slideri-produktit-lart {
+    justify-content: center;
+  }
+
+  .slideri-produktit-posht {
+    justify-content: center;
+    margin: 10px 10px 0 0;
+  }
+
+  .slideri-produktit-lart img {
+    width: 70%;
+  }
+
+  .slideri-produktit-posht > img {
+    width: 15%;
+  }
+
+  .slideri-produktit-posht > button {
+    margin: 0;
+  }
+
+  #slideri-kontentit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .opsionet-blerja-produktit {
+    width: 100%;
+    display: flex;
+  }
+
+  /*    <!--      suporti-klientit.php     -->      */
+
+  .info #butoni-djathats {
+    left: 100px;
+  }
+
+  .elementet-baneri {
+    padding: 30px;
+  }
+
+  .kontenti span {
+    font-size: 10px;
+  }
+  .kontenti span:first-child {
+    font-size: 14px;
+    font-weight: 900;
+  }
+
+  /* .kartat-suportit i{
+        font-size: 5rem;
+      } */
+
+  .informacioni-kartave {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .hoveri {
+    width: 280px;
+  }
+
+  .mbeshtjellesi {
+    width: 80%;
+  }
+
+  .suport-kontakt {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    height: 180px;
+  }
+
+  .ikonat {
+    font-size: 20px;
+    gap: 10px;
+    padding-left: 1px;
+  }
+
+  .shape {
+    width: 53%;
+    padding: 15px 50px 33px 20px;
+  }
+
+  .shape p {
+    width: 112%;
+    display: flex;
+    margin-top: 3px;
+  }
+
+  .shape h2 {
+    font-size: 20px;
+  }
+
 }
 
 
@@ -580,5 +871,84 @@
     width: 65%;
   }
    /*    <!--      end off    products.php     -->      */
+
+
+   /*    <!--      product.php     -->      */
+
+  .dergesa-paga-flex {
+    flex-direction: column;
+  }
+
+  .slideri-produktit-lart img {
+    width: 300px;
+  }
+
+  .slideri-produktit-posht {
+    width: 300px;
+  }
+
+  .opsionet-blerja-produktit > a {
+    padding-bottom: 20px;
+  }
+
+  /*    <!--      suporti-klientit.php     -->      */
+
+  .info #butoni-djathats {
+    left: 400px;
+  }
+
+  .elementet-baneri {
+    padding: 20px;
+  }
+
+  .baneri-dyte {
+    gap: 5px;
+  }
+
+  .kontenti {
+    padding: 5px;
+  }
+
+  .kontenti span {
+    font-size: 15px;
+    gap: 10px;
+  }
+
+  .kartat-suportit {
+    text-align: center;
+  }
+
+  .hoveri {
+    width: 190px;
+  }
+
+  .perKlientin {
+    width: 100%;
+    gap: 15px;
+  }
+
+  .suport-kontakt {
+    padding: 10px;
+  }
+
+  .shape {
+    padding: 15px 0 15px 15px;
+  }
+
+  .shape p {
+    width: 90%;
+    display: flex;
+    margin-top: 3px;
+  }
+
+  .shape h2 {
+    display: flex;
+    margin: 5px;
+  }
+
+  .ikonat {
+    padding-left: 3px;
+    font-size: 2rem;
+  }
 
 }
