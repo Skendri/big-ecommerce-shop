@@ -1,0 +1,288 @@
+/* ----------------------- faqja e servisi.php ---------------------- */
+
+.seksioni1 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.imazhi-seksionit1 {
+  border-radius: 20px;
+  width: 50%;
+}
+
+.seksioni1 div {
+  width: 50%;
+  font-size: 20px;
+}
+
+.seksioni1 div p {
+  color: rgb(85, 85, 85);
+}
+
+.info-servisi {
+  margin: 5pc 0;
+}
+
+.servisio {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  justify-items: center;
+  height: 100px;
+  margin: 130px 0;
+}
+
+.servisi-grid {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.hoveri-servisi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+}
+
+.hoveri-servisi:hover {
+  width: 100%;
+  height: 100%;
+  text-decoration: underline;
+}
+
+.sherbimet-vecuar {
+  padding: 2% 0;
+}
+
+.sherbimet-kategoriVecuar {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 2rem;
+}
+
+.sherbimet-kartat {
+  padding: 20px 25px 65px 20px;
+  width: 100%;
+  height: fit-content;
+}
+
+.sherbimet-kartat img {
+  width: 100%;
+  height: 80%;
+  border-radius: 15px;
+}
+
+.sherbimet-kartat p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: rgb(68, 68, 68);
+}
+
+.childs p {
+  text-align: left;
+}
+
+.childs :nth-child(-n + 2) {
+  margin-top: 10px;
+}
+
+.linqet {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.linqet a {
+  color: #000000;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.seksioni2 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.seksioni2 div {
+  width: 50%;
+  font-size: 20px;
+}
+
+.seksioni2 button {
+  padding: 10px 50px;
+  background: transparent;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+.seksioni2 button:hover {
+  background-color: rgb(227, 227, 227);
+}
+
+.elementet-flex {
+  display: flex;
+  width: 100%;
+}
+
+.elementet-flex .childs button:hover {
+  background-color: rgb(227, 227, 227);
+}
+
+.sherbimet-dyqan {
+  margin-top: 5%;
+  padding: 60px 20px;
+}
+
+.sherbimet-dyqan img {
+  width: 100%;
+  border-radius: 20px;
+  height: 50%;
+}
+
+.sherbimet-dyqan button {
+  padding: 10px 50px;
+  background: transparent;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+/* .elementet-flex2 {
+  display: flex;
+  gap: 2%;
+} */
+
+.kartaMadhe-sherbimet {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px rgb(182, 182, 182);
+  border-radius: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.kartaMadhe-foto-sherbimet > img {
+  width: 100%;
+}
+
+.kartaMadhe-kutiaInfos-sherbime {
+  padding: 10px;
+}
+
+.kartaMadhe-infoDyte-sherbimet > p {
+  font-size: 1rem;
+  font-stretch: expanded;
+  color: rgb(53, 53, 53);
+}
+
+.kartaMadhe-infoDyte-sherbimet > h3 {
+  font-weight: 900;
+  font-size: 1.6rem;
+  font-style: oblique;
+}
+
+.informacioni-sherbimet {
+  background-color: rgb(247 247 247);
+  width: 100%;
+  height: auto;
+  padding: 20px 20px;
+  margin-top: 40px;
+}
+
+/* <!-- KARTA MADHE --> */
+.mbeshtjellesi-kartaveServisi,
+.seksioni-plani-pare {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: 0;
+}
+
+.mbeshtjellesi-kartaveServisi::-webkit-scrollbar,
+.seksioni-plani-pare::-webkit-scrollbar {
+  display: none;
+}
+
+.kartat-e-medhaServisi {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 1%);
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  scroll-snap-align: start;
+}
+
+.kartat-e-medhaServisi.terheqje,
+.kartat-plan-pare.terheqje {
+  cursor: grab;
+  user-select: none;
+}
+
+.kartat-e-medhaServisi.jo-transition,
+.kartat-plan-pare.jo-transition {
+  scroll-behavior: auto;
+}
+
+.kartat-e-medhaServisi a {
+  text-decoration: none;
+  color: black;
+}
+
+.kartaMadheServisi {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px rgb(182, 182, 182);
+  border-radius: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.kartaMadhe-foto > img {
+  width: 100%;
+}
+
+.kartaMadhe-kutiaInfos {
+  padding: 10px;
+}
+
+.kartaMadhe-infoDyte > p {
+  font-size: 1rem;
+  font-stretch: expanded;
+  color: rgb(53, 53, 53);
+}
+
+.kartaMadhe-infoDyte > h3 {
+  font-weight: 900;
+  font-size: 1.6rem;
+  font-style: oblique;
+}
+
+.butonat-e-kontrolluesit {
+  text-align: end;
+  padding: 20px 0;
+}
+
+.butonat-e-kontrolluesit > button {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.butonat-e-kontrolluesit > button:hover {
+  background-color: #616161;
+}

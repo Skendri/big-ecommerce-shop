@@ -1,0 +1,206 @@
+/* ----------------------- faqja e perKompanine.php ---------------------- */
+
+.globe {
+  padding: 1rem 11%;
+}
+
+.kompania-globe {
+  display: flex;
+  align-items: center;
+}
+
+.kompania-globe a {
+  color: rgb(85, 85, 85);
+  text-decoration: none;
+}
+
+/* <!-- navi Globe perKompanine.php --> */
+.navi-perKompanine {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  background-color: white;
+  z-index: 1000;
+  padding: 0 10%;
+  border-bottom: 1px solid gray;
+}
+
+.navi-perKompanine.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0 10px;
+}
+
+.navi-perKompanine > a {
+  font-size: 0.9rem;
+  color: rgb(58, 58, 58);
+  margin: 0;
+  padding: 10px;
+  position: relative;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.nav-item {
+  position: relative;
+  transition: color 0.3s ease-in-out;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-item.active {
+  font-weight: bold;
+  color: #000000;
+}
+
+.nav-item.active::after {
+  width: 100%;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #007fa4;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* .nav-item:hover {
+  background-color: #007fa4;  Set the background color on hover 
+  color: white;  Change the text color to white (optional) 
+}  */
+
+.perklientin-Globe {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.imazhi-plote {
+  width: 55%;
+  height: 500px;
+}
+
+.imazhi-perKompanine {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.perklientin-Globe .listat span {
+  padding: 10px;
+}
+
+.perklientin-Globe .listat {
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  width: 50%;
+  font-size: 20px;
+}
+
+.perklientin-Globe button {
+  width: 30%;
+  padding: 10px 50px;
+  background: transparent;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+.perklientin-Globe button:hover {
+  background-color: rgb(227, 227, 227);
+}
+
+/*                  kartat e para te faqes                       */
+.kartat-e-medhaperKompanine {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 2) - 1%);
+  gap: 20px;
+  margin-top: 8%;
+  overflow: hidden;
+}
+
+.kartat-e-medhaperKompanine.terheqje,
+.kartat-plan-pare.terheqje {
+  cursor: grab;
+  user-select: none;
+}
+
+.kartat-e-medhaperKompanine.jo-transition,
+.kartat-plan-pare.jo-transition {
+  scroll-behavior: auto;
+}
+
+.kartat-e-medhaperKompanine a {
+  text-decoration: none;
+  color: black;
+}
+
+.kartaMadheperKompanine {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px rgb(182, 182, 182);
+  border-radius: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.kartaMadhe-foto-kompania > img {
+  width: 100%;
+}
+
+.kartaMadhe-kutiaInfos-kompania {
+  padding: 10px;
+}
+
+.kartaMadhe-infoDyte-kompania > p {
+  font-size: 1rem;
+  font-stretch: expanded;
+  color: rgb(53, 53, 53);
+}
+
+.kartaMadhe-infoDyte-kompania > h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.kartaMadhe-infoDyte-kompania > h3 {
+  font-weight: 900;
+  font-size: 1.6rem;
+  font-style: oblique;
+  margin: 0;
+}
+
+.kartaMadhe-info-kompania {
+  display: flex;
+  gap: 5px;
+  padding: 0 10px;
+}
+
+.kartaMadhe-info-kompania > p {
+  border: 1px solid #007fa4;
+  border-radius: 1rem;
+  padding: 3px 5px;
+  font-size: 0.7rem;
+  color: rgb(53, 53, 53);
+}
+
+.butonat-mediaQuery {
+  display: hidden;
+}

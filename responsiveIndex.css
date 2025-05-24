@@ -537,6 +537,159 @@
     padding: 8px 8px;
   }
 
+
+  /*    <!--      faqja e servisit.php     -->      */
+
+  .seksioni1 {
+    flex-direction: column;
+  }
+
+  .seksioni1 div {
+    width: 100%;
+  }
+
+  .sherbimet-kategoriVecuar {
+    grid-template-columns: repeat(1, auto);
+    gap: 0;
+  }
+
+  .sherbimet-kartat {
+    padding: 20px;
+  }
+
+  .servisio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .elementet-flex {
+    flex-direction: column;
+    margin-bottom: 10%;
+  }
+
+  .imazhi-seksionit1 {
+    width: 100%;
+  }
+
+  .seksioni2 {
+    flex-direction: column;
+  }
+
+  .seksioni2 div {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  .sherbimet-dyqan {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .kartat-e-medhaServisi {
+    grid-auto-columns: calc((97% / 1));
+  }
+
+
+   /*    <!--      faqja e perKompanine.php     -->      */
+
+  .navi-perKompanine {
+    padding: 0;
+  }
+
+  #toggle-btn {
+    display: block; /* Show button only on small screens */
+  }
+
+  .show-all .nav-item {
+    display: flex !important; /* Show all links when toggle is active */
+  }
+
+  #toggle-links {
+    display: block; /* Hide the menu by default */
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+  }
+
+  #toggle-links.active {
+    display: flex; /* Show the menu when active */
+  }
+
+  .nav-item {
+    display: none; /* Hide all nav links */
+  }
+
+  .nav-item.active {
+    display: flex; /* Show only the active link */
+  }
+
+  /* .nav-item {
+    padding: 10px;
+    text-align: center;
+  } */
+
+  .linqet {
+    display: none;
+  }
+
+  .perklientin-Globe {
+    flex-direction: column;
+  }
+
+  .imazhi-plote {
+    width: auto;
+    height: auto;
+  }
+
+  .perklientin-Globe .listat {
+    width: auto;
+  }
+
+  .perklientin-Globe button {
+    width: 60%;
+    margin-left: 10px;
+  }
+
+  .kartat-e-medhaperKompanine {
+    grid-auto-columns: calc((100% / 1));
+  }
+
+  .Globe-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .avantazhet-perKompanine {
+    margin-top: 120%;
+  }
+
+  .kartat-e-medha-kompania {
+    grid-auto-columns: calc((100% / 1));
+  }
+
+  .butonat-mediaQuery {
+    text-align: end;
+    padding: 20px 0;
+  }
+
+  .kartat-e-medhaGlobe {
+    grid-auto-columns: calc((100% / 1));
+  }
+
+  .elementet-perGlobe {
+    flex-direction: column;
+  }
+
+  .sherbimet-globe {
+    padding: 0;
+    margin: 8%;
+  }
+
+  .mbeshtjellesi-shkrimet {
+    margin-top: 7%;
+  }
+
 }
 
 
@@ -840,6 +993,8 @@
 
   /*            end of  live chat empty                     */
 
+
+
   /*    <!--      faqja e dyqanetTona.php     -->      */
 
   .container {
@@ -884,6 +1039,118 @@
   .kontakti-div {
     gap: 20px;
   }
+
+
+  /*    <!--      faqja e servisit.php     -->      */
+
+  .seksioni1 {
+    flex-direction: column;
+  }
+
+  .imazhi-seksionit1 {
+    width: 100%;
+  }
+
+  .seksioni1 div {
+    width: 100%;
+  }
+
+  .seksioni2 {
+    flex-direction: column;
+  }
+
+  .seksioni2 div {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .servisio {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .sherbimet-kategoriVecuar {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .elementet-flex {
+    flex-flow: wrap;
+    margin-bottom: 10%;
+  }
+
+  .sherbimet-dyqan {
+    width: calc(95% / 2);
+    padding: 7px;
+  }
+
+  .sherbimet-dyqan img {
+    height: auto;
+  }
+
+  .elementet-flex2 {
+    margin-top: 40px;
+  }
+
+  .kartat-e-medhaServisi {
+    grid-auto-columns: calc((96% / 2) - 1%);
+  }
+
+
+  /*    <!--      faqja e perKompanine.php     -->      */
+
+  .navi-perKompanine {
+    padding: 0;
+  }
+
+  .listat h3 {
+    font-size: 18px;
+  }
+
+  .imazhi-perKompanine {
+    height: 270px;
+  }
+
+  .imazhi-plote {
+    width: 70%;
+    height: auto;
+  }
+
+  .perklientin-Globe button {
+    width: 50%;
+    padding: 10px;
+    margin-left: 10px;
+  }
+
+  .Globe-grid {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 45%;
+  }
+
+  .kartat-e-medha-kompania {
+    grid-auto-columns: calc((100% / 2) - 2%);
+  }
+
+  .butonat-mediaQuery {
+    text-align: end;
+    padding: 20px 0;
+  }
+
+  .kartat-e-medhaGlobe {
+    grid-auto-columns: calc((100% / 2) - 2%);
+  }
+
+  .elementet-perGlobe {
+    flex-flow: wrap;
+  }
+
+  .sherbimet-globe {
+    width: calc(95% / 2);
+    padding: 20px 5px;
+  }
+
+  .mbeshtjellesi-shkrimet {
+    margin-top: 15%;
+  }
+
 
 }
 
@@ -1167,6 +1434,49 @@
 
   .item input {
     margin-right: 0;
+  }
+
+
+  /*    <!--      faqja e servisi.php     -->      */
+
+  .sherbimet-kartat {
+    padding: 0;
+  }
+
+  .sherbimet-dyqan {
+    padding: 50px 10px;
+  }
+
+  .sherbimet-dyqan img {
+    height: auto;
+  }
+
+  .kartat-e-medhaServisi {
+    grid-auto-columns: calc((100% / 2) - 1%);
+  }
+
+
+  /*    <!--      faqja e perKompanine.php     -->      */
+
+  .imazhi-plote {
+    width: 55%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .perklientin-Globe button {
+    padding: 10px;
+    gap: 0;
+  }
+
+  .navi-perKompanine {
+    padding: 0;
+    height: auto;
+  }
+
+  .imazhi-perKompanine {
+    width: 100%;
+    height: 450px;
   }
 
 }
