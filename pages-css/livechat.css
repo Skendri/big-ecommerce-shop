@@ -1,0 +1,112 @@
+/* ----------------------- faqja e livechat ---------------------- */
+
+.imazhi-mbrapa {
+  position: relative;
+  display: flex;
+  background-image: url("https://cms-images.mmst.eu/hzxov1nxpus5/KOAjFH8DRbv8kzXFPZXPv/9316abc1356ab8f832b3c4115bd3004b/Header_hersteller_name_artn_123456.jpg?q=92&fm=webp&h=408&w=1920");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10% 10%;
+  justify-content: center;
+}
+
+.borderi-relativ {
+  width: 70%;
+  position: absolute;
+  background-color: white;
+  border-radius: 15px 8px 90px 15px;
+  top: 85%;
+  padding-left: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.mbeshtetja-online {
+  width: 50%;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+  position: relative;
+  right: 102px;
+}
+
+.step {
+  text-align: center;
+  width: 30%;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.line {
+  width: 25%;
+  height: 2px;
+  background-color: black;
+}
+
+.borderi-infos {
+  display: flex;
+  gap: 5px;
+  padding: 0 10px;
+}
+
+.borderi-infos > p {
+  border: 1px solid #007fa4;
+  border-radius: 1rem;
+  padding: 3px 5px;
+  font-size: 0.7rem;
+  color: rgb(53, 53, 53);
+}
+
+.kontenieri-asistentit {
+  display: flex;
+  width: 96.2%;
+  height: 415px;
+  border-radius: 10px;
+  margin-top: 4rem;
+  padding-left: 10px;
+  gap: 88px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.imazhi {
+  background-image: url("https://cms-images.mmst.eu/hzxov1nxpus5/3Wev11DpDTnFxzzlXAoot9/a65112db00039beab06bc1d74dcf720a/Assistenza-HTC-Desk-v2.jpg?q=92&w=890");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.imazhi img {
+  width: 100%;
+  height: 100%;
+}
+
+.informacioni {
+  margin-bottom: 210px;
+}
+
+.imazhi2 {
+  background-image: url("https://cms-images.mmst.eu/hzxov1nxpus5/3sGFRYRrDIkBdwqpiaZHeL/2962c9f591da18cb64ae28102080142d/492291275-personalassistantsamsung_htc_desk.jpg?q=92&w=890");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}

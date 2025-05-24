@@ -1,0 +1,169 @@
+/* ----------------------- faqja e dyqanetTona.php ---------------------- */
+
+.faqjaPare-dyqanet {
+  padding: 1rem 11%;
+}
+
+.dyqanet-globe {
+  display: flex;
+  align-items: center;
+}
+
+.dyqanet-globe a {
+  color: rgb(85, 85, 85);
+  text-decoration: none;
+}
+
+.backgroundi {
+  background-color: rgb(247, 247, 247);
+}
+
+.item:nth-child(1) {
+  width: 30%;
+  height: auto;
+}
+
+.item:nth-child(2) {
+  width: 66%;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.inputi-dyqanit input {
+  padding-left: 30px;
+}
+
+.container .item:nth-child(1) {
+  display: flex;
+  color: black;
+  padding: 10px 0;
+  margin: 10px 13px;
+  font-size: 12px;
+  flex-direction: column;
+}
+
+.item p {
+  font-size: 15px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.item > span {
+  color: rgb(50, 50, 50);
+  font-size: 13px;
+  padding: 12px 0;
+  margin: 10px 0;
+}
+
+.item input {
+  width: 50%;
+  height: 40px;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+input::placeholder {
+  font-size: 15px;
+  color: rgb(50, 50, 50);
+}
+
+#icona {
+  background: url("https://static.thenounproject.com/png/101791-200.png")
+    no-repeat left;
+  background-size: 25px;
+}
+
+.inputi-dyqanit button {
+  background-color: #000000;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.inputi-dyqanit button:hover {
+  background-color: rgb(167, 162, 162);
+}
+
+.elementi-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70%;
+}
+
+.elementi-2 button {
+  margin-left: 10%;
+  width: 70%;
+  background-color: rgb(179, 179, 179);
+  color: white;
+  padding: 15px 0;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.ikona {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.kontenieri-dyqaneve {
+  margin: 100px 0;
+}
+
+.content {
+  display: none;
+  padding: 10px;
+  background-color: #f4f4f4;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Style for each "ikona" section */
+.ikona {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Change the icon when the section is open */
+.open i {
+  transform: rotate(180deg); /* Rotates the chevron */
+  transition: transform 0.3s ease;
+}
+
+.divi {
+  margin-bottom: 80px;
+}
+
+.identifikimi-dyqanit {
+  width: 70%;
+  margin-bottom: 10%;
+}
+
+.kontakti-dyqanit {
+  display: flex;
+  align-items: anchor-center;
+  justify-content: space-between;
+}
+
+.kontakti-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: baseline;
+  gap: 15px;
+}
+
+#map {
+  height: 180px;
+}

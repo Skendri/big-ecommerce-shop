@@ -414,6 +414,129 @@
     display: none;
   }
 
+  /*    <!--      faqja e livechat      -->      */
+  .borderi-relativ {
+    width: 90%;
+    right: 22px;
+  }
+
+  .borderi-relativ h1 {
+    font-size: 20px;
+  }
+
+  .mbeshtetja-online {
+    width: 100%;
+  }
+
+  .step {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .line {
+    width: 1%;
+    height: 40px;
+  }
+
+  .circle {
+    margin: 0;
+  }
+
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: unset;
+  }
+
+  .kontenieri-asistentit {
+    flex-direction: column-reverse;
+    padding: 0;
+    gap: 0px;
+  }
+
+  .informacioni {
+    margin-bottom: 0;
+    padding-left: 10px;
+  }
+
+  .informacioni h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0%;
+  }
+
+   /*    <!--      faqja e dyqanetTona.php      -->      */
+  .container .item:nth-child(1) {
+    width: 100%;
+  }
+
+  .container .item:nth-child(2) {
+    width: 100%;
+  }
+
+  .elementi-2 button {
+    margin-left: 0;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .inputi-dyqanit {
+    display: flex;
+    align-items: center;
+  }
+
+  .inputi-dyqanit input {
+    width: 85%;
+  }
+
+  .inputi-dyqanit button {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT--W18wy6a2ieVL6AoUwTx7OwzuY1-ncqVeA&s")
+      no-repeat;
+    font-size: 0;
+    background-size: 25px;
+    background-position: center;
+    background-color: black;
+    padding: 20px 20px;
+  }
+
+  .kontakti-dyqanit {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .item input {
+    margin-right: 5px;
+  }
+
+  .kontakti-div {
+    gap: 15px;
+  }
+
+  .kontakti-dyqanit {
+    gap: 30px;
+  }
+
+  .products-rrezultate {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .products-rrezultate h3 {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .products-rrezultate p {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  #toggleButton {
+    padding: 8px 8px;
+  }
+
 }
 
 
@@ -713,6 +836,55 @@
     font-size: 20px;
   }
 
+  /*             live chat empty                     */
+
+  /*            end of  live chat empty                     */
+
+  /*    <!--      faqja e dyqanetTona.php     -->      */
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .container .item:nth-child(1) {
+    width: 100%;
+  }
+
+  .container .item:nth-child(2) {
+    width: 100%;
+  }
+
+  .elementi-2 button {
+    margin-left: 0;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .inputi-dyqanit {
+    display: flex;
+    align-items: center;
+  }
+
+  .inputi-dyqanit input {
+    width: 85%;
+  }
+
+  .inputi-dyqanit button {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT--W18wy6a2ieVL6AoUwTx7OwzuY1-ncqVeA&s")
+      no-repeat;
+    font-size: 0;
+    background-size: 25px;
+    background-position: center;
+    background-color: black;
+    padding: 20px 20px;
+  }
+
+  .kontakti-div {
+    gap: 20px;
+  }
+
 }
 
 
@@ -949,6 +1121,52 @@
   .ikonat {
     padding-left: 3px;
     font-size: 2rem;
+  }
+
+
+   /*    <!--      faqja e livechat     -->      */
+
+  .steps {
+    right: 40px;
+  }
+
+  .mbeshtetja-online {
+    margin-top: 50px;
+    width: 65%;
+  }
+
+
+   /*    <!--      faqja e dyqanetTona.php     -->      */
+
+  .container {
+    gap: 0;
+  }
+
+  .inputi-dyqanit {
+    display: flex;
+  }
+
+  .inputi-dyqanit {
+    gap: 15px;
+  }
+
+  .kontakti-dyqanit {
+    gap: 10px;
+  }
+
+  .kontakti-div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .kontakti-dyqanit {
+    margin-left: 0;
+    width: 90%;
+  }
+
+  .item input {
+    margin-right: 0;
   }
 
 }
