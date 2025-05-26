@@ -1,4 +1,4 @@
-@media only screen and (min-width: 300px) and (max-width: 767px){
+@media only screen and (min-width: 300px) and (max-width: 768px){
   /*    <!--      index.php     -->      */
 
   .plani-pare {
@@ -693,7 +693,7 @@
 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
    /*    <!--      index.php     -->      */
    .kartat-kategoriVecuar {
     padding-bottom: 30px;
