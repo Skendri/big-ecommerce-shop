@@ -1,30 +1,30 @@
-// --------------------------------------------- INFO PRODUKTIT DEKLARIMET ---------------------------------------------------------- /
+// ---------------------------- INFO PRODUKTIT DEKLARIMET ---------------------------------------------------------- /
 const infoProduktit = document.getElementsByClassName("info-produktit");
 const pershkrimiProduktitBtn = document.getElementsByClassName(
   "pershkrimi-produktit"
 );
 let infoProduktitDukshme = false;
 
-// --------------------------------------------- KATEGORI POPUP DEKLARIMET ----------------------------------------------------------- /
+// -------------------------- KATEGORI POPUP DEKLARIMET ----------------------------------------------------------- /
 const listaItems = document.querySelectorAll(".kategoriPopUp");
 const popupGlobeShopsRekomandon = document.getElementById(
   "kategori-GlobeShops-rekomandonPopUp"
 );
 
-// --------------------------------------------- PERDJA ZEZE DEKLARIMET ------------------------------------------------------------- /
+// ---------------------------- PERDJA ZEZE DEKLARIMET ------------------------------------------------------------- /
 
 const perdjaZeze = document.getElementById("perdja-zeze");
 const perdjaZezeZgjidhDyqani = document.getElementById(
   "perdja-zeze-zgjidhDyqani"
 );
 
-// ----------------------------------- MBESHTJELLSI GJITH KATEGORIVE - ZGJIDH DYQANIN DEKLARIMET ------------------------------------ /
+// ------------------- MBESHTJELLSI GJITH KATEGORIVE - ZGJIDH DYQANIN DEKLARIMET ------------------------------------ /
 const mbeshtjellsiZgjidhDyqanin = document.getElementById("ZgjidhDyqanin");
 const mbeshtjellsiGjithaKategorite = document.getElementById(
   "mbeshtjellsi-gjithaKategorite"
 );
 
-// ----------------------------------------------- KARTAT E MEDHA SLIDER DEKLARIMET ------------------------------------------------ /
+// ---------------------------------- KARTAT E MEDHA SLIDER DEKLARIMET ---------------------------------------------- /
 const mbeshtjellesiKartave = document.querySelector("#mbeshtjellesi-kartave");
 const kartatEMedha = document.querySelector("#kartat-e-medha");
 const butonatShigjet = document.querySelectorAll(
@@ -33,7 +33,7 @@ const butonatShigjet = document.querySelectorAll(
 const gjersiaKartesTePare = document.querySelector(".kartaMadhe").offsetWidth;
 const FemijetKartaveTeMedha = [...kartatEMedha.children];
 
-//------------------------------------------------ KARTAT E PLANIT TE PARE DEKLARIMET ------------------------------------------------ //
+// ---------------------------- KARTAT E PLANIT TE PARE DEKLARIMET ------------------------------------------------ //
 const seksioniPlaniPare = document.querySelector("#seksioni-plani-pare");
 const kartatPlaniPare = document.querySelector("#kartat-plan-pare");
 const PlaniButonatShigjet = document.querySelectorAll(
@@ -46,7 +46,7 @@ let planiCardPerPamje = Math.round(
   kartatPlaniPare.offsetWidth / gjersiaKartesTePlanit
 );
 
-// ---------------------------------------------------  KARTAT KLUB DEKLARIMET -----------------------------------------------------//
+// -----------------------------------  KARTAT KLUB DEKLARIMET -----------------------------------------------------//
 const mbeshtjellesiKartaveKlub = document.querySelector(
   "#mbeshtjellesi-kartave-klub"
 );
@@ -60,30 +60,34 @@ let cardPerKlub = Math.round(
   kartatEMedhaKlub.offsetWidth / gjersiaKartesTeKlub
 );
 
-// ---------------------------------------------------------- KATEGORI POPUP -------------------------------------------------------- /
+// ------------------------------------------ KATEGORI POPUP -------------------------------------------------------- /
 
 listaItems.forEach((item) => {
-  item.addEventListener("mouseover", () => {
+  item.addEventListener("mouseenter", () => {
     popupGlobeShopsRekomandon.style.visibility = "visible";
-
     popupGlobeShopsRekomandon.style.opacity = 1;
   });
-});
 
-listaItems.forEach((item) => {
-  item.addEventListener("mouseleave", (event) => {
-    if (
-      !event.relatedTarget.closest(".kategoriPopUp") &&
-      !event.relatedTarget.closest(".kategoriPopUp")
-    ) {
-      popupGlobeShopsRekomandon.style.visibility = "hidden";
-
-      popupGlobeShopsRekomandon.style.opacity = 0;
-    }
+  item.addEventListener("mouseleave", (e) => {
+    // Small delay to allow hover over popup
+    setTimeout(() => {
+      if (!popupGlobeShopsRekomandon.matches(':hover')) {
+        popupGlobeShopsRekomandon.style.visibility = "hidden";
+        popupGlobeShopsRekomandon.style.opacity = 0;
+      }
+    }, 100);
   });
 });
 
-// ------------------------------------------------------- HAP POP UP DYQANI -------------------------------------------------------- /
+// Also handle popup itself to keep it open when hovered
+popupGlobeShopsRekomandon.addEventListener("mouseleave", () => {
+  popupGlobeShopsRekomandon.style.visibility = "hidden";
+  popupGlobeShopsRekomandon.style.opacity = 0;
+});
+
+console.log(popupGlobeShopsRekomandon);
+
+// ------------------------------------- HAP POP UP DYQANI -------------------------------------------------------- /
 
 function hapPopUpDyqani() {
   mbeshtjellsiZgjidhDyqanin.classList.toggle("hapPopUpZgjidhDyqanin");
@@ -94,7 +98,7 @@ function hapPopUpDyqani() {
   }
 }
 
-// -------------------------------------------------------- HAP POP UP ------------------------------------------------------------- /
+// ---------------------------------------- HAP POP UP ------------------------------------------------------------- /
 
 function hapPopUp() {
   mbeshtjellsiGjithaKategorite.classList.toggle("hapPopUpMbeshtjellsi");
@@ -105,7 +109,7 @@ function hapPopUp() {
   }
 }
 
-// ------------------------------------------------- KARTAT E MEDHA SLIDER -------------------------------------------------------- /
+// ---------------------------------- KARTAT E MEDHA SLIDER -------------------------------------------------------- /
 
 let cardPerPamje = Math.round(kartatEMedha.offsetWidth / gjersiaKartesTePare);
 
@@ -184,7 +188,7 @@ mbeshtjellesiKartave.addEventListener("mouseenter", () =>
 );
 mbeshtjellesiKartave.addEventListener("mouseleave", autoPlay);
 
-//---------------------------------------------------- KARTAT E PLANIT TE PARE ------------------------------------------------ //
+//-------------------------------------- KARTAT E PLANIT TE PARE ------------------------------------------------ //
 
 FemijetKartaveTePlanit.slice(-planiCardPerPamje)
   .reverse()
@@ -263,7 +267,7 @@ seksioniPlaniPare.addEventListener("mouseenter", () =>
 );
 seksioniPlaniPare.addEventListener("mouseleave", autoPlayPlani);
 
-// --------------------------------------------------------  KARTAT KLUB  ----------------------------------------------------------//
+// ---------------------------------------  KARTAT KLUB  ----------------------------------------------------------//
 
 FemijetKartaveTeKlub.slice(-cardPerKlub)
   .reverse()
@@ -340,7 +344,7 @@ mbeshtjellesiKartaveKlub.addEventListener("mouseenter", () =>
 );
 mbeshtjellesiKartaveKlub.addEventListener("mouseleave", autoPlayKlub);
 
-// -------------------  KARTAT KLUB  ---------------------//
+// -------------------------------------------------------------  KARTAT KLUB  ---------------------//
 
 const mbeshtjellesiDyteKartaveKlub = document.querySelector(
   "#mbeshtjellesi-dyte-kartave-klub"
@@ -433,7 +437,7 @@ mbeshtjellesiDyteKartaveKlub.addEventListener("mouseenter", () =>
 );
 mbeshtjellesiDyteKartaveKlub.addEventListener("mouseleave", autoPlayKlubDy);
 
-// -------------------  KARTAT E GJERA  ---------------------//
+// --------------------------------------------------------------------  KARTAT E GJERA  ---------------------//
 
 const mbeshtjellesiGjere = document.querySelector(
   "#mbeshtjellesi-gjere-kartave-klub"
@@ -525,7 +529,7 @@ mbeshtjellesiGjere.addEventListener("mouseenter", () =>
 );
 mbeshtjellesiGjere.addEventListener("mouseleave", autoPlayKartaGjere);
 
-// --------------- KARTAT E SHERBIMIT ---------------- //
+// ---------------------------------------------------------------------- KARTAT E SHERBIMIT ---------------- //
 
 const mbeshtjellesiSherbimit = document.querySelector(
   "#mbeshtjellesi-gjere-kartave-klub"
@@ -620,44 +624,6 @@ mbeshtjellesiSherbimit.addEventListener("mouseenter", () =>
 );
 mbeshtjellesiSherbimit.addEventListener("mouseleave", autoPlayKartaSherbimit);
 
-// // ---------------------- PRODUCT BUTTON -------------------------- //
 
-// ---------------------- BUTTON Toggle -------------------------- //
 
-function infoProduktitShow() {
-  if (!infoProduktitDukshme) {
-      for (let i = 0; i < infoProduktit.length; i++) {
-      infoProduktit[i].style.visibility = "visible";
-      infoProduktit[i].style.opacity = 1;
-      infoProduktit[i].style.position = "unset";
-      }
-      infoProduktitDukshme = true;
-  } else {
-      for (let i = 0; i < infoProduktit.length; i++) {
-      infoProduktit[i].style.visibility = "hidden";
-      infoProduktit[i].style.opacity = 0;
-      infoProduktit[i].style.position = "unset";
-      }
-      infoProduktitDukshme = false;
-  }
-  }
 
-  for (let i = 0; i < pershkrimiProduktitBtn.length; i++) {
-  pershkrimiProduktitBtn[i].addEventListener("click", infoProduktitShow);
-  }
-
-  document.addEventListener("click", (event) => {
-  if (
-      !event.target.closest(".info-produktit") &&
-      !event.target.closest(".pershkrimi-produktit")
-  ) {
-      if (infoProduktitDukshme) {
-      for (let i = 0; i < infoProduktit.length; i++) {
-          infoProduktit[i].style.visibility = "hidden";
-          infoProduktit[i].style.opacity = 0;
-          infoProduktit[i].style.position = "unset";
-      }
-      infoProduktitDukshme = false;
-      }
-  }
-  });

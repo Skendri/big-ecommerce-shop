@@ -161,6 +161,7 @@ body {
   width: 100%;
   height: 90px;
   background-color: #3a86ff;
+  margin-bottom: 50px;
 }
 
 .baneriBrendshem {
@@ -269,7 +270,7 @@ body {
 }
 
 .perdja-zeze {
-  width: 99%;
+  width: 100%;
   height: 975px;
   background: #1a1a1a;
   overflow: hidden;
@@ -284,6 +285,7 @@ body {
   opacity: 1;
 }
 
+/* bacgroundi i zi te hapja e pop up-it */
 .hapPopUpPerdja {
   visibility: visible;
   opacity: 1;
@@ -425,7 +427,7 @@ body {
 .hapPerdja-Zeze-ZgjidhDyqanin {
   visibility: visible;
   opacity: 1;
-  opacity: 70%;
+  opacity: 90%;
 }
 
 
@@ -856,8 +858,9 @@ body {
 .markat > h3,
 .sherbimet-globeShopsSection > h3,
 .kategoria-vecuar > h3 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: rgb(48, 48, 48);
+  font-weight: 600;
 }
 
 .marka-logo {
