@@ -1,4 +1,4 @@
-// ----------------------------------------------- KARTAT E MEDHA SLIDER DEKLARIMET te perKompanine.php ------------------------------------------------ /
+
         const mbeshtjellesiKartaveGlobe = document.querySelector("#mbeshtjellesi-kartaveGlobe");
         const kartatEMedhaGlobe = document.querySelector("#kartat-e-medhaGlobe");
         const butonatShigjetGlobe = document.querySelectorAll(

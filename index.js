@@ -64,12 +64,12 @@ let cardPerKlub = Math.round(
 console.log("ketu eshte kapur lista e pare", listaItems[0]);
 console.log("ketu eshte kapur lista e dyte", listaItems[1]);
 console.log("ketu eshte kapur lista e trete", listaItems[2]);
-listapare = listaItems[0];
+let listapare = listaItems[0];
 console.log("kjo eshte lista pare", listapare);
 listapare = listaItems[0].innerHTML;
 console.log("kjo eshte lista pare bashke me vleren qe ka brenda", listapare);
-listapare.style.fontSize = "60px";
-listapare.style.backgroundColor = "red"
+// listapare.style.fontSize = "60px";
+// listapare.style.backgroundColor = "red"
 listaItems.forEach((item) => {
   item.addEventListener("mouseenter", () => {
     popupGlobeShopsRekomandon.style.visibility = "visible";
@@ -107,7 +107,7 @@ console.log(popupGlobeShopsRekomandon);
 
 // ------------------------------------- HAP POP UP DYQANI -------------------------------------------------------- /
 
-function hapPopUpDyqani() {
+ function hapPopUpDyqani() {
   mbeshtjellsiZgjidhDyqanin.classList.toggle("hapPopUpZgjidhDyqanin");
   perdjaZezeZgjidhDyqani.classList.toggle("hapPerdja-Zeze-ZgjidhDyqanin");
   if (perdjaZezeZgjidhDyqani === true) {
@@ -118,7 +118,7 @@ function hapPopUpDyqani() {
 
 // ---------------------------------------- HAP POP UP ------------------------------------------------------------- /
 
-function hapPopUp() {
+ function hapPopUp() {
   mbeshtjellsiGjithaKategorite.classList.toggle("hapPopUpMbeshtjellsi");
   perdjaZeze.classList.toggle("hapPopUpPerdja");
   if (perdjaZeze === true) {
