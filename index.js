@@ -61,18 +61,21 @@ let cardPerKlub = Math.round(
 
 // ------------------------------------------ KATEGORI POPUP -------------------------------------------------------- /
 
+console.log("ketu eshte kapur lista e pare", listaItems[0]);
+console.log("ketu eshte kapur lista e dyte", listaItems[1]);
+console.log("ketu eshte kapur lista e trete", listaItems[2]);
+listapare = listaItems[0];
+console.log("kjo eshte lista pare", listapare);
+listapare = listaItems[0].innerHTML;
+console.log("kjo eshte lista pare bashke me vleren qe ka brenda", listapare);
+listapare.style.fontSize = "60px";
+listapare.style.backgroundColor = "red"
 listaItems.forEach((item) => {
   item.addEventListener("mouseenter", () => {
     popupGlobeShopsRekomandon.style.visibility = "visible";
     popupGlobeShopsRekomandon.style.opacity = 1;
     console.log("hovered on", item);
     console.log("pop up is", popupGlobeShopsRekomandon);
-
-      if (e.relatedTarget !== popupGlobeShopsRekomandon) {
-        // If mouse leaves the item and is not hovering over the popup, hide it
-        popupGlobeShopsRekomandon.style.visibility = "hidden";
-        popupGlobeShopsRekomandon.style.opacity = 0;
-      }
   });
 
   item.addEventListener("mouseleave", (e) => {
@@ -84,13 +87,15 @@ listaItems.forEach((item) => {
       }
     }, 500);
   });
-});
 
-// items.onmouseover = function() {
-//   popupGlobeShopsRekomandon.style.visibility = "visible"
-//   popupGlobeShopsRekomandon.style.opacity = 1;
-//   console.log("item on mouseover", items);
-// }
+  item.addEventListener("mouseover", () => {
+    if(item === "mouseover") {
+    popupGlobeShopsRekomandon.style.visibility = "visible";
+    popupGlobeShopsRekomandon.style.opacity = 1;
+    }
+  })
+
+});
 
 // Also handle popup itself to keep it open when hovered
 popupGlobeShopsRekomandon.addEventListener("mouseleave", () => {
