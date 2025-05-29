@@ -44,23 +44,23 @@
 
 // ---------------------- BUTTON Toggle -------------------------- //
 
-// function infoProduktitShow() {
-//   if (!infoProduktitDukshme) {
-//       for (let i = 0; i < infoProduktit.length; i++) {
-//       infoProduktit[i].style.visibility = "visible";
-//       infoProduktit[i].style.opacity = 1;
-//       infoProduktit[i].style.position = "unset";
-//       }
-//       infoProduktitDukshme = true;
-//   } else {
-//       for (let i = 0; i < infoProduktit.length; i++) {
-//       infoProduktit[i].style.visibility = "hidden";
-//       infoProduktit[i].style.opacity = 0;
-//       infoProduktit[i].style.position = "unset";
-//       }
-//       infoProduktitDukshme = false;
-//   }
-//   }
+function infoProduktitShow() {
+  if (!infoProduktitDukshme) {
+      for (let i = 0; i < infoProduktit.length; i++) {
+      infoProduktit[i].style.visibility = "visible";
+      infoProduktit[i].style.opacity = 1;
+      infoProduktit[i].style.position = "unset";
+      }
+      infoProduktitDukshme = true;
+  } else {
+      for (let i = 0; i < infoProduktit.length; i++) {
+      infoProduktit[i].style.visibility = "hidden";
+      infoProduktit[i].style.opacity = 0;
+      infoProduktit[i].style.position = "unset";
+      }
+      infoProduktitDukshme = false;
+  }
+  }
 
 //   for (let i = 0; i < pershkrimiProduktitBtn.length; i++) {
 //   pershkrimiProduktitBtn[i].addEventListener("click", infoProduktitShow);
