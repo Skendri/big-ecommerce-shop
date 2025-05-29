@@ -7,9 +7,8 @@ let infoProduktitDukshme = false;
 
 // -------------------------- KATEGORI POPUP DEKLARIMET ----------------------------------------------------------- /
 const listaItems = document.querySelectorAll(".kategoriPopUp");
-const popupGlobeShopsRekomandon = document.getElementById(
-  "kategori-GlobeShops-rekomandonPopUp"
-);
+const popupGlobeShopsRekomandon = document.getElementById("kategori-GlobeShops-rekomandonPopUp");
+const items = document.querySelector(".kategoriPopUp")
 
 // ---------------------------- PERDJA ZEZE DEKLARIMET ------------------------------------------------------------- /
 
@@ -66,6 +65,14 @@ listaItems.forEach((item) => {
   item.addEventListener("mouseenter", () => {
     popupGlobeShopsRekomandon.style.visibility = "visible";
     popupGlobeShopsRekomandon.style.opacity = 1;
+    console.log("hovered on", item);
+    console.log("pop up is", popupGlobeShopsRekomandon);
+
+      if (e.relatedTarget !== popupGlobeShopsRekomandon) {
+        // If mouse leaves the item and is not hovering over the popup, hide it
+        popupGlobeShopsRekomandon.style.visibility = "hidden";
+        popupGlobeShopsRekomandon.style.opacity = 0;
+      }
   });
 
   item.addEventListener("mouseleave", (e) => {
@@ -75,9 +82,15 @@ listaItems.forEach((item) => {
         popupGlobeShopsRekomandon.style.visibility = "hidden";
         popupGlobeShopsRekomandon.style.opacity = 0;
       }
-    }, 100);
+    }, 500);
   });
 });
+
+// items.onmouseover = function() {
+//   popupGlobeShopsRekomandon.style.visibility = "visible"
+//   popupGlobeShopsRekomandon.style.opacity = 1;
+//   console.log("item on mouseover", items);
+// }
 
 // Also handle popup itself to keep it open when hovered
 popupGlobeShopsRekomandon.addEventListener("mouseleave", () => {

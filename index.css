@@ -289,7 +289,7 @@ body {
 .hapPopUpPerdja {
   visibility: visible;
   opacity: 1;
-  opacity: 70%;
+  opacity: 80%;
 }
 
 .hr {
@@ -560,6 +560,15 @@ body {
   scroll-snap-align: start;
 }
 
+.backgroundi-karta-klub {
+  background-color: #3a86ff;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(50px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 2% 7%;
+}
+
 .kartat-e-medha.terheqje,
 .kartat-plan-pare.terheqje {
   cursor: grab;
@@ -592,6 +601,7 @@ body {
 
 .kartaMadhe-kutiaInfos {
   padding: 10px;
+  background-color: white;
 }
 
 .kartaMadhe-info {
