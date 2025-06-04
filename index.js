@@ -59,17 +59,10 @@ let cardPerKlub = Math.round(
   kartatEMedhaKlub.offsetWidth / gjersiaKartesTeKlub
 );
 
-// ------------------------------------------ KATEGORI POPUP -------------------------------------------------------- /
+// ------------------------------------------ KATEGORI POPUP -------------------------------------------------------- //
 
-console.log("ketu eshte kapur lista e pare", listaItems[0]);
-console.log("ketu eshte kapur lista e dyte", listaItems[1]);
-console.log("ketu eshte kapur lista e trete", listaItems[2]);
-let listapare = listaItems[0];
-console.log("kjo eshte lista pare", listapare);
-listapare = listaItems[0].innerHTML;
-console.log("kjo eshte lista pare bashke me vleren qe ka brenda", listapare);
-// listapare.style.fontSize = "60px";
-// listapare.style.backgroundColor = "red"
+let isPopupHover = false;
+
 listaItems.forEach((item) => {
   item.addEventListener("mouseenter", () => {
     popupGlobeShopsRekomandon.style.visibility = "visible";
@@ -85,20 +78,16 @@ listaItems.forEach((item) => {
         popupGlobeShopsRekomandon.style.visibility = "hidden";
         popupGlobeShopsRekomandon.style.opacity = 0;
       }
-    }, 500);
+    }, 300);
   });
-
-  item.addEventListener("mouseover", () => {
-    if(item === "mouseover") {
-    popupGlobeShopsRekomandon.style.visibility = "visible";
-    popupGlobeShopsRekomandon.style.opacity = 1;
-    }
-  })
 
 });
 
+
+
 // Also handle popup itself to keep it open when hovered
 popupGlobeShopsRekomandon.addEventListener("mouseleave", () => {
+  isPopupHover = false;
   popupGlobeShopsRekomandon.style.visibility = "hidden";
   popupGlobeShopsRekomandon.style.opacity = 0;
 });

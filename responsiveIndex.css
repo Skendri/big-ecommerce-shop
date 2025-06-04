@@ -1159,7 +1159,7 @@
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   /*    <!--      index.php     -->      */
   .kartat-plani-pare {
-    grid-auto-columns: calc((99% / 3) - 2%);
+    grid-auto-columns: calc((100% / 3) - 3%);
   }
 
   .naviLart {
@@ -1201,6 +1201,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    align-items: center;
+    justify-content: center;
   }
 
   .kartat-vogla {
