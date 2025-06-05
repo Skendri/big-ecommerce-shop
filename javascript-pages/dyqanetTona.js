@@ -34,7 +34,7 @@
 
 
         // Function to toggle visibility of content
-        export function toggleSection(element) {
+         function toggleSection(element) {
             const content = element.nextElementSibling; // Get the content div
             const icon = element.querySelector('i'); // Get the icon
 

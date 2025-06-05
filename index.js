@@ -61,27 +61,26 @@ let cardPerKlub = Math.round(
 
 // ------------------------------------------ KATEGORI POPUP -------------------------------------------------------- //
 
-let isPopupHover = false;
 
-listaItems.forEach((item) => {
-  item.addEventListener("mouseenter", () => {
-    popupGlobeShopsRekomandon.style.visibility = "visible";
-    popupGlobeShopsRekomandon.style.opacity = 1;
-    console.log("hovered on", item);
-    console.log("pop up is", popupGlobeShopsRekomandon);
-  });
+// listaItems.forEach((item) => {
+//   item.addEventListener("mouseenter", () => {
+//     popupGlobeShopsRekomandon.style.visibility = "visible";
+//     popupGlobeShopsRekomandon.style.opacity = 1;
+//     console.log("hovered on", item);
+//     console.log("pop up is", popupGlobeShopsRekomandon);
+//   });
 
-  item.addEventListener("mouseleave", (e) => {
-    // Small delay to allow hover over popup
-    setTimeout(() => {
-      if (!popupGlobeShopsRekomandon.matches(':hover')) {
-        popupGlobeShopsRekomandon.style.visibility = "hidden";
-        popupGlobeShopsRekomandon.style.opacity = 0;
-      }
-    }, 300);
-  });
+//   item.addEventListener("mouseleave", (e) => {
+//     // Small delay to allow hover over popup
+//     setTimeout(() => {
+//       if (!popupGlobeShopsRekomandon.matches(':hover')) {
+//         popupGlobeShopsRekomandon.style.visibility = "hidden";
+//         popupGlobeShopsRekomandon.style.opacity = 0;
+//       }
+//     }, 300);
+//   });
 
-});
+// });
 
 
 
@@ -90,6 +89,51 @@ popupGlobeShopsRekomandon.addEventListener("mouseleave", () => {
   isPopupHover = false;
   popupGlobeShopsRekomandon.style.visibility = "hidden";
   popupGlobeShopsRekomandon.style.opacity = 0;
+});
+
+console.log(popupGlobeShopsRekomandon);
+
+let hideTimeout; // Variable to store the timeout ID
+
+listaItems.forEach((item) => {
+  item.addEventListener("mouseenter", () => {
+    // Clear any existing timeout to prevent hiding
+    if (hideTimeout) {
+      clearTimeout(hideTimeout);
+      hideTimeout = null;
+    }
+    
+    popupGlobeShopsRekomandon.style.visibility = "visible";
+    popupGlobeShopsRekomandon.style.opacity = 1;
+    console.log("hovered on", item);
+    console.log("pop up is", popupGlobeShopsRekomandon);
+  });
+
+  item.addEventListener("mouseleave", (e) => {
+    // Small delay to allow hover over popup
+    hideTimeout = setTimeout(() => {
+      if (!popupGlobeShopsRekomandon.matches(':hover')) {
+        popupGlobeShopsRekomandon.style.visibility = "hidden";
+        popupGlobeShopsRekomandon.style.opacity = 0;
+      }
+    }, 300);
+  });
+});
+
+// Also handle popup itself to keep it open when hovered
+popupGlobeShopsRekomandon.addEventListener("mouseleave", () => {
+  hideTimeout = setTimeout(() => {
+    popupGlobeShopsRekomandon.style.visibility = "hidden";
+    popupGlobeShopsRekomandon.style.opacity = 0;
+  }, 300);
+});
+
+// Clear timeout when entering the popup
+popupGlobeShopsRekomandon.addEventListener("mouseenter", () => {
+  if (hideTimeout) {
+    clearTimeout(hideTimeout);
+    hideTimeout = null;
+  }
 });
 
 console.log(popupGlobeShopsRekomandon);

@@ -56,7 +56,7 @@ function infoProduktitShow() {
       for (let i = 0; i < infoProduktit.length; i++) {
       infoProduktit[i].style.visibility = "hidden";
       infoProduktit[i].style.opacity = 0;
-      infoProduktit[i].style.position = "unset";
+      infoProduktit[i].style.position = "absolute";
       }
       infoProduktitDukshme = false;
   }

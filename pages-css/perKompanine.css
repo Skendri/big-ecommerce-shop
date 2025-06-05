@@ -1,5 +1,3 @@
-/* ----------------------- faqja e perKompanine.php ---------------------- */
-
 .globe {
   padding: 1rem 11%;
 }
@@ -203,4 +201,279 @@
 
 .butonat-mediaQuery {
   display: hidden;
+}
+
+/*           kartat e para te faqes                            */
+
+.informacioni-sherbimet-kompanise {
+  background-color: rgb(247 247 247);
+  width: 100%;
+  height: auto;
+  padding: 20px 20px;
+  margin-top: 40px;
+}
+
+.Globe-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  justify-items: center;
+  height: 100px;
+  margin: 130px 0;
+}
+
+.perGlobe-grid {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.Globehoveri-servisi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+}
+
+.Globehoveri-servisi:hover {
+  width: 100%;
+  height: 100%;
+  text-decoration: underline;
+}
+
+.avantazhet-perKompanine {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.avantazhet-perKompanine > h4 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1rem 0;
+}
+
+.kartat-e-medha-kompania {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 1%);
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  scroll-snap-align: start;
+}
+
+.kartat-e-medha-kompania a {
+  text-decoration: none;
+  color: black;
+}
+
+.kartaMadheKompania {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px rgb(182, 182, 182);
+  border-radius: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.KompaniaKartaMadhe-foto > img {
+  width: 100%;
+}
+
+.kompaniaKartaMadhe-kutiaInfos {
+  padding: 10px;
+}
+
+.kompania-kartaMadhe-info {
+  display: flex;
+  gap: 5px;
+  padding: 0 10px;
+}
+
+.kompania-kartaMadhe-info > p {
+  border: 1px solid #007fa4;
+  border-radius: 1rem;
+  padding: 3px 30px;
+  font-size: 0.7rem;
+  color: rgb(53, 53, 53);
+}
+
+.kompania-kartaMadhe-infoDyte > p {
+  font-size: 1rem;
+  font-stretch: expanded;
+  color: rgb(53, 53, 53);
+}
+
+.kompania-kartaMadhe-infoDyte > h3 {
+  font-weight: 900;
+  font-size: 1.6rem;
+  font-style: oblique;
+}
+
+.kompania-kartaMadhe-infoDyte > h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+/* <!-- KARTA MADHE --> */
+.mbeshtjellesi-Globe,
+.seksioni-plani-pare {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: 0;
+}
+
+.mbeshtjellesi-Globe::-webkit-scrollbar,
+.seksioni-plani-pare::-webkit-scrollbar {
+  display: none;
+}
+
+.kartat-e-medhaGlobe {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 1%);
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  scroll-snap-align: start;
+}
+
+.kartat-e-medhaGlobe.terheqje,
+.kartat-plan-pare.terheqje {
+  cursor: grab;
+  user-select: none;
+}
+
+.kartat-e-medhaGlobe.jo-transition,
+.kartat-plan-pare.jo-transition {
+  scroll-behavior: auto;
+}
+
+.kartat-e-medhaGlobe a {
+  text-decoration: none;
+  color: black;
+}
+
+.kartaMadheGlobe {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px rgb(182, 182, 182);
+  border-radius: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.kartaMadhe-foto-globe > img {
+  width: 100%;
+}
+
+.kartaMadhe-kutiaInfos-globe {
+  padding: 10px;
+}
+
+.kartaMadhe-infoDyte-globe > p {
+  font-size: 1rem;
+  font-stretch: expanded;
+  color: rgb(53, 53, 53);
+}
+
+.kartaMadhe-infoDyte-globe > h3 {
+  font-weight: 900;
+  font-size: 1.6rem;
+  font-style: oblique;
+}
+
+.butonat-e-kontrolluesit {
+  text-align: end;
+  padding: 20px 0;
+}
+
+.butonat-e-kontrolluesit > button {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.butonat-e-kontrolluesit > button:hover {
+  background-color: #616161;
+}
+
+.elementet-perGlobe {
+  display: flex;
+  width: 100%;
+}
+
+.elementet-perGlobe .childs-globe button:hover {
+  background-color: rgb(227, 227, 227);
+}
+
+.sherbimet-globe {
+  margin-top: 5%;
+  padding: 60px 20px;
+}
+
+.sherbimet-globe img {
+  width: 100%;
+  border-radius: 20px;
+  height: 50%;
+}
+
+.sherbimet-globe button {
+  padding: 10px 50px;
+  background: transparent;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+.linqet-globe {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.linqet-globe a {
+  color: #000000;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.mbeshtjellesi-shkrimet {
+  display: flex;
+  flex-direction: column;
+}
+
+.shkrimet {
+  background-color: rgb(244, 244, 244);
+  margin-bottom: 40px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+}
+
+.shkrimet h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  font-style: italic;
+  padding: 10px;
+  margin: 0;
+}
+
+.shkrimet p {
+  padding: 10px;
+  width: 60%;
+  font-size: 1.05rem;
+  margin: 0;
 }
