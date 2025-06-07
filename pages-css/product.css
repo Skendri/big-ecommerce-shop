@@ -241,3 +241,132 @@ span {
   opacity: 0;
   visibility: hidden;
 }
+
+
+/*              slideri i ri               */
+
+.kontenieri-reklames {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: wheat;
+}
+
+.slider-container {
+  position: relative;
+  width: 500px;
+  overflow: hidden;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.image-container {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 20px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.btn.prev {
+  left: 10px;
+}
+
+.btn.next {
+  right: 10px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+/* double landing page */
+
+.container-landingPage {
+  position: relative;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+
+.container-landingPage h1 {
+  font-size: 100px;
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 4px;
+}
+
+.container-landingPage .btn {
+  background-color: black;
+  color: white;
+  padding: 20px 40px;
+  font-size: 25px;
+  border: 4px solid;
+  cursor: pointer;
+  transition: 1s background-color;
+  white-space: nowrap;
+}
+
+.container-landingPage .btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.container-landingPage .split {
+  width: 50%;
+  height: 100%;
+  top: 0;
+  overflow: hidden;
+}
+
+.container-landingPage .split.left {
+  position: absolute;
+  left: 0;
+  background-color: pink;
+  background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1631220221000");
+  background-size: cover;
+}
+
+.container-landingPage .split.right {
+  position: absolute;
+  right: 0;
+  background-color: lightblue;
+  background-image: url("https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6465/6465022_sd.jpg;maxHeight=640;maxWidth=550");
+  background-size: cover;
+}
+
+.container-landingPage .active-left .left {
+  width: 75%;
+}
+
+.container-landingPage .active-left .right {
+  width: 25%;
+}
+
+.container-landingPage .active-right .left {
+  width: 25%;
+}
+
+.container-landingPage .active-right .right {
+  width: 75%;
+}
+
+.container-landingPage .left,
+.right {
+  transition: width 2s ease-in-out;
+}
