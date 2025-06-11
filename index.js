@@ -316,7 +316,7 @@ kartatPlaniPare.addEventListener("scroll", infiniteScrollPlani);
 seksioniPlaniPare.addEventListener("mouseenter", () =>
   clearTimeout(timeoutIDPlani)
 );
-seksioniPlaniPare.addEventListener("mouseleave", autoPlayPlani);
+seksioniPlaniPare.addEventListener("mouseenter", autoPlayPlani);
 
 // ---------------------------------------  KARTAT KLUB  ----------------------------------------------------------//
 
@@ -393,7 +393,7 @@ kartatEMedhaKlub.addEventListener("scroll", infiniteScrollKlub);
 mbeshtjellesiKartaveKlub.addEventListener("mouseenter", () =>
   clearTimeout(timeoutIDKlub)
 );
-mbeshtjellesiKartaveKlub.addEventListener("mouseleave", autoPlayKlub);
+mbeshtjellesiKartaveKlub.addEventListener("mouseenter", autoPlayKlub);
 
 // -------------------------------------------------------------  KARTAT KLUB  ---------------------//
 
@@ -486,7 +486,7 @@ kartatEDytaKlub.addEventListener("scroll", infiniteScrollKlubDy);
 mbeshtjellesiDyteKartaveKlub.addEventListener("mouseenter", () =>
   clearTimeout(timeoutIDKlubDy)
 );
-mbeshtjellesiDyteKartaveKlub.addEventListener("mouseleave", autoPlayKlubDy);
+mbeshtjellesiDyteKartaveKlub.addEventListener("mouseenter", autoPlayKlubDy);
 
 // --------------------------------------------------------------------  KARTAT E GJERA  ---------------------//
 
@@ -578,7 +578,7 @@ kartaGjereKlub.addEventListener("scroll", infiniteScrollKartaGjere);
 mbeshtjellesiGjere.addEventListener("mouseenter", () =>
   clearTimeout(timeoutIDKartaGjere)
 );
-mbeshtjellesiGjere.addEventListener("mouseleave", autoPlayKartaGjere);
+mbeshtjellesiGjere.addEventListener("mouseenter", autoPlayKartaGjere);
 
 // ---------------------------------------------------------------------- KARTAT E SHERBIMIT ---------------- //
 
@@ -673,7 +673,7 @@ kartaSherbimit.addEventListener("scroll", infiniteScrollKartaSherbimit);
 mbeshtjellesiSherbimit.addEventListener("mouseenter", () =>
   clearTimeout(timeoutIDKartaSherbimit)
 );
-mbeshtjellesiSherbimit.addEventListener("mouseleave", autoPlayKartaSherbimit);
+mbeshtjellesiSherbimit.addEventListener("mouseenter", autoPlayKartaSherbimit);
 
 
 

@@ -3,10 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./pages-css/faqjaKontakteve.css">
-  <link rel="stylesheet" href="./imported-links/footer.css">
-  <link rel="stylesheet" href="./imported-links/navbar.css">
-  <link rel="stylesheet" href="./responsiveIndex.css">
+  <link rel="stylesheet" href="/pages-css/dyqanetTona.css">
+  <link rel="stylesheet" href="/imported-links/footer.css">
+  <link rel="stylesheet" href="/imported-links/navbar.css">
+  <link rel="stylesheet" href="/responsiveIndex.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" />
   <title>Document</title>
 </head>
 <body>
@@ -246,98 +250,168 @@
     <!-- Big Nav --> 
   </div>
 
-  <!--                  kontenti  i faqes               --> 
-  <div class="background-image">
-            <div class="teksti"> 
-                <h1>Si mund t'ju ndihmojmë?</h1> 
+  <!--                    faqja kontentit                        -->
+
+  <section class="faqjaPare-dyqanet">
+        <div class="dyqanet-globe">
+            <svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                    d="m10.8686 2.2245-7.5 6.1068A1 1 0 0 0 3 9.1068V16c0 2.7614 2.2386 5 5 5h8c2.7614 0 5-2.2386 5-5V9.1068a1 1 0 0 0-.4165-.8121l-8.5-6.1068a1 1 0 0 0-1.2149.0366m.6684 2.0335L19 9.619V16c0 1.6569-1.3431 3-3 3H8l-.1763-.005C6.249 18.9036 5 17.5976 5 16V9.582z">
+                </path>
+            </svg>
+            <svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                    d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z">
+                </path>
+            </svg>
+            <a href="">Të gjitha dyqanet E-commerceShop</a>
+         </div>
+         <div>
+            <h1>Dyqanet</h1>
+         </div>
+    </section>
+
+<div class="backgroundi">
+<section class="faqjaPare">
+
+    <div class="container">
+        <div class="item">
+            <p>Select the store</p>
+            <span>Fut kodin postar ose qytetin për të parë dyqanet pranë teje. Në këtë
+                mënyrë ju mund të kontrolloni disponueshmërinë e produkteve në
+                dyqan
+            </span>
+           <div class="inputi-dyqanit">
+                <input
+                type="text"
+                placeholder="Search by ZIP Code or City"
+                id="icona"
+                />
+                <button>Kerko</button>
+            </div> 
+            <div class="elementi-2">
+                <span>10 dyqanet më të afërta të Globe:</span>  <br>
+                <button>kliko Dyqanin</button>
             </div>
         </div>
 
-        <section class="faqjaPare">
-            <div class="divi-pare">
-                <img src="https://cms-images.mmst.eu/hzxov1nxpus5/3tUxBgJIMZhsfXF7m4Ynwi/86744b0fdcc55ff112165642b5ef2722/contattaci_01.jpg?q=70&fm=webp&w=650&h=650" class="imazhi-kontaktit" alt="">
-                <div class="elementetEdivit">
-                    <h3>PYETJE DHE PËRGJIGJE</h3>
-                    <p>Pyetjet dhe përgjigjet më të zakonshme para dhe pas blerjes mund të gjenden në Mbështetjen e Klientit</p>
-                    <button>Shkoni te Mbështetja e Klientit</button>
-                </div>
-            </div>
+      <div class="item">
+      <h1>Google Map Example</h1>
+      <div id="map" style="height: 500px;"></div>
+      </div>
+    </div>
+</section>
+</div>
 
-            <p>Nëse nuk i keni gjetur përgjigjet që po kërkoni, mund të na kontaktoni në shumë mënyra:</p>
-            <div class="divi-dyte">
-                <img src="https://cms-images.mmst.eu/hzxov1nxpus5/3tUxBgJIMZhsfXF7m4Ynwi/86744b0fdcc55ff112165642b5ef2722/contattaci_01.jpg?q=70&fm=webp&w=650&h=650" class="imazhi-kontaktit" alt="">
-                <div class="elementetEdivit">
-                    <h3>PYETJE DHE PËRGJIGJE</h3>
-                    <p>Pyetjet dhe përgjigjet më të zakonshme para dhe pas blerjes mund të gjenden në Mbështetjen e Klientit</p>
-                    <button>Shkoni te Mbështetja e Klientit</button>
-                </div>
-            </div>
+<section class="faqjaPare">
+    <div class="kontenieri-dyqaneve">
+        <hr>
+        <div class="ikona" onclick="toggleSection(this)">
+            <h1>Tirane</h1>
+            <i class="fa-solid fa-chevron-down fa-xl"></i>
+        </div>
+        <div class="content">
+            <!-- Content for Tirane -->
+            -<p>Qendra Globe, Rruga “Kavajës”, Tiranë</p>
+            -<p>Tiranë, Qendra tregtare “Tirana Ring Center”</p>
+            -<p>Tiranë, Toptani Shopping Center</p>
+            -<p>Rruga "Ali Demi", Kompleksi Vind, Ish Uzina Gjeologjike</p>
+            -<p>Rruga Milano, Kamëz 1030</p>
+        </div>
+        <hr>
+        
+        <div class="ikona" onclick="toggleSection(this)">
+            <h1>Durrës</h1>
+            <i class="fa-solid fa-chevron-down fa-xl"></i>
+        </div>
+        <div class="content">
+            <!-- Content for Tirane -->
+            <p>Durrës, Rrethrrotullimi i stacionit të trenit</p>
+        </div>
+        <hr>
 
-            <!-- <div class="divi-trete">
-                <img src="https://cms-images.mmst.eu/hzxov1nxpus5/3tUxBgJIMZhsfXF7m4Ynwi/86744b0fdcc55ff112165642b5ef2722/contattaci_01.jpg?q=70&fm=webp&w=650&h=650" class="imazhi-kontaktit" alt="">
-                <div class="elementetEdivit">
-                    <h3>PYETJE DHE PËRGJIGJE</h3>
-                    <p>Pyetjet dhe përgjigjet më të zakonshme para dhe pas blerjes mund të gjenden në Mbështetjen e Klientit</p>
-                    <button>Shkoni te Mbështetja e Klientit</button>
-                </div>
-            </div> -->
-            
-            <!-- <div class="divi-kater">
-                <img src="https://cms-images.mmst.eu/hzxov1nxpus5/3tUxBgJIMZhsfXF7m4Ynwi/86744b0fdcc55ff112165642b5ef2722/contattaci_01.jpg?q=70&fm=webp&w=650&h=650" class="imazhi-kontaktit" alt="">
-                <div class="elementetEdivit">
-                    <h3>PYETJE DHE PËRGJIGJE</h3>
-                    <p>Pyetjet dhe përgjigjet më të zakonshme para dhe pas blerjes mund të gjenden në Mbështetjen e Klientit</p>
-                    <button>Shkoni te Mbështetja e Klientit</button>
-                </div>
-            </div> -->
-            
-            
-                <div class="form-container">
-                    <div id="login-box" class="login-box">
-                        <h2>Sign In</h2>
-                        <form id="myForm" >
-                            <div class="user-box">
-                                <input type="text" name="" required=""/>
-                                <label> First Name: </label>
-                            </div>
-                            <div class="user-box">
-                                <input type="text" name="" required=""/>
-                                <label>Last Name: </label>
-                            </div>
-                            
-                            <div class="user-box">
-                                <input type="text" id="email" name="" required=""/>
-                                <label>Email:</label>
-                            </div>
-                            
-                            <!-- <div class="user-box">
-                                <input type="password" id="password"  name="password" required />
-                                <label>Password: </label>
-                            </div> -->
-                            
-                            <!-- <div class="user-box padding-input">
-                                <input
-                                type="text"
-                                required=""
-                                id="address"
-                                name="address"
-                                />
-                                <label>Address:</label>
-                            </div> -->
+        <div class="ikona" onclick="toggleSection(this)">
+            <h1>Fier</h1>
+            <i class="fa-solid fa-chevron-down fa-xl"></i>
+        </div>
+        <div class="content">
+            <!-- Content for Tirane -->
+            <p>Fier, Rruga “Jakov Xoxa”, pallati pranë Piacës</p>
+        </div>
+        <hr>
 
-                            <div class="text-area">
-                                <p class="text-area1"> Type message here:</p>
-                                <textarea name="" id=""></textarea>
-                            </div>
+        <div class="ikona" onclick="toggleSection(this)">
+            <h1>Vlorë</h1>
+            <i class="fa-solid fa-chevron-down fa-xl"></i>
+        </div>
+        <div class="content">
+            <!-- Content for Tirane -->
+            <p>Vlorë, Lagjia “Pavarësia”, Rr “Kosova, përballë Hyrjes së Portit</p>
+        </div>
+        <hr>
 
-                            <button type="submit" class="button-87" role="button">Sign in</button>
-                        </form>
-                        <div id="error-message"></div>
+        <div class="ikona" onclick="toggleSection(this)">
+            <h1>Sarandë</h1>
+            <i class="fa-solid fa-chevron-down fa-xl"></i>
+        </div>
+        <div class="content">
+            <!-- Content for Tirane -->
+            <p>Sarandë, Lagjia nr. 1, rruga Skënderbeu, nr. 131 mbi Harqet</p>
+        </div>
+        <hr>
+
+        <div class="ikona" onclick="toggleSection(this)">
+            <h1>korçë</h1>
+            <i class="fa-solid fa-chevron-down fa-xl"></i>
+        </div>
+        <div class="content">
+            <!-- Content for Tirane -->
+            <p>Korçë, përballë Katedrales.</p>
+        </div>
+        <hr>
+
+        <div class="ikona" onclick="toggleSection(this)">
+            <h1>Shkodër</h1>
+            <i class="fa-solid fa-chevron-down fa-xl"></i>
+        </div>
+        <div class="content">
+            <!-- Content for Tirane -->
+            <p>Shkodër, Rruga "Qemal Draçini"</p>
+        </div>
+        <hr>
+    </div>
+
+
+    <div class="divi">
+        <h1>EJANI NA VIZITONI</h1>
+        <h2>DYQANET TONA JANË NË DISPONIM TUAJ</h2>
+        <span>Dal 1° maggio non è necessario esibire il green pass all’ingresso. <br>
+        L’utilizzo della mascherina è fortemente raccomandato per una maggiore incolumità di tutti i dipendenti e visitatori.
+        </span>
+    </div>
+
+
+    <div class="identifikimi-dyqanit">
+                    <h2>Si mund të identifikohem?</h2>
+                    <div class="kontakti-dyqanit">
+                        <div class="kontakti-div">
+                            <i class="fa-regular fa-envelope fa-2xl" style="color: #007fa4;"></i>
+                            <span>Inviare un'e-mail <br> Rispondiamo in media entro 48 ore </span> 
+                        </div> 
+
+                        <div class="kontakti-div">
+                        <i class="fa-regular fa-envelope fa-2xl" style="color: #007fa4;"></i>
+                        <span>Inviare un'e-mail <br> Rispondiamo in media entro 48 ore</span>
+                        </div>
+
+                        
+                        <div class="kontakti-div">
+                        <i class="fa-regular fa-envelope fa-2xl" style="color: #007fa4;"></i>
+                        <span>Inviare un'e-mail <br> Rispondiamo in media entro 48 ore</span>
+                        </div>
                     </div>
-                </div>   
-        </section>
-
-        <!--                  kontenti  i faqes               --> 
+                </div>
+</section>
 
 
     <!--                  ky eshte futeri                                    -->
@@ -560,7 +634,13 @@
       </p>
     </section>
 
-    <script type="module" src="./index.js"></script>
+    <script src="/index.js"></script>
+
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+    <script src="/javascript-pages/dyqanetTona.js"></script>
 
 </body>
 </html>

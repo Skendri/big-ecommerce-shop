@@ -88,8 +88,8 @@
         // feedbacku qe do lene userat per eksperiencen e blerjeve ne faqe
 
         const starsEl = document.querySelectorAll(".fa-star");
-        const emojisEl = document.querySelectorAll(".far");
-        const colorsArray = ["red", "orange", "lightblue", "lightgreen", "green"];
+        const emojisEl = document.querySelectorAll(".emoji");
+        // const colorsArray = ["😡", "😶", "😐", "😊", "😆"];
 
         updateRating(0);
 
@@ -110,6 +110,6 @@
 
         emojisEl.forEach((emojiEl) => {
             emojiEl.style.transform = `translateX(-${index * 50}px)`;
-            emojiEl.style.color = colorsArray[index];
+            // emojiEl.innerHTML = colorsArray[index];
         });
         }

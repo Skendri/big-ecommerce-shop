@@ -1,5 +1,7 @@
 
-        const mbeshtjellesiKartaveGlobe = document.querySelector("#mbeshtjellesi-kartaveGlobe");
+
+
+    const mbeshtjellesiKartaveGlobe = document.querySelector("#mbeshtjellesi-kartaveGlobe");
         const kartatEMedhaGlobe = document.querySelector("#kartat-e-medhaGlobe");
         const butonatShigjetGlobe = document.querySelectorAll(
         "#butonat-e-kontrolluesit button"
@@ -112,11 +114,11 @@
 
 
         const container = document.querySelector('#kartat-e-medha-klub'); // The container of carousel items
-const items = document.querySelectorAll('.kartaMadheKompania'); // All carousel items
+let items1 = document.querySelectorAll('.kartaMadheKompania'); // All carousel items
 const leftButton = document.getElementById('butoni-majtas'); // Left button
 const rightButton = document.getElementById('butoni-djathtas'); // Right button
 
-const itemWidth = items[0].offsetWidth; // Get the width of a single item
+const itemWidth = items1[0].offsetWidth; // Get the width of a single item
 let isUserDragging = false, UserstartX, scrollLeft;
 
 const UserautoPlay = () => {

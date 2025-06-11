@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./pages-css/livechat.css">
-  <link rel="stylesheet" href="./imported-links/footer.css">
-  <link rel="stylesheet" href="./imported-links/navbar.css">
-  <link rel="stylesheet" href="./responsiveIndex.css">
+  <link rel="stylesheet" href="/pages-css/suportiKlientit.css">
+  <link rel="stylesheet" href="/imported-links/footer.css">
+  <link rel="stylesheet" href="/imported-links/navbar.css">
+  <link rel="stylesheet" href="/responsiveIndex.css">
+  <!-- font awsome icon link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Document</title>
 </head>
 <body>
@@ -246,107 +248,252 @@
     <!-- Big Nav --> 
   </div>
 
-  <!--            contenti i faqes                   -->
+  <!--                 contenti faqes full                                -->
 
-   <div class="imazhi-mbrapa">
-            <div class="borderi-relativ"> 
-                <h1>Si mund t'ju ndihmojmë?</h1> 
+   <section class="faqjaPare">
+        <div class="divi-banerit">
+         <span>suporti klientit</span>
+         <hr>
+          <div class="baneri">
+            <div class="elementet-baneri">
+                <h2>Si mund t'ju ndihmojmë?</h2>
+                <div class="inputi">
+                    <input type="text" id="" placeholder="Futni temën ose bëni pyetjen tuaj">
+                    <button><i class="fa-solid fa-magnifying-glass fa-sm"></i></button>
+                </div>
             </div>
+          </div>
         </div>
 
-
-        <section class="faqjaPare">
-            <div>
-                <div class="mbeshtetja-online">
-                    <h3>Mbështetja live që meritoni, qoftë edhe online!</h3>
-                    <p>
-                        Me konsulentët tanë të drejtpërdrejtë do të mësoni gjithçka që duhet të dini 
-                        për të blerë produktin tuaj të ri, duke gjetur atë të përsosur për nevojat 
-                        tuaja. Flisni dhe shikoni konsulentin të shpjegojë gjithçka që ju intereson 
-                        (dhe për të garantuar privatësinë tuaj ai nuk do t'ju shohë)
-                    </p>
-                </div>
-
-                <div class="steps">
-                    <div class="step">
-                        <div class="circle">1</div>
-                        <p>
-                            <strong>Scegli la marca
-                            </strong>
+        <div class="info">
+            <button id="prevBtn"><</button>
+                <div class="mbeshtjellesi">
+                    <div class="carousel" id="carousel">
+                        <p class="text" id="lastClone">
+                            Cilat janë kushtet e përgjithshme të shitjes në Globe?
+                        </p>
+                        <p class="text">
+                            A është e mundur të bëhet një porosi me telefon?
+                        </p>
+                        <p class="text">
+                            A mund ta ndryshoj porosinë time më vonë?
+                        </p>
+                        <p class="text">
+                            Cilat janë kushtet e përgjithshme të shitjes në Globe?
+                        </p>
+                        <p class="text" id="firstClone">
+                            A është e mundur të bëhet një porosi me telefon?
                         </p>
                     </div>
+                </div>
+            <button id="nextBtn">></button>
+        </div>
 
-                    <div class="line"></div>
-                        <div class="step">
-                            <div class="circle">2</div>
-                            <p>
-                                <strong>
-                                Scegli se avere informazioni di dettaglio su un prodotto o sul
-                                tipo di prodotto
-                                </strong>
-                            </p>
-                        </div>
-                        
-                    <div class="line"></div>
-                        <div class="step">
-                            <div class="circle">3</div>
-                                <p>
-                                    <strong>
-                                        Parla o chatta con i consulenti
-                                    </strong>
-                                </p>
-                        </div>
+        <div class="divi-banerit">
+         <h2>Pyetjet e bëra më shpesh</h2>
+            <div class="baneri-dyte">
+             <div class="kontenti">
+             <input type="checkbox" id="toggle1" class="toggle-checkbox">
+                <label for="toggle1">
+                    <span style="color: #007fa4;">Si mund të bëj një porosi në internet?</span>
+                </label>
+                <div class="answer">
+                    <span>Troverai le informazioni di tuo interesse nell'area effettuare un ordine del sito.  più</span>
+                </div>
+             </div>
+
+             <div class="kontenti">
+             <input type="checkbox" id="toggle2" class="toggle-checkbox">
+                <label for="toggle2">
+                    <span style="color: #007fa4;">Si mund të bëj një porosi në internet?</span>
+                </label>
+                <div class="answer">
+                    <span>Troverai le informazioni di tuo interesse nell'area effettuare un ordine del sito.  più</span>
+                </div>
+             </div>
+
+             <div class="kontenti">
+             <input type="checkbox" id="toggle3" class="toggle-checkbox">
+                <label for="toggle3">
+                    <span style="color: #007fa4;">Si mund të bëj një porosi në internet?</span>
+                </label>
+                <div class="answer">
+                    <span>Troverai le informazioni di tuo interesse nell'area effettuare un ordine del sito.  più</span>
+                </div>
+             </div>
+                
+             </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="informacioni-kartave">
+                <div class="kartat-suportit" id="kartat">
+                    <div class="hoveri" id="mousehover"> 
+                        <li> lista 1</li>
+                        <li> lista 2</li>
+                        <li> lista 3</li>
+                        <li> lista 4</li> 
                     </div>
+                    <i class="fa-solid fa-globe fa-2xl"></i>
+                    <p>Bli Online dhe merr nje aksesor falas.</p>
                 </div>
 
-
-                <div class="kontenieri-asistentit">
-                    <div class="teksti-kontentit">
-
-                        <div class="borderi-infos">
-                            <p>Ne dyqan dhe online</p>
-                        </div>
-                    
-                        <div class="informacioni">
-                            <span>NEVOJET NDIHMË?</span>
-                            <h1>Asistent Personal</h1>
-                            <p>Eksperti ynë i produkteve Apple në shërbimin tuaj</p>
-                        </div>
-            
-                            <div class="borderi-infos" id="borderi-infos">
-                                <p>Ne dyqan dhe online</p>
-                            </div>
-
+                <div class="kartat-suportit" id="kartat">
+                    <div class="hoveri" id="mousehover"> 
+                        <li> lista 1</li>
+                        <li> lista 2</li>
+                        <li> lista 3</li>
+                        <li> lista 4</li> 
                     </div>
-
-                        <div class="imazhi"></div>
+                    <i class="fa-solid fa-globe fa-2xl"></i>
+                    <p>Bli Online dhe merr nje aksesor falas.</p>
                 </div>
 
+                <div class="kartat-suportit" id="kartat">
+                    <div class="hoveri" id="mousehover"> 
+                        <li> lista 1</li>
+                        <li> lista 2</li>
+                        <li> lista 3</li>
+                        <li> lista 4</li> 
+                    </div>
+                    <i class="fa-solid fa-globe fa-2xl"></i>
+                    <p>Bli Online dhe merr nje aksesor falas.</p>
+                </div>
 
-                <div class="kontenieri-asistentit">
-                    <div class="teksti-kontentit">
+                <div class="kartat-suportit" id="kartat">
+                    <div class="hoveri" id="mousehover"> 
+                        <li> lista 1</li>
+                        <li> lista 2</li>
+                        <li> lista 3</li>
+                        <li> lista 4</li> 
+                    </div>
+                    <i class="fa-solid fa-globe fa-2xl"></i>
+                    <p>Bli Online dhe merr nje aksesor falas.</p>
+                </div>
 
-                        <div class="borderi-infos">
-                            <p>Ne dyqan dhe online</p>
+                <div class="kartat-suportit" id="kartat">
+                    <div class="hoveri" id="mousehover"> 
+                        <li> lista 1</li>
+                        <li> lista 2</li>
+                        <li> lista 3</li>
+                        <li> lista 4</li> 
+                    </div>
+                    <i class="fa-solid fa-globe fa-2xl"></i>
+                    <p>Bli Online dhe merr nje aksesor falas.</p>
+                </div>
+
+                <div class="kartat-suportit" id="kartat">
+                    <div class="hoveri" id="mousehover"> 
+                        <li> lista 1</li>
+                        <li> lista 2</li>
+                        <li> lista 3</li>
+                        <li> lista 4</li> 
+                    </div>
+                    <i class="fa-solid fa-globe fa-2xl"></i>
+                    <p>Bli Online dhe merr nje aksesor falas.</p>
+                </div>
+
+                <div class="kartat-suportit" id="kartat">
+                    <div class="hoveri" id="mousehover"> 
+                        <li> lista 1</li>
+                        <li> lista 2</li>
+                        <li> lista 3</li>
+                        <li> lista 4</li> 
+                    </div>
+                    <i class="fa-solid fa-globe fa-2xl"></i>
+                    <p>Bli Online dhe merr nje aksesor falas.</p>
+                </div>
+
+                <div class="kartat-suportit" id="kartat">
+                    <div class="hoveri" id="mousehover"> 
+                        <li> lista 1</li>
+                        <li> lista 2</li>
+                        <li> lista 3</li>
+                        <li> lista 4</li> 
+                    </div>
+                    <i class="fa-solid fa-globe fa-2xl"></i>
+                    <p>Bli Online dhe merr nje aksesor falas.</p>
+                </div>
+
+                <div class="kartat-suportit" id="kartat">
+                    <div class="hoveri" id="mousehover"> 
+                        <li> lista 1</li>
+                        <li> lista 2</li>
+                        <li> lista 3</li>
+                        <li> lista 4</li> 
+                    </div>
+                    <i class="fa-solid fa-globe fa-2xl"></i>
+                    <p>Bli Online dhe merr nje aksesor falas.</p>
+                </div>
+
+            </section>
+
+                <div class="perKlientin">
+                    <h2>Kontakti</h2>
+                    <div class="suport-kontakt">
+                        <i class="fa-regular fa-envelope fa-2xl" style="color: #007fa4;"></i>
+                        <div class="kontakti-1">
+                        <span>Inviare un'e-mail</span> 
+                        <span>Rispondiamo in media entro 48 ore</span>
                         </div>
-                    
-                        <div class="informacioni">
-                            <span>NEVOJET NDIHMË?</span>
-                            <h1>Asistent Personal</h1>
-                            <p>Eksperti ynë i produkteve Apple në shërbimin tuaj</p>
-                        </div>
-            
-                            <div class="borderi-infos">
-                                <p>Ne dyqan dhe online</p>
-                            </div>
 
+                        <i class="fa-regular fa-envelope fa-2xl" style="color: #007fa4;"></i>
+                        <div class="kontakti-1">
+                        <span>Inviare un'e-mail</span>
+                        <span>Rispondiamo in media entro 48 ore</span>
+                        </div>
+
+                        <i class="fa-regular fa-envelope fa-2xl" style="color: #007fa4;"></i>
+                        <div class="kontakti-1">
+                        <span>Inviare un'e-mail</span>
+                        <span>Rispondiamo in media entro 48 ore</span>
+                        </div>
                     </div>
 
-                        <div class="imazhi2"></div>
+                    <!-- feedbacku do qe lene userat qe perdorin faqen -->
+                <div class="diviMadh">
+                    <div class="shape">
+                        <h2>Il miglior servizio MediaWorld</h2>
+                        <p>Che si tratti di consegna, resi, garanzia, riparazione, opzioni di pagamento o qualsiasi altro nostro servizio, i nostri clienti meritano il miglior servizio.</p>
+                    </div>
+                    <div class="ikonat">
+                    <i class="fa-regular fa-envelope fa-2xl" style="color: #007fa4;"></i>
+                    <i class="fa-regular fa-envelope fa-2xl" style="color: #007fa4;"></i>
+                    <i class="fa-regular fa-envelope fa-2xl" style="color: #007fa4;"></i>
+                    <i class="fa-regular fa-envelope fa-2xl" style="color: #007fa4;"></i>
+                    </div>
+                </div>
+                
+                <!-- feedbacku do qe lene userat qe perdorin faqen -->
+                <div class="feedback-container">
+                  <div class="emoji-container">
+                    <span class="emoji">😡</span>
+                    <span class="emoji">😶</span>
+                    <span class="emoji">😐</span>
+                    <span class="emoji">😊</span>
+                    <span class="emoji">😆</span>
+                  </div>
+                  
+                  <div class="rating-container">
+                    <i class="fas fa-star fa-2x active"></i>
+                    <i class="fas fa-star fa-2x"></i>
+                    <i class="fas fa-star fa-2x"></i>
+                    <i class="fas fa-star fa-2x"></i>
+                    <i class="fas fa-star fa-2x"></i>
+                  </div>
+                </div>
+                <!-- feedbacku do qe lene userat qe perdorin faqen -->
 
-        </section>
+                </div>
 
-<!--                  end of kontenti i faqes                                    -->
+                
+
+    </section>
+  
+
+  <!--       contenti faqes full         -->
+
 
 
     <!--                  ky eshte futeri                                    -->
@@ -569,7 +716,9 @@
       </p>
     </section>
 
-    <script src="./index.js"></script>
+    <script src="/index.js"></script>
+
+      <script src="/javascript-pages/suportiKlientitn.js"></script>
 
 </body>
 </html>
