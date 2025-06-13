@@ -233,7 +233,7 @@
 .emoji-container {
   border: 1px solid red;
   position: absolute;
-  left: 50%;
+  left: 45%;
   /* transform: translateX(-50%); */
   top: 20%;
   width: 50px;
@@ -244,15 +244,15 @@
 }
 
 .emoji {
-  
-  margin: 14px;
+  font-size: 37px;
+  /* margin-bottom: 14px; */
   transform: translateX(0);
   transition: transform 0.2s;
 }
 
-.emoji-container .emoji span {
+/* .emoji-container .emoji span {
 width: 100px;
-}
+} */
 
 .rating-container {
   position: absolute;

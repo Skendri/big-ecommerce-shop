@@ -125,3 +125,46 @@ countersEl.forEach((counterEl) => {
     }
   }
 });
+
+// kontenti i dyte dinamik
+const itemsNumb = [...document.querySelectorAll('.number')];
+
+ const updateCount = (el) => {
+      const value = parseInt(el.dataset.value);
+      const increment = Math.ceil(value / 1000);
+      let initialValue = 0;
+      const increaseCount = setInterval(() => {
+        initialValue += increment;
+        if (initialValue > value) {
+          el.textContent = `${value}+`;
+          clearInterval(increaseCount);
+          return;
+        }
+        el.textContent = `${initialValue}+`;
+      }, 1);
+    };
+
+    
+    itemsNumb.forEach((item) => {
+      updateCount(item);
+    });
+
+    // Observer to trigger count when in view
+const observer = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        updateCount(el);
+        observer.unobserve(el); // trigger only once
+      }
+    });
+  },
+  {
+    threshold: 1,
+  }
+);
+
+document.querySelectorAll('.number').forEach(el => {
+  observer.observe(el);
+});

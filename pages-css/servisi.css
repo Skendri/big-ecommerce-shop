@@ -332,3 +332,92 @@
   transform: translateX(-50%);
   color: green;
 }
+
+
+/* contenti i dyte dinamic */
+
+p {
+  margin-bottom: 1.5rem;
+  max-width: 40em;
+}
+
+
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+/*
+=============== 
+Numbers 
+===============
+*/
+
+section {
+  padding: 5rem 0;
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+}
+
+article {
+  background: var(--white);
+  padding: 1rem 2rem;
+  border-radius: var(--borderRadius);
+  border-bottom: 4px solid transparent;
+}
+
+article span {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+article p {
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
+article:nth-of-type(1) {
+  border-bottom-color: #f59e0b;
+}
+article:nth-of-type(2) {
+  border-bottom-color: #14b8a6;
+}
+article:nth-of-type(3) {
+  border-bottom-color: #a855f7;
+}
