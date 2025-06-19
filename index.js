@@ -102,7 +102,7 @@ listaItems.forEach((item) => {
       clearTimeout(hideTimeout);
       hideTimeout = null;
     }
-    
+
     popupGlobeShopsRekomandon.style.visibility = "visible";
     popupGlobeShopsRekomandon.style.opacity = 1;
     console.log("hovered on", item);
@@ -140,7 +140,7 @@ console.log(popupGlobeShopsRekomandon);
 
 // ------------------------------------- HAP POP UP DYQANI -------------------------------------------------------- /
 
- function hapPopUpDyqani() {
+function hapPopUpDyqani() {
   mbeshtjellsiZgjidhDyqanin.classList.toggle("hapPopUpZgjidhDyqanin");
   perdjaZezeZgjidhDyqani.classList.toggle("hapPerdja-Zeze-ZgjidhDyqanin");
   if (perdjaZezeZgjidhDyqani === true) {
@@ -151,7 +151,7 @@ console.log(popupGlobeShopsRekomandon);
 
 // ---------------------------------------- HAP POP UP ------------------------------------------------------------- /
 
- function hapPopUp() {
+function hapPopUp() {
   mbeshtjellsiGjithaKategorite.classList.toggle("hapPopUpMbeshtjellsi");
   perdjaZeze.classList.toggle("hapPopUpPerdja");
   if (perdjaZeze === true) {
@@ -674,6 +674,35 @@ mbeshtjellesiSherbimit.addEventListener("mouseenter", () =>
   clearTimeout(timeoutIDKartaSherbimit)
 );
 mbeshtjellesiSherbimit.addEventListener("mouseenter", autoPlayKartaSherbimit);
+
+// Dark Mode Toggle button
+
+const inputEl = document.querySelector(".input");
+
+const bodyEl = document.querySelector("body");
+
+inputEl.checked = JSON.parse(localStorage.getItem("mode"));
+
+updateBody();
+
+function updateBody() {
+  if (inputEl.checked) {
+    bodyEl.style.background = "black";
+  } else {
+    bodyEl.style.background = "white";
+  }
+}
+
+inputEl.addEventListener("input", () => {
+  updateBody();
+  updateLocalStorage();
+});
+
+function updateLocalStorage() {
+  localStorage.setItem("mode", JSON.stringify(inputEl.checked));
+}
+
+// Dark Mode Toggle button
 
 
 
