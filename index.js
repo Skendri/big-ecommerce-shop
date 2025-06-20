@@ -681,13 +681,13 @@ const inputEl = document.querySelector(".input");
 
 const bodyEl = document.querySelector("body");
 
-inputEl.checked = JSON.parse(localStorage.getItem("mode"));
+inputEl.checked = JSON.parse(localStorage.getItem("Darkmode"));
 
 updateBody();
 
 function updateBody() {
   if (inputEl.checked) {
-    bodyEl.style.background = "black";
+    bodyEl.style.background = "#1f2022";
   } else {
     bodyEl.style.background = "white";
   }
@@ -699,7 +699,7 @@ inputEl.addEventListener("input", () => {
 });
 
 function updateLocalStorage() {
-  localStorage.setItem("mode", JSON.stringify(inputEl.checked));
+  localStorage.setItem("Darkmode", JSON.stringify(inputEl.checked));
 }
 
 // Dark Mode Toggle button

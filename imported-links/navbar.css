@@ -188,7 +188,7 @@
 
 .input:checked+.label .circle {
   animation: toggleOn 0.4s linear forwards;
-  background-color: black;
+  background-color: #1f2022;
 }
 
 @keyframes toggleOn {
@@ -539,10 +539,10 @@ body {
   display: flex;
   align-items: center;
   cursor: pointer;
-  gap: 10px;
+  padding: 5px;
   background-color: transparent;
   border-radius: 7px;
-  border: none;
+  border: 2px solid;
   font-weight: 900;
 }
 
