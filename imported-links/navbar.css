@@ -33,9 +33,13 @@
   align-items: center;
 }
 
+.responsive-row a {
+  padding-top: 16px;
+}
+
 .responsive-row img {
   width: 100px;
-  /* height: 40px; */
+  height: 40px;
 }
 
 .navbarButoni {
@@ -90,10 +94,10 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  gap: 10px;
+  padding: 5px;
   background-color: transparent;
   border-radius: 7px;
-  border: none;
+  border: 2px solid;
   font-weight: 900;
 }
 
@@ -147,11 +151,11 @@
 .baneri-blu {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   width: 100%;
   height: 90px;
   background-color: #3a86ff;
+  align-items: anchor-center;
   margin-bottom: 50px;
 }
 
@@ -159,22 +163,23 @@
 
 .input {
   visibility: hidden;
+  position: absolute;
 }
 
 .label {
   position: absolute;
-  right: 0;
-  width: 80px;
-  height: 40px;
+  right: 10px;
+  width: 71px;
+  height: 30px;
   background-color: lightgray;
   border-radius: 20px;
   cursor: pointer;
 }
 
 .circle {
-  width: 34px;
+  width: 25px;
   background-color: white;
-  height: 34px;
+  height: 25px;
   border-radius: 50%;
   top: 3px;
   position: absolute;
@@ -187,8 +192,8 @@
 }
 
 .input:checked+.label .circle {
-  animation: toggleOn 0.4s linear forwards;
-  background-color: #1f2022;
+  animation: toggleOn 0.2s linear forwards;
+  background-color: #232529;
 }
 
 @keyframes toggleOn {
@@ -216,7 +221,7 @@
 .baneriBrendshem {
   display: flex;
   align-items: center;
-  width: 76%;
+  width: 50%;
   padding: 20px;
   border-radius: 0.5rem;
   background-color: black;
@@ -493,22 +498,12 @@ body {
   padding: 2rem 11%;
 }
 
-
-
-.responsive-row {
-  display: flex;
-  gap: 10px;
-}
-
 .navbarButoni>i {
   font-size: 1.2rem;
   padding: 0 10px;
 }
 
-.navbarButoni,
-.butoniDyqani {
-  color: white;
-}
+
 
 .navbarKerkimi {
   display: flex;
@@ -524,32 +519,9 @@ body {
   outline: none;
 }
 
-.navbarKerkimi>button,
-.navbarKerkimi>input {
-  background-color: white;
-  border: none;
-}
-
 .zgjidhDyqanin {
   margin: 0;
   padding: 0;
-}
-
-.butoniDyqani {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  padding: 5px;
-  background-color: transparent;
-  border-radius: 7px;
-  border: 2px solid;
-  font-weight: 900;
-}
-
-.butoniDyqani>span {
-  font-weight: 200;
-  display: flex;
-  flex-direction: column;
 }
 
 .zgjidhDyqanin>p {

@@ -683,11 +683,12 @@ const bodyEl = document.querySelector("body");
 
 inputEl.checked = JSON.parse(localStorage.getItem("Darkmode"));
 
+
 updateBody();
 
 function updateBody() {
   if (inputEl.checked) {
-    bodyEl.style.background = "#1f2022";
+    bodyEl.style.background = "#232529";
   } else {
     bodyEl.style.background = "white";
   }
