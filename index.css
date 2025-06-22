@@ -7,6 +7,132 @@ body {
   padding: 2rem 11%;
 }
 
+/* <!--  DARK MODE TOGGLE  --> */
+
+/* Dark mode styles */
+body.darkmode {
+  background-color: #121212;
+  color: white;
+}
+
+body.darkmode .kartaMadhe-kutiaInfos {
+  background-color: #2c2c2c;
+  color: white;
+  border-color: #444;
+}
+
+body.darkmode .kartaMadhe-info > p {
+  color: white;
+  border-color: #888;
+}
+
+body.darkmode .kartaMadhe-infoDyte > p,
+body.darkmode .kartaMadhe-infoDyte > h4,
+body.darkmode .kartaMadhe-infoDyte > h3 {
+  color: white;
+}
+
+body.darkmode .butonat-e-kontrolluesit > button:hover {
+  background-color: #444;
+}
+
+body.darkmode .karta-vogel p {
+  color: white;
+}
+
+body.darkmode .globe-klub-baner {
+  background-color: #1a4ed6;
+  color: white;
+}
+
+body.darkmode .globe-klub-baner a {
+  color: white;
+}
+
+body.darkmode .fundi {
+  background-color: #222;
+  color: #ccc;
+}
+
+body.darkmode .fundi-rreshti h3,
+body.darkmode .fundi-rreshti a {
+  color: #ccc;
+}
+
+body.darkmode .fundi-rreshti a:hover {
+  text-decoration: underline;
+}
+
+body.darkmode .fundiDy {
+  background-color: #222;
+  color: #ccc;
+}
+
+body.darkmode .fundiDy a {
+  color: #ccc;
+}
+
+body.darkmode .fundiDy p {
+  color: #ccc;
+}
+
+body.darkmode .navbarKerkimi {
+  background-color: #444;
+}
+
+body.darkmode .navbarKerkimi>input,
+body.darkmode .navbarKerkimi>input:focus {
+  background-color: #666;
+  color: white;
+}
+
+body.darkmode .butonatDjathtas>button,
+body.darkmode .butonatDjathtas>a {
+  background-color: #444;
+  color: white;
+  border: none;
+}
+
+body.darkmode .butonatDjathtas>button:hover,
+body.darkmode .butonatDjathtas>a:hover {
+  background-color: #666;
+  color: white;
+}
+
+body.darkmode .mbeshtjellsi-gjithaKategorite {
+  background-color: #333;
+  color: white;
+}
+
+body.darkmode .kategori-GlobeShops-rekomandon {
+  background-color: #333;
+  color: white;
+}
+
+body.darkmode .ZgjidhDyqanin {
+  background-color: #333;
+  color: white;
+}
+
+body.darkmode .kerko-dyqanin>button {
+  background-color: #666;
+  color: white;
+}
+
+body.darkmode .kerko-dyqanin>input,
+body.darkmode .kerko-dyqanin>input:focus {
+  background-color: #555;
+  color: white;
+  border-color: #888;
+}
+
+body.darkmode .dyqaniZgjedhur-btn {
+  background-color: #666;
+  color: white;
+}
+
+/* <!-- END OF DARK MODE TOGGLE  --> */
+
 
 /* <!-- FAQIA PARE  --> */
 
@@ -157,7 +283,7 @@ body {
   text-align: center;
   font-weight: 600;
   font-size: 0.8rem;
-  color: rgb(68, 68, 68);
+  /* color: rgb(68, 68, 68); */
 }
 
 .karta-vogel:hover {
