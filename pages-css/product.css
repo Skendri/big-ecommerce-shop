@@ -218,6 +218,11 @@ span {
 .produkti-pershkrimi {
   color: rgb(85, 85, 85);
 }
+
+.pershkrimi-produktit {
+  margin-bottom: 3%;
+}
+
 .pershkrimi-produktit > button {
   display: flex;
   align-items: center;

@@ -403,7 +403,7 @@ span {
 
 .products-card-reviewsIMG {
   display: flex;
-  padding: 50px 0 0 0;
+  padding: 15px 0 0 40px;
   align-items: center;
 }
 .products-card-reviewsIMG > img {

@@ -336,7 +336,7 @@
 
 /* contenti i dyte dinamic */
 
-p {
+.stats p {
   margin-bottom: 1.5rem;
   max-width: 40em;
 }
@@ -384,14 +384,14 @@ Numbers
 ===============
 */
 
-section {
+/* section {
   padding: 5rem 0;
   width: 90vw;
   max-width: 1170px;
   margin: 0 auto;
   display: grid;
   gap: 2rem;
-}
+} */
 
 article {
   background: var(--white);

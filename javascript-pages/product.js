@@ -111,10 +111,10 @@ prevEl.addEventListener("click", () => {
 updateImg();
 
 function updateImg() {
-  if (currentImg > imgsEl.length) {
+  if (currentImg > imageContainerEl.children.length) {
     currentImg = 1;
   } else if (currentImg < 1) {
-    currentImg = imgsEl.length;
+    currentImg = imageContainerEl.children.length;
   }
   imageContainerEl.style.transform = `translateX(-${(currentImg - 1) * 500}px)`;
   timeout = setTimeout(() => {
