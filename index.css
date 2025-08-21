@@ -498,7 +498,6 @@ body.darkmode .dyqaniZgjedhur-btn {
   border: solid 1px gray;
   border-radius: 10px;
   width: 150px;
-  margin-left: 40px;
 }
 
 .marka-logo:nth-child(2) {
@@ -584,6 +583,7 @@ body.darkmode .dyqaniZgjedhur-btn {
   grid-template-columns: repeat(6, auto);
   gap: 2rem;
 }
+
 /*               fundi menu                    */
 .fundi {
   background-color: #e3e3e3;
