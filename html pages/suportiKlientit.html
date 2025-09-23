@@ -1,123 +1,178 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/pages-css/suportiKlientit.css">
-  <link rel="stylesheet" href="/imported-links/footer.css">
-  <link rel="stylesheet" href="/imported-links/navbar.css">
-  <link rel="stylesheet" href="/responsiveIndex.css">
-  <!-- font awsome icon link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/pages-css/suportiKlientit.css" />
+    <link rel="stylesheet" href="/imported-links/footer.css" />
+    <link rel="stylesheet" href="/imported-links/navbar.css" />
+    <link rel="stylesheet" href="/responsiveIndex.css" />
+    <!-- font awsome icon link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- menu anash full link -->
 
-
-    <!-- menu anash full link --> 
-
-  <div id="perdja-zeze-zgjidhDyqani" class="perdja-zeze-zgjidhDyqani" onclick=" hapPopUpDyqani()"></div>
-  <!-- <div id="mbeshtjellsi-gjithaKategorite" class="mbeshtjellsi-gjithaKategorite"> -->
-   <div class="ZgjidhDyqanin" id="ZgjidhDyqanin">
-       <div class="ZgjidhDyqanin-Popup">
-           <p>Zgjidhni dyqanin</p>
-           <button onclick="hapPopUpDyqani()"><i class="ph ph-x"></i></button>
-       </div>
-      <div class="ZgjidhDyqanin-input">
-       <p>
-       Fut kodin postar ose qytetin për të parë dyqanet pranë teje. Në këtë mënyrë do të 
-       mund të kontrolloni disponueshmërinë e produkteve në dyqan.</p>
-       <div class="kerko-dyqanin">
-       <input type="text" placeholder='Kerkoni sipas kodit postar ose qytetit'>
-       <button>Kerko</i></button>
-       </div>
-       
-       <hr class="hr-ZgjidhDyqanin">
-       <button class="dyqaniZgjedhur-btn">
-       Zgjidhni dyqanin
-       </button>
+    <div
+      id="perdja-zeze-zgjidhDyqani"
+      class="perdja-zeze-zgjidhDyqani"
+      onclick=" hapPopUpDyqani()"
+    ></div>
+    <!-- <div id="mbeshtjellsi-gjithaKategorite" class="mbeshtjellsi-gjithaKategorite"> -->
+    <div class="ZgjidhDyqanin" id="ZgjidhDyqanin">
+      <div class="ZgjidhDyqanin-Popup">
+        <p>Zgjidhni dyqanin</p>
+        <button onclick="hapPopUpDyqani()"><i class="ph ph-x"></i></button>
       </div>
-       
-   </div>
-</div>
+      <div class="ZgjidhDyqanin-input">
+        <p>
+          Fut kodin postar ose qytetin për të parë dyqanet pranë teje. Në këtë
+          mënyrë do të mund të kontrolloni disponueshmërinë e produkteve në
+          dyqan.
+        </p>
+        <div class="kerko-dyqanin">
+          <input
+            type="text"
+            placeholder="Kerkoni sipas kodit postar ose qytetit"
+          />
+          <button><i>Kerko</i></button>
+        </div>
 
-<!--                   pop upi i linqeve te mouse leave                  -->
-<div id="perdja-zeze" class="perdja-zeze" onclick=" hapPopUp()"></div>
-<ul class='kategori-GlobeShops-rekomandon' id="kategori-GlobeShops-rekomandonPopUp">
-   <p>GlobeShops Rekomandon</p>
-   <li>geri</li>
-   <li>Telefonia</li>
-   <li>Kompjuterë dhe tableta</li>
-   <li>Pajisjet periferike dhe aksesoret</li>
-   <li>TV dhe kinema në shtëpi</li>
-   <li>Pajisje të mëdha</li>
-   <li>Pajisje të vogla dhe kafe</li>
-   <li>Kujdesi Personal</li>
-   <li>Audio, kufje dhe navigatorë</li>
-</ul>
+        <hr class="hr-ZgjidhDyqanin" />
+        <button class="dyqaniZgjedhur-btn">Zgjidhni dyqanin</button>
+      </div>
+    </div>
+    <!-- </div> -->
 
-<div id="mbeshtjellsi-gjithaKategorite" class="mbeshtjellsi-gjithaKategorite">
- <div class="listat-gjithaKategorite">
-   <div class="gjithaKategorite-logoBtn">
-     <img src="/images/amazon-logo-white.png" alt="">
-     <button onclick="hapPopUp()"><i class="ph ph-x"></i></button>
-   </div>
-   
-   <hr class="hr">
-   
-   <h4>Te gjitha Kategorite</h4>
+    <!--                   pop upi i linqeve te mouse leave                  -->
+    <div id="perdja-zeze" class="perdja-zeze" onclick=" hapPopUp()"></div>
+    <ul
+      class="kategori-GlobeShops-rekomandon"
+      id="kategori-GlobeShops-rekomandonPopUp"
+    >
+      <p>GlobeShops Rekomandon</p>
+      <li>geri</li>
+      <li>Telefonia</li>
+      <li>Kompjuterë dhe tableta</li>
+      <li>Pajisjet periferike dhe aksesoret</li>
+      <li>TV dhe kinema në shtëpi</li>
+      <li>Pajisje të mëdha</li>
+      <li>Pajisje të vogla dhe kafe</li>
+      <li>Kujdesi Personal</li>
+      <li>Audio, kufje dhe navigatorë</li>
+    </ul>
 
-   <ul class="emri-lista">
-     <li class="kategoriPopUp"><a href="./html pages/product.html" >Product page</a>
-       <a href=""><svg width="32" height="32" viewBox="0 0 24 24">
-         <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path></svg>
-       </a>
-     </li>
-     
-     <li class="kategoriPopUp">
-       <a href="./html pages/products.html">ALL Products page</a>
-       <a href=""><svg width="32" height="32" viewBox="0 0 24 24">
-         <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path></svg>
-       </a>
-     </li>
-     
-     <li class="kategoriPopUp"><a href="./html pages/servisi.html">Servisi jone</a>
-       <a href=""><svg width="32" height="32" viewBox="0 0 24 24">
-         <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path></svg>
-       </a>
-     </li>
-     
-     <li class="kategoriPopUp"><a href="./html pages/suportiKlientit.html">Suproti Klinetit</a>
-       <a href=""><svg width="32" height="32" viewBox="0 0 24 24">
-         <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path></svg>
-       </a>
-     </li>
-     
-     <li class="kategoriPopUp"><a href="./html pages/faqjaKontakteve.html">Faqja e Kontakteve</a>
-       <a href=""><svg width="32" height="32" viewBox="0 0 24 24">
-         <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path></svg>
-       </a>
-     </li>
-     
-     <li class="kategoriPopUp"><a href="./html pages/dyqanetTona.html">Dyqanet Tona</a>
-       <a href=""><svg width="32" height="32" viewBox="0 0 24 24">
-         <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path></svg>
-       </a>
-     </li>
-     
-     <li class="kategoriPopUp"><a href="./html pages/livechat.html">Live Chati per pyetje</a>
-       <a href=""><svg width="32" height="32" viewBox="0 0 24 24">
-         <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path></svg>
-       </a>
-     </li>
-     
-      <li class="kategoriPopUp"><a href="/html pages/perKompanine.html">Per Kompanine</a>
-       <a href=""><svg width="32" height="32" viewBox="0 0 24 24">
-         <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path></svg>
-       </a>
-       </li>
-       
-       <!-- <li class="kategoriPopUp"><a href="">Lojera kompjuterike dhe komponentet</a>
+    <div
+      id="mbeshtjellsi-gjithaKategorite"
+      class="mbeshtjellsi-gjithaKategorite"
+    >
+      <div class="listat-gjithaKategorite">
+        <div class="gjithaKategorite-logoBtn">
+          <img src="/images/amazon-logo-white.png" alt="" />
+          <button onclick="hapPopUp()"><i class="ph ph-x"></i></button>
+        </div>
+
+        <hr class="hr" />
+
+        <h4>Te gjitha Kategorite</h4>
+
+        <ul class="emri-lista">
+          <li class="kategoriPopUp">
+            <a href="./html pages/product.html">Product page</a>
+            <a href=""
+              ><svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+
+          <li class="kategoriPopUp">
+            <a href="./html pages/products.html">ALL Products page</a>
+            <a href=""
+              ><svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+
+          <li class="kategoriPopUp">
+            <a href="./html pages/servisi.html">Servisi jone</a>
+            <a href=""
+              ><svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+
+          <li class="kategoriPopUp">
+            <a href="./html pages/suportiKlientit.html">Suproti Klinetit</a>
+            <a href=""
+              ><svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+
+          <li class="kategoriPopUp">
+            <a href="./html pages/faqjaKontakteve.html">Faqja e Kontakteve</a>
+            <a href=""
+              ><svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+
+          <li class="kategoriPopUp">
+            <a href="./html pages/dyqanetTona.html">Dyqanet Tona</a>
+            <a href=""
+              ><svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+
+          <li class="kategoriPopUp">
+            <a href="./html pages/livechat.html">Live Chati per pyetje</a>
+            <a href=""
+              ><svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+
+          <li class="kategoriPopUp">
+            <a href="/html pages/perKompanine.html">Per Kompanine</a>
+            <a href=""
+              ><svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+
+          <!-- <li class="kategoriPopUp"><a href="">Lojera kompjuterike dhe komponentet</a>
          <a href=""><svg width="32" height="32" viewBox="0 0 24 24">
            <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path></svg>
          </a>
@@ -164,347 +219,367 @@
            <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path></svg>
          </a>
        </li> -->
+        </ul>
+      </div>
+    </div>
 
-     </ul>
-   </div>
- </div>
+    <!-- menu anash full link -->
 
-  <!-- menu anash full link --> 
- 
- <div class="navi">
-   <!-- Big Nav --> 
+    <div class="navi">
+      <!-- Big Nav -->
 
-   <div class="naviLart">
-     <a href="#">KLUB GlobeShops</a>
-     <a href="#">APP MediaWorld</a>
-     <a href="#">Sherbimet</a>
-     <a href="#">Qendrueshmeria</a>
-     <a href="#">Dyqane</a>
-     <a href="#">Per Kompanite</a>
-     <a href="#">Porosite</a>
-     <a href="#">Mbeshtetja e klientit</a>
-     <a href="#">Na Kontaktoni</a>
-     <a href="#">Prize</a>
-     <a href="#">Ofertat</a>
-     <a href="#">Bisede Live</a>
-     <a href="#">Punoni me ne</a>
-     <a href="#">Revista & Guide</a>
-   </div>
-   <!-- listat e nav --> 
+      <div class="naviLart">
+        <a href="#">KLUB GlobeShops</a>
+        <a href="#">APP MediaWorld</a>
+        <a href="#">Sherbimet</a>
+        <a href="#">Qendrueshmeria</a>
+        <a href="#">Dyqane</a>
+        <a href="#">Per Kompanite</a>
+        <a href="#">Porosite</a>
+        <a href="#">Mbeshtetja e klientit</a>
+        <a href="#">Na Kontaktoni</a>
+        <a href="#">Prize</a>
+        <a href="#">Ofertat</a>
+        <a href="#">Bisede Live</a>
+        <a href="#">Punoni me ne</a>
+        <a href="#">Revista & Guide</a>
+      </div>
+      <!-- listat e nav -->
 
-   <div class="naviPosht" id="naviPosht">
-     <div class="responsive-row">
-       <a href="">
-         <img src="/images/amazon-logo-white.png" alt="logo-image">
-       </a>
-       <button class="navbarButoni" onclick="hapPopUp()">
-         <i class="fa-solid fa-bars"></i>
-         <!-- <i class="ph ph-list"></i> -->
-         <p> Te gjithe katergorite </p>
-       </button>
-     </div>
-     <div class="navbarKerkimi">
-       <button type="menu"><i class="ph ph-magnifying-glass"></i></button>
-       <input type="text" placeholder="Kerko produktin tend..." name="search">
-     </div>
-     <div class="zgjidhDyqanin">
-       <button  class="butoniDyqani" onclick="hapPopUpDyqani()" >
-         <span> Zgjidhni Dyqanin </br>
-           Fut koding postar ose
-         </span>
-         <i class="ph ph-caret-down"></i>
-       </button>
-     </div>
-     <div class="butonatDjathtas">
-       <button type="menu"><i class="fa-solid fa-user fa-flip"></i></button>
-       <a href="#"><i class="fa-solid fa-cart-shopping fa-bounce"></i></a>
-     </div>
-   </div>
-   <!-- navi poshte --> 
-   
-   <div class="baneri-zi">
-     <a href="">Shkarkoni APP-in</a>
-     <a href="">Financimi</a>
-     <a href="">Sherbimet</a>
-   </div>
-   
-   <div class="baneri-blu">
-     <div class="baneriBrendshem">
-       <i class="exclamation-mark">❗</i>
-       <a href="">MBLEDHJE FALAS gjithashtu në 30 MINUTA dhe Dorëzimi FALAS në 6000 produkte!</a>
-     </div>
-   </div>
-   <!-- Big Nav --> 
- </div>
+      <div class="naviPosht" id="naviPosht">
+        <div class="responsive-row">
+          <a href="">
+            <img src="/images/amazon-logo-white.png" alt="logo-image" />
+          </a>
+          <button class="navbarButoni" onclick="hapPopUp()">
+            <i class="fa-solid fa-bars"></i>
+            <!-- <i class="ph ph-list"></i> -->
+            <p>Te gjithe katergorite</p>
+          </button>
+        </div>
+        <div class="navbarKerkimi">
+          <button type="menu"><i class="ph ph-magnifying-glass"></i></button>
+          <input
+            type="text"
+            placeholder="Kerko produktin tend..."
+            name="search"
+          />
+        </div>
+        <div class="zgjidhDyqanin">
+          <button class="butoniDyqani" onclick="hapPopUpDyqani()">
+            <span>
+              Zgjidhni Dyqanin <br />
+              Fut koding postar ose
+            </span>
+            <i class="ph ph-caret-down"></i>
+          </button>
+        </div>
+        <div class="butonatDjathtas">
+          <button type="menu"><i class="fa-solid fa-user fa-flip"></i></button>
+          <a href="#"><i class="fa-solid fa-cart-shopping fa-bounce"></i></a>
+        </div>
+      </div>
+      <!-- navi poshte -->
 
-  <!--                 contenti faqes full                                -->
+      <div class="baneri-zi">
+        <a href="">Shkarkoni APP-in</a>
+        <a href="">Financimi</a>
+        <a href="">Sherbimet</a>
+      </div>
 
-   <section class="faqjaPare">
-        <div class="divi-banerit">
-         <span>suporti klientit</span>
-         <hr>
-          <div class="baneri">
-            <div class="elementet-baneri">
-                <h2>Si mund t'ju ndihmojmë?</h2>
-                <div class="inputi">
-                    <input type="text" id="" placeholder="Futni temën ose bëni pyetjen tuaj">
-                    <button><i class="fa-solid fa-magnifying-glass fa-sm"></i></button>
-                </div>
+      <div class="baneri-blu">
+        <div class="baneriBrendshem">
+          <i class="exclamation-mark">❗</i>
+          <a href=""
+            >MBLEDHJE FALAS gjithashtu në 30 MINUTA dhe Dorëzimi FALAS në 6000
+            produkte!</a
+          >
+        </div>
+      </div>
+      <!-- Big Nav -->
+    </div>
+
+    <!--                 contenti faqes full                                -->
+
+    <section class="faqjaPare">
+      <div class="divi-banerit">
+        <span>suporti klientit</span>
+        <hr />
+        <div class="baneri">
+          <div class="elementet-baneri">
+            <h2>Si mund t'ju ndihmojmë?</h2>
+            <div class="inputi">
+              <input
+                type="text"
+                id=""
+                placeholder="Futni temën ose bëni pyetjen tuaj"
+              />
+              <button>
+                <i class="fa-solid fa-magnifying-glass fa-sm"></i>
+              </button>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="info">
-            <button id="prevBtn"><</button>
-                <div class="mbeshtjellesi">
-                    <div class="carousel" id="carousel">
-                        <p class="text" id="lastClone">
-                            Cilat janë kushtet e përgjithshme të shitjes në Globe?
-                        </p>
-                        <p class="text">
-                            A është e mundur të bëhet një porosi me telefon?
-                        </p>
-                        <p class="text">
-                            A mund ta ndryshoj porosinë time më vonë?
-                        </p>
-                        <p class="text">
-                            Cilat janë kushtet e përgjithshme të shitjes në Globe?
-                        </p>
-                        <p class="text" id="firstClone">
-                            A është e mundur të bëhet një porosi me telefon?
-                        </p>
-                    </div>
-                </div>
-            <button id="nextBtn">></button>
+      <div class="info">
+        <button id="prevBtn"><</button>
+        <div class="mbeshtjellesi">
+          <div class="carousel" id="carousel">
+            <p class="text" id="lastClone">
+              Cilat janë kushtet e përgjithshme të shitjes në Globe?
+            </p>
+            <p class="text">A është e mundur të bëhet një porosi me telefon?</p>
+            <p class="text">A mund ta ndryshoj porosinë time më vonë?</p>
+            <p class="text">
+              Cilat janë kushtet e përgjithshme të shitjes në Globe?
+            </p>
+            <p class="text" id="firstClone">
+              A është e mundur të bëhet një porosi me telefon?
+            </p>
+          </div>
         </div>
+        <button id="nextBtn">></button>
+      </div>
 
-        <div class="divi-banerit">
-         <h2>Pyetjet e bëra më shpesh</h2>
-            <div class="baneri-dyte">
-             <div class="kontenti">
-             <input type="checkbox" id="toggle1" class="toggle-checkbox">
-                <label for="toggle1">
-                    <span style="color: #007fa4;">Si mund të bëj një porosi në internet?</span>
-                </label>
-                <div class="answer">
-                    <span>Troverai le informazioni di tuo interesse nell'area effettuare un ordine del sito.  più</span>
-                </div>
-             </div>
+      <div class="divi-banerit">
+        <h2>Pyetjet e bëra më shpesh</h2>
+        <div class="baneri-dyte">
+          <div class="kontenti">
+            <input type="checkbox" id="toggle1" class="toggle-checkbox" />
+            <label for="toggle1">
+              <span style="color: #007fa4"
+                >Si mund të bëj një porosi në internet?</span
+              >
+            </label>
+            <div class="answer">
+              <span
+                >Troverai le informazioni di tuo interesse nell'area effettuare
+                un ordine del sito. più</span
+              >
+            </div>
+          </div>
 
-             <div class="kontenti">
-             <input type="checkbox" id="toggle2" class="toggle-checkbox">
-                <label for="toggle2">
-                    <span style="color: #007fa4;">Si mund të bëj një porosi në internet?</span>
-                </label>
-                <div class="answer">
-                    <span>Troverai le informazioni di tuo interesse nell'area effettuare un ordine del sito.  più</span>
-                </div>
-             </div>
+          <div class="kontenti">
+            <input type="checkbox" id="toggle2" class="toggle-checkbox" />
+            <label for="toggle2">
+              <span style="color: #007fa4"
+                >Si mund të bëj një porosi në internet?</span
+              >
+            </label>
+            <div class="answer">
+              <span
+                >Troverai le informazioni di tuo interesse nell'area effettuare
+                un ordine del sito. più</span
+              >
+            </div>
+          </div>
 
-             <div class="kontenti">
-             <input type="checkbox" id="toggle3" class="toggle-checkbox">
-                <label for="toggle3">
-                    <span style="color: #007fa4;">Si mund të bëj një porosi në internet?</span>
-                </label>
-                <div class="answer">
-                    <span>Troverai le informazioni di tuo interesse nell'area effettuare un ordine del sito.  più</span>
-                </div>
-             </div>
-                
-             </div>
+          <div class="kontenti">
+            <input type="checkbox" id="toggle3" class="toggle-checkbox" />
+            <label for="toggle3">
+              <span style="color: #007fa4"
+                >Si mund të bëj një porosi në internet?</span
+              >
+            </label>
+            <div class="answer">
+              <span
+                >Troverai le informazioni di tuo interesse nell'area effettuare
+                un ordine del sito. più</span
+              >
             </div>
           </div>
         </div>
+      </div>
+      <!-- </div> -->
+      <!-- </div> -->
 
-        <section class="informacioni-kartave">
-                <div class="kartat-suportit" id="kartat">
-                    <div class="hoveri" id="mousehover"> 
-                        <li> lista 1</li>
-                        <li> lista 2</li>
-                        <li> lista 3</li>
-                        <li> lista 4</li> 
-                    </div>
-                    <i class="fa-solid fa-globe fa-2xl"></i>
-                    <p>Bli Online dhe merr nje aksesor falas.</p>
-                </div>
+      <section class="informacioni-kartave">
+        <div class="kartat-suportit" id="kartat">
+          <div class="hoveri" id="mousehover">
+            <li>lista 1</li>
+            <li>lista 2</li>
+            <li>lista 3</li>
+            <li>lista 4</li>
+          </div>
+          <i class="fa-solid fa-globe fa-2xl"></i>
+          <p>Bli Online dhe merr nje aksesor falas.</p>
+        </div>
 
-                <div class="kartat-suportit" id="kartat">
-                    <div class="hoveri" id="mousehover"> 
-                        <li> lista 1</li>
-                        <li> lista 2</li>
-                        <li> lista 3</li>
-                        <li> lista 4</li> 
-                    </div>
-                    <i class="fa-solid fa-globe fa-2xl"></i>
-                    <p>Bli Online dhe merr nje aksesor falas.</p>
-                </div>
+        <div class="kartat-suportit" id="kartat">
+          <div class="hoveri" id="mousehover">
+            <li>lista 1</li>
+            <li>lista 2</li>
+            <li>lista 3</li>
+            <li>lista 4</li>
+          </div>
+          <i class="fa-solid fa-globe fa-2xl"></i>
+          <p>Bli Online dhe merr nje aksesor falas.</p>
+        </div>
 
-                <div class="kartat-suportit" id="kartat">
-                    <div class="hoveri" id="mousehover"> 
-                        <li> lista 1</li>
-                        <li> lista 2</li>
-                        <li> lista 3</li>
-                        <li> lista 4</li> 
-                    </div>
-                    <i class="fa-solid fa-globe fa-2xl"></i>
-                    <p>Bli Online dhe merr nje aksesor falas.</p>
-                </div>
+        <div class="kartat-suportit" id="kartat">
+          <div class="hoveri" id="mousehover">
+            <li>lista 1</li>
+            <li>lista 2</li>
+            <li>lista 3</li>
+            <li>lista 4</li>
+          </div>
+          <i class="fa-solid fa-globe fa-2xl"></i>
+          <p>Bli Online dhe merr nje aksesor falas.</p>
+        </div>
 
-                <div class="kartat-suportit" id="kartat">
-                    <div class="hoveri" id="mousehover"> 
-                        <li> lista 1</li>
-                        <li> lista 2</li>
-                        <li> lista 3</li>
-                        <li> lista 4</li> 
-                    </div>
-                    <i class="fa-solid fa-globe fa-2xl"></i>
-                    <p>Bli Online dhe merr nje aksesor falas.</p>
-                </div>
+        <div class="kartat-suportit" id="kartat">
+          <div class="hoveri" id="mousehover">
+            <li>lista 1</li>
+            <li>lista 2</li>
+            <li>lista 3</li>
+            <li>lista 4</li>
+          </div>
+          <i class="fa-solid fa-globe fa-2xl"></i>
+          <p>Bli Online dhe merr nje aksesor falas.</p>
+        </div>
 
-                <div class="kartat-suportit" id="kartat">
-                    <div class="hoveri" id="mousehover"> 
-                        <li> lista 1</li>
-                        <li> lista 2</li>
-                        <li> lista 3</li>
-                        <li> lista 4</li> 
-                    </div>
-                    <i class="fa-solid fa-globe fa-2xl"></i>
-                    <p>Bli Online dhe merr nje aksesor falas.</p>
-                </div>
+        <div class="kartat-suportit" id="kartat">
+          <div class="hoveri" id="mousehover">
+            <li>lista 1</li>
+            <li>lista 2</li>
+            <li>lista 3</li>
+            <li>lista 4</li>
+          </div>
+          <i class="fa-solid fa-globe fa-2xl"></i>
+          <p>Bli Online dhe merr nje aksesor falas.</p>
+        </div>
 
-                <div class="kartat-suportit" id="kartat">
-                    <div class="hoveri" id="mousehover"> 
-                        <li> lista 1</li>
-                        <li> lista 2</li>
-                        <li> lista 3</li>
-                        <li> lista 4</li> 
-                    </div>
-                    <i class="fa-solid fa-globe fa-2xl"></i>
-                    <p>Bli Online dhe merr nje aksesor falas.</p>
-                </div>
+        <div class="kartat-suportit" id="kartat">
+          <div class="hoveri" id="mousehover">
+            <li>lista 1</li>
+            <li>lista 2</li>
+            <li>lista 3</li>
+            <li>lista 4</li>
+          </div>
+          <i class="fa-solid fa-globe fa-2xl"></i>
+          <p>Bli Online dhe merr nje aksesor falas.</p>
+        </div>
 
-                <div class="kartat-suportit" id="kartat">
-                    <div class="hoveri" id="mousehover"> 
-                        <li> lista 1</li>
-                        <li> lista 2</li>
-                        <li> lista 3</li>
-                        <li> lista 4</li> 
-                    </div>
-                    <i class="fa-solid fa-globe fa-2xl"></i>
-                    <p>Bli Online dhe merr nje aksesor falas.</p>
-                </div>
+        <div class="kartat-suportit" id="kartat">
+          <div class="hoveri" id="mousehover">
+            <li>lista 1</li>
+            <li>lista 2</li>
+            <li>lista 3</li>
+            <li>lista 4</li>
+          </div>
+          <i class="fa-solid fa-globe fa-2xl"></i>
+          <p>Bli Online dhe merr nje aksesor falas.</p>
+        </div>
 
-                <div class="kartat-suportit" id="kartat">
-                    <div class="hoveri" id="mousehover"> 
-                        <li> lista 1</li>
-                        <li> lista 2</li>
-                        <li> lista 3</li>
-                        <li> lista 4</li> 
-                    </div>
-                    <i class="fa-solid fa-globe fa-2xl"></i>
-                    <p>Bli Online dhe merr nje aksesor falas.</p>
-                </div>
+        <div class="kartat-suportit" id="kartat">
+          <div class="hoveri" id="mousehover">
+            <li>lista 1</li>
+            <li>lista 2</li>
+            <li>lista 3</li>
+            <li>lista 4</li>
+          </div>
+          <i class="fa-solid fa-globe fa-2xl"></i>
+          <p>Bli Online dhe merr nje aksesor falas.</p>
+        </div>
 
-                <div class="kartat-suportit" id="kartat">
-                    <div class="hoveri" id="mousehover"> 
-                        <li> lista 1</li>
-                        <li> lista 2</li>
-                        <li> lista 3</li>
-                        <li> lista 4</li> 
-                    </div>
-                    <i class="fa-solid fa-globe fa-2xl"></i>
-                    <p>Bli Online dhe merr nje aksesor falas.</p>
-                </div>
+        <div class="kartat-suportit" id="kartat">
+          <div class="hoveri" id="mousehover">
+            <li>lista 1</li>
+            <li>lista 2</li>
+            <li>lista 3</li>
+            <li>lista 4</li>
+          </div>
+          <i class="fa-solid fa-globe fa-2xl"></i>
+          <p>Bli Online dhe merr nje aksesor falas.</p>
+        </div>
+      </section>
 
-            </section>
+      <div class="perKlientin">
+        <h2>Kontakti</h2>
+        <div class="suport-kontakt">
+          <i class="fa-regular fa-envelope fa-2xl" style="color: #007fa4"></i>
+          <div class="kontakti-1">
+            <span>Inviare un'e-mail</span>
+            <span>Rispondiamo in media entro 48 ore</span>
+          </div>
 
-                <div class="perKlientin">
-                    <h2>Kontakti</h2>
-                    <div class="suport-kontakt">
-                        <i class="fa-regular fa-envelope fa-2xl" style="color: #007fa4;"></i>
-                        <div class="kontakti-1">
-                        <span>Inviare un'e-mail</span> 
-                        <span>Rispondiamo in media entro 48 ore</span>
-                        </div>
+          <i class="fa-regular fa-envelope fa-2xl" style="color: #007fa4"></i>
+          <div class="kontakti-1">
+            <span>Inviare un'e-mail</span>
+            <span>Rispondiamo in media entro 48 ore</span>
+          </div>
 
-                        <i class="fa-regular fa-envelope fa-2xl" style="color: #007fa4;"></i>
-                        <div class="kontakti-1">
-                        <span>Inviare un'e-mail</span>
-                        <span>Rispondiamo in media entro 48 ore</span>
-                        </div>
+          <i class="fa-regular fa-envelope fa-2xl" style="color: #007fa4"></i>
+          <div class="kontakti-1">
+            <span>Inviare un'e-mail</span>
+            <span>Rispondiamo in media entro 48 ore</span>
+          </div>
+        </div>
 
-                        <i class="fa-regular fa-envelope fa-2xl" style="color: #007fa4;"></i>
-                        <div class="kontakti-1">
-                        <span>Inviare un'e-mail</span>
-                        <span>Rispondiamo in media entro 48 ore</span>
-                        </div>
-                    </div>
+        <!-- feedbacku do qe lene userat qe perdorin faqen -->
+        <div class="diviMadh">
+          <div class="shape">
+            <h2>Il miglior servizio MediaWorld</h2>
+            <p>
+              Che si tratti di consegna, resi, garanzia, riparazione, opzioni di
+              pagamento o qualsiasi altro nostro servizio, i nostri clienti
+              meritano il miglior servizio.
+            </p>
+          </div>
+          <div class="ikonat">
+            <i class="fa-regular fa-envelope fa-2xl" style="color: #007fa4"></i>
+            <i class="fa-regular fa-envelope fa-2xl" style="color: #007fa4"></i>
+            <i class="fa-regular fa-envelope fa-2xl" style="color: #007fa4"></i>
+            <i class="fa-regular fa-envelope fa-2xl" style="color: #007fa4"></i>
+          </div>
+        </div>
 
-                    <!-- feedbacku do qe lene userat qe perdorin faqen -->
-                <div class="diviMadh">
-                    <div class="shape">
-                        <h2>Il miglior servizio MediaWorld</h2>
-                        <p>Che si tratti di consegna, resi, garanzia, riparazione, opzioni di pagamento o qualsiasi altro nostro servizio, i nostri clienti meritano il miglior servizio.</p>
-                    </div>
-                    <div class="ikonat">
-                    <i class="fa-regular fa-envelope fa-2xl" style="color: #007fa4;"></i>
-                    <i class="fa-regular fa-envelope fa-2xl" style="color: #007fa4;"></i>
-                    <i class="fa-regular fa-envelope fa-2xl" style="color: #007fa4;"></i>
-                    <i class="fa-regular fa-envelope fa-2xl" style="color: #007fa4;"></i>
-                    </div>
-                </div>
-                
-                <!-- feedbacku do qe lene userat qe perdorin faqen -->
-                <div class="feedback-container">
-                  <div class="emoji-container">
-                    <span class="emoji">😡</span>
-                    <span class="emoji">😶</span>
-                    <span class="emoji">😐</span>
-                    <span class="emoji">😊</span>
-                    <span class="emoji">😆</span>
-                  </div>
-                  
-                  <div class="rating-container">
-                    <i class="fas fa-star fa-2x active"></i>
-                    <i class="fas fa-star fa-2x"></i>
-                    <i class="fas fa-star fa-2x"></i>
-                    <i class="fas fa-star fa-2x"></i>
-                    <i class="fas fa-star fa-2x"></i>
-                  </div>
-                </div>
-                <!-- feedbacku do qe lene userat qe perdorin faqen -->
+        <!-- feedbacku do qe lene userat qe perdorin faqen -->
+        <div class="feedback-container">
+          <div class="emoji-container">
+            <span class="emoji">😡</span>
+            <span class="emoji">😶</span>
+            <span class="emoji">😐</span>
+            <span class="emoji">😊</span>
+            <span class="emoji">😆</span>
+          </div>
 
-                </div>
-
-                
-
+          <div class="rating-container">
+            <i class="fas fa-star fa-2x active"></i>
+            <i class="fas fa-star fa-2x"></i>
+            <i class="fas fa-star fa-2x"></i>
+            <i class="fas fa-star fa-2x"></i>
+            <i class="fas fa-star fa-2x"></i>
+          </div>
+        </div>
+        <!-- feedbacku do qe lene userat qe perdorin faqen -->
+      </div>
     </section>
-  
 
-  <!--       contenti faqes full         -->
-
-
+    <!--       contenti faqes full         -->
 
     <!--                  ky eshte futeri                                    -->
-   <section class="fundi faqjaPare">
+    <section class="fundi faqjaPare">
       <h3>Cmimet tona</h3>
       <h3>TRUSTPILOT</h3>
       <div class="fundi-menu">
         <div class="fundi-rreshti">
           <h3>NA KONTAKTONI</h3>
-          <br>Mbeshtetja e klientit </br>
-          <a href="#">Lexoni te gjitha pyetjet e shpeshta</a></p>
-          <p>Na shkruani </br>
+          <br />Mbeshtetja e klientit <br />
+          <a href="#">Lexoni te gjitha pyetjet e shpeshta</a>
+          <p>
+            Na shkruani <br />
             <a href="#">Formulari i kontaktit</a>
           </p>
-          
+
           <div class="fundi-socials">
             <p>ig</p>
             <p>fcb</p>
             <p>yt</p>
           </div>
         </div>
-        
+
         <div class="fundi-rreshti">
           <h3>KATALOG</h3>
           <a href="">Telefonia</a>
@@ -518,7 +593,7 @@
           <a href="">Te gjitha Ofertat</a>
           <a href="">Produkte te rinovuara</a>
         </div>
-        
+
         <div class="fundi-rreshti">
           <h3>BLINI ONLINE</h3>
           <a href="">Menyrat e pageses</a>
@@ -531,14 +606,16 @@
           <a href="">Kufijte e blerjeve</a>
           <a href="">Revista</a>
         </div>
-        
+
         <div class="fundi-rreshti">
           <h3>TREG</h3>
           <a href="">Per konsumatoret</a>
           <a href=""> Per shitesit </a>
-          <a href="">Pika e kontaktit sipas nenit. 11 Akti i sherbimit digjital</a>
+          <a href=""
+            >Pika e kontaktit sipas nenit. 11 Akti i sherbimit digjital</a
+          >
         </div>
-        
+
         <div class="fundi-rreshti">
           <h3>SHERBIMET PER KLIENTET DHE KOMPANITE</h3>
           <a href="">Zgjidhje per KOPMANITE</a>
@@ -547,7 +624,7 @@
           <a href="">Sherbimet e Sigurimeve</a>
           <a href="">Shkoni te indeksi i Sherbimeve</a>
         </div>
-        
+
         <div class="fundi-rreshti">
           <h3>KOMPANIA DHE PUNA ME NE</h3>
           <a href="">Kush jemi ne</a>
@@ -557,7 +634,7 @@
           <a href="">Reklamim me pakice ne media</a>
           <a href="">Programi per zbulimin e dobesive</a>
         </div>
-        
+
         <div class="fundi-rreshti">
           <h3>FUSHATA DHE INICIATIVA</h3>
           <a href="">Dita e Babait</a>
@@ -574,7 +651,7 @@
           <a href="">Karta e mesuesit</a>
           <a href="">Bonusi i Kultures</a>
         </div>
-        
+
         <div class="fundi-rreshti">
           <h3>TERHEQJA, GARANCI dhe PRIVATESIA</h3>
           <a href="">E drejta e terheqjes</a>
@@ -583,7 +660,7 @@
           <a href="">Politika e privatesise</a>
         </div>
       </div>
-      
+
       <div class="revista">
         <h3>REVISTA dhe GUIDA</h3>
         <div class="revista-guida">
@@ -591,40 +668,79 @@
           <a href="">Blerja e udhezuesve</a>
         </div>
       </div>
-      
+
       <div class="dergesa-paga-flex">
         <div>
           <h3>Ne dergojme me</h3>
           <div class="dergojme">
-            <img src="https://cms-images.mmst.eu/hzxov1nxpus5/4qXgDEqtsdZ6n11yVxnJxA/b546fb7fc6cac564deac26acf5776210/logo-poste-italiane-bw.svg?q=80" alt="">
-            <img src="https://cms-images.mmst.eu/hzxov1nxpus5/4qXgDEqtsdZ6n11yVxnJxA/b546fb7fc6cac564deac26acf5776210/logo-poste-italiane-bw.svg?q=80" alt="">
-            <img src="https://cms-images.mmst.eu/hzxov1nxpus5/4qXgDEqtsdZ6n11yVxnJxA/b546fb7fc6cac564deac26acf5776210/logo-poste-italiane-bw.svg?q=80" alt="">
+            <img
+              src="https://cms-images.mmst.eu/hzxov1nxpus5/4qXgDEqtsdZ6n11yVxnJxA/b546fb7fc6cac564deac26acf5776210/logo-poste-italiane-bw.svg?q=80"
+              alt=""
+            />
+            <img
+              src="https://cms-images.mmst.eu/hzxov1nxpus5/4qXgDEqtsdZ6n11yVxnJxA/b546fb7fc6cac564deac26acf5776210/logo-poste-italiane-bw.svg?q=80"
+              alt=""
+            />
+            <img
+              src="https://cms-images.mmst.eu/hzxov1nxpus5/4qXgDEqtsdZ6n11yVxnJxA/b546fb7fc6cac564deac26acf5776210/logo-poste-italiane-bw.svg?q=80"
+              alt=""
+            />
           </div>
         </div>
-        
+
         <div>
-          <h3>Pagesa</h3> 
+          <h3>Pagesa</h3>
           <div class="pagesa">
-            <img src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80" alt=""> 
-            <img src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80" alt="">
-            <img src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80" alt="">
-            <img src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80" alt="">
-            <img src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80" alt="">
-            <img src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80" alt="">
-            <img src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80" alt="">
+            <img
+              src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80"
+              alt=""
+            />
+            <img
+              src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80"
+              alt=""
+            />
+            <img
+              src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80"
+              alt=""
+            />
+            <img
+              src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80"
+              alt=""
+            />
+            <img
+              src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80"
+              alt=""
+            />
+            <img
+              src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80"
+              alt=""
+            />
+            <img
+              src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80"
+              alt=""
+            />
           </div>
         </div>
       </div>
-      
+
       <h3>Aplikacioni GlobeShops</h3>
-      
+
       <div class="aplikacioni-GlobeShops">
-        <img src="https://cms-images.mmst.eu/hzxov1nxpus5/Nke1b40tgIZ4cEd81r4SZ/184507693030fe65d6e02d313c972aeb/GoogleAppStoreEn.svg?q=80" alt="">
-        <img src="https://cms-images.mmst.eu/hzxov1nxpus5/Nke1b40tgIZ4cEd81r4SZ/184507693030fe65d6e02d313c972aeb/GoogleAppStoreEn.svg?q=80" alt="">
-        <img src="https://cms-images.mmst.eu/hzxov1nxpus5/Nke1b40tgIZ4cEd81r4SZ/184507693030fe65d6e02d313c972aeb/GoogleAppStoreEn.svg?q=80" alt="">
+        <img
+          src="https://cms-images.mmst.eu/hzxov1nxpus5/Nke1b40tgIZ4cEd81r4SZ/184507693030fe65d6e02d313c972aeb/GoogleAppStoreEn.svg?q=80"
+          alt=""
+        />
+        <img
+          src="https://cms-images.mmst.eu/hzxov1nxpus5/Nke1b40tgIZ4cEd81r4SZ/184507693030fe65d6e02d313c972aeb/GoogleAppStoreEn.svg?q=80"
+          alt=""
+        />
+        <img
+          src="https://cms-images.mmst.eu/hzxov1nxpus5/Nke1b40tgIZ4cEd81r4SZ/184507693030fe65d6e02d313c972aeb/GoogleAppStoreEn.svg?q=80"
+          alt=""
+        />
       </div>
     </section>
-    
+
     <section class="fundiDy">
       <div class="fundiDy-flex">
         <a href="">Aksesueshmeria</a>
@@ -635,79 +751,117 @@
         <a href="">Rregulloret e Kartes se Klubit GlobeShops</a>
         <a href="">Te gjitha informacionet</a>
       </div>
-      
-      <p>FINANCIMI PËR TË GJITHA BLERJET QË FILLON NGA 199€
-        Reklamë me qëllime promovuese. Oferta e finalizuar e kredisë e vlefshme nga 01/08/2024 deri më 31/08/2024
-        nga 12 deri në 48 muaj sipas shembullit përfaqësues: Çmimi i aktivit 789 €, TAN fiks 11,94%, Prill 12,61%,
-        në 20 këste nga 43,70 €, shpenzimet dhe kostot shtesë eliminohen. Shuma totale e kredisë: 789 € Shuma totale
-        e borxhit nga Konsumatori: 874,00 €. IEBCC në pikën e shitjes dhe online. Subjekt i miratimit nga
-        Findomestic Banca SpA për të cilën Mediamarket SpA con Socio Unico operon si një ndërmjetës ekskluziv
-        krediti. Për mbajtësit e Linjës së Kreditit MediaWorld Smart Line është e mundur të pranohet kjo ofertë me
-        të njëjtat kushte si kredia e finalizuar.
-      </p>
-      
+
       <p>
-        FINANCIM ME INTERES HERO ME 20 KËSTE PËR MOTOROLA RAZR 50 ULTRA duke filluar nga 199 € TAN FIKS 0% - PR 0%.
-        Reklamë me qëllime promovuese. Oferta e finalizuar e kredisë e vlefshme nga 27.06.2024 deri më 31.08.2024 në
-        20 muaj sipas shembullit përfaqësues: Çmimi i aktivit 1,198 €, TAN fiks 0% Prill 0%, në 20 këste prej 59,90
-        € shpenzimet dhe aksesorët rishikohen . Shuma totale e kredisë dhe e borxhit nga Konsumatori: 1,198€. IEBCC
-        në pikën e shitjes dhe online. Subjekt i miratimit nga Findomestic Banca SpA për të cilën Mediamarket SpA
-        con Socio Unico operon si një ndërmjetës ekskluziv krediti. Për mbajtësit e Linjës së Kreditit MediaWorld
-        Smart Line është e mundur të pranohet kjo ofertë me të njëjtat kushte si kredia e finalizuar.</p>
-        <p>FINANCIM ZERO INTERES ME 20 KËSTE PËR REALME 12 PRO, REALME 12 PRO+ DHE REALME GT6 5G 512 GB duke filluar nga
-        199 € TAN FIKS 0% - PR 0%.
-        Reklamë me qëllime promovuese. Oferta e finalizuar e kredisë e vlefshme nga 01/08/2024 deri më 31/08/2024 në
-        20 muaj sipas shembullit përfaqësues: Çmimi i aktivit 458,99 € TAN fiks 0% Prill 0%, në 20 këste prej 22,95
-        €, shpenzimet dhe kostot shtesë të eliminuara . Shuma totale e kredisë dhe e borxhit të Konsumatorit: 458,99
-        €. IEBCC në pikën e shitjes dhe online. Subjekt i miratimit nga Findomestic Banca SpA për të cilën
-        Mediamarket SpA con Socio Unico operon si një ndërmjetës ekskluziv krediti. Për mbajtësit e Linjës së
-        Kreditit MediaWorld Smart Line është e mundur të pranohet kjo ofertë me të njëjtat kushte si kredia e
+        FINANCIMI PËR TË GJITHA BLERJET QË FILLON NGA 199€ Reklamë me qëllime
+        promovuese. Oferta e finalizuar e kredisë e vlefshme nga 01/08/2024 deri
+        më 31/08/2024 nga 12 deri në 48 muaj sipas shembullit përfaqësues: Çmimi
+        i aktivit 789 €, TAN fiks 11,94%, Prill 12,61%, në 20 këste nga 43,70 €,
+        shpenzimet dhe kostot shtesë eliminohen. Shuma totale e kredisë: 789 €
+        Shuma totale e borxhit nga Konsumatori: 874,00 €. IEBCC në pikën e
+        shitjes dhe online. Subjekt i miratimit nga Findomestic Banca SpA për të
+        cilën Mediamarket SpA con Socio Unico operon si një ndërmjetës ekskluziv
+        krediti. Për mbajtësit e Linjës së Kreditit MediaWorld Smart Line është
+        e mundur të pranohet kjo ofertë me të njëjtat kushte si kredia e
         finalizuar.
       </p>
-      
-      <p>FINANCIM ME INTERES ZERO 20 KËSTE PER SAMSUNG GALAXY Z FOLD6 EZ FLIP6 duke filluar nga 199 € TAN
-        FIKS 0% - PR 0% 
-        Reklamë me qëllime promovuese. Oferta e finalizuar e kredisë e vlefshme nga 10/07/2024 deri më 18/08/2024 në
-        20 muaj sipas shembullit përfaqësues: Çmimi i aktivit 1,279 € TAN fiks 0%, Prill 0%, në 20 këste prej 63,95
-        € shpenzimet dhe aksesorët rishikohen . Shuma totale e kredisë së konsumatorit: 1,279€. Afati mesatar i
-        pagesës së këstit të parë prej 90 ditësh. IEBCC në pikën e shitjes dhe online. Subjekt i miratimit nga
-        Findomestic Banca SpA për të cilën Mediamarket SpA me Aksioner të Vetëm operon si ndërmjetës ekskluziv
-        kredie. Për mbajtësit e Linjës së Kreditit MediaWorld Smart Line është e mundur të pranojnë këtë ofertë në
-        të njëjtat kushte si kredia e përfunduar.</p>
-        <p>FINANCIM ZERO INTERES NE 20 KASTE PER NENDETESEN DYSON V15 DETECT DUKE FILLUAR NGA 199 € TAN FIKS 0% - APR 0%
-        Reklamë me qëllime promovuese. Oferta e finalizuar e kredisë e vlefshme nga 01/08/2024 deri më 25/08/2024 në
-        20 muaj sipas shembullit përfaqësues: Çmimi i aktivit 949€, TAN fikse 0%, Prill 0%, në 20 këste prej 47,45€,
-        shpenzime dhe shtesë kostot e eliminuara. Shuma totale e kredisë dhe borxh nga Konsumatori: 949€. Afati
-        mesatar i pagesës së këstit të parë prej 90 ditësh. IEBCC në pikën e shitjes dhe online. Subjekt i miratimit
-        nga Findomestic Banca SpA për të cilën Mediamarket SpA con Socio Unico operon si një ndërmjetës ekskluziv
-        krediti. Për mbajtësit e Linjës së Kreditit MediaWorld Smart Line është e mundur të pranohet kjo ofertë me
-        të njëjtat kushte si kredia e finalizuar.</p>
-        <p>FINANCIM ME INTERES ZERO NË 20 KËSTE PËR ZTE NUBIA FLIP 5G duke filluar nga 199 € TAN FIKS 0% - 0%.Reklamë me qëllime promovuese. Oferta e finalizuar e kredisë e vlefshme nga 05/08/2024 deri më 31/08/2024 në
-        20 muaj sipas shembullit përfaqësues: Çmimi i aktivit 599€, TAN fiks 0% Prill 0%, në 20 këste prej 29,95€
-        shpenzimet dhe rishikimi i aksesorëve . Shuma totale e kredisë dhe e borxhit nga Konsumatori: 599€. IEBCC në
-        pikën e shitjes dhe online. Subjekt i miratimit nga Findomestic Banca SpA për të cilën Mediamarket SpA con
-        Socio Unico operon si një ndërmjetës ekskluziv krediti. Për mbajtësit e linjës së kreditit MediaWorld Smart
-        Line është e mundur të pranohet kjo ofertë me të njëjtat kushte si kredia e përfunduar</p>
-        <p>FINANCIM ME INTERES ZERO PËR 20 MUAJ, FILLON NGA 199 €, PËR SERIA GOOGLE PIXEL 9 | PIXEL 9 PRO | PIXEL 9 PRO
-        XL TAN FIKSE 0% - PR 0%.
-        Reklamë me qëllime promovuese. Oferta e finalizuar e kredisë e vlefshme nga 13.08.2024 deri më 15.09.2024 në
-        20 muaj sipas shembullit përfaqësues: Çmimi i aktivit 1,299 €, TAN fikse 0%, Prill 0%, në 20 këste prej
-        64,95 €, shpenzime dhe shtesë kostot e eliminuara. Shuma totale e kredisë së konsumatorit: 1,299€. Afati
-        mesatar i pagesës së këstit të parë prej 90 ditësh. IEBCC në rrugën online. Subjekt i miratimit nga
-        Findomestic Banca SpA për të cilën Mediamarket SpA me Aksioner të Vetëm operon si ndërmjetës ekskluziv
-        kredie. Për mbajtësit e linjës së kreditit MediaWorld Smart Line është e mundur të pranohet kjo ofertë me të
+
+      <p>
+        FINANCIM ME INTERES HERO ME 20 KËSTE PËR MOTOROLA RAZR 50 ULTRA duke
+        filluar nga 199 € TAN FIKS 0% - PR 0%. Reklamë me qëllime promovuese.
+        Oferta e finalizuar e kredisë e vlefshme nga 27.06.2024 deri më
+        31.08.2024 në 20 muaj sipas shembullit përfaqësues: Çmimi i aktivit
+        1,198 €, TAN fiks 0% Prill 0%, në 20 këste prej 59,90 € shpenzimet dhe
+        aksesorët rishikohen . Shuma totale e kredisë dhe e borxhit nga
+        Konsumatori: 1,198€. IEBCC në pikën e shitjes dhe online. Subjekt i
+        miratimit nga Findomestic Banca SpA për të cilën Mediamarket SpA con
+        Socio Unico operon si një ndërmjetës ekskluziv krediti. Për mbajtësit e
+        Linjës së Kreditit MediaWorld Smart Line është e mundur të pranohet kjo
+        ofertë me të njëjtat kushte si kredia e finalizuar.
+      </p>
+      <p>
+        FINANCIM ZERO INTERES ME 20 KËSTE PËR REALME 12 PRO, REALME 12 PRO+ DHE
+        REALME GT6 5G 512 GB duke filluar nga 199 € TAN FIKS 0% - PR 0%. Reklamë
+        me qëllime promovuese. Oferta e finalizuar e kredisë e vlefshme nga
+        01/08/2024 deri më 31/08/2024 në 20 muaj sipas shembullit përfaqësues:
+        Çmimi i aktivit 458,99 € TAN fiks 0% Prill 0%, në 20 këste prej 22,95 €,
+        shpenzimet dhe kostot shtesë të eliminuara . Shuma totale e kredisë dhe
+        e borxhit të Konsumatorit: 458,99 €. IEBCC në pikën e shitjes dhe
+        online. Subjekt i miratimit nga Findomestic Banca SpA për të cilën
+        Mediamarket SpA con Socio Unico operon si një ndërmjetës ekskluziv
+        krediti. Për mbajtësit e Linjës së Kreditit MediaWorld Smart Line është
+        e mundur të pranohet kjo ofertë me të njëjtat kushte si kredia e
+        finalizuar.
+      </p>
+
+      <p>
+        FINANCIM ME INTERES ZERO 20 KËSTE PER SAMSUNG GALAXY Z FOLD6 EZ FLIP6
+        duke filluar nga 199 € TAN FIKS 0% - PR 0% Reklamë me qëllime
+        promovuese. Oferta e finalizuar e kredisë e vlefshme nga 10/07/2024 deri
+        më 18/08/2024 në 20 muaj sipas shembullit përfaqësues: Çmimi i aktivit
+        1,279 € TAN fiks 0%, Prill 0%, në 20 këste prej 63,95 € shpenzimet dhe
+        aksesorët rishikohen . Shuma totale e kredisë së konsumatorit: 1,279€.
+        Afati mesatar i pagesës së këstit të parë prej 90 ditësh. IEBCC në pikën
+        e shitjes dhe online. Subjekt i miratimit nga Findomestic Banca SpA për
+        të cilën Mediamarket SpA me Aksioner të Vetëm operon si ndërmjetës
+        ekskluziv kredie. Për mbajtësit e Linjës së Kreditit MediaWorld Smart
+        Line është e mundur të pranojnë këtë ofertë në të njëjtat kushte si
+        kredia e përfunduar.
+      </p>
+      <p>
+        FINANCIM ZERO INTERES NE 20 KASTE PER NENDETESEN DYSON V15 DETECT DUKE
+        FILLUAR NGA 199 € TAN FIKS 0% - APR 0% Reklamë me qëllime promovuese.
+        Oferta e finalizuar e kredisë e vlefshme nga 01/08/2024 deri më
+        25/08/2024 në 20 muaj sipas shembullit përfaqësues: Çmimi i aktivit
+        949€, TAN fikse 0%, Prill 0%, në 20 këste prej 47,45€, shpenzime dhe
+        shtesë kostot e eliminuara. Shuma totale e kredisë dhe borxh nga
+        Konsumatori: 949€. Afati mesatar i pagesës së këstit të parë prej 90
+        ditësh. IEBCC në pikën e shitjes dhe online. Subjekt i miratimit nga
+        Findomestic Banca SpA për të cilën Mediamarket SpA con Socio Unico
+        operon si një ndërmjetës ekskluziv krediti. Për mbajtësit e Linjës së
+        Kreditit MediaWorld Smart Line është e mundur të pranohet kjo ofertë me
+        të njëjtat kushte si kredia e finalizuar.
+      </p>
+      <p>
+        FINANCIM ME INTERES ZERO NË 20 KËSTE PËR ZTE NUBIA FLIP 5G duke filluar
+        nga 199 € TAN FIKS 0% - 0%.Reklamë me qëllime promovuese. Oferta e
+        finalizuar e kredisë e vlefshme nga 05/08/2024 deri më 31/08/2024 në 20
+        muaj sipas shembullit përfaqësues: Çmimi i aktivit 599€, TAN fiks 0%
+        Prill 0%, në 20 këste prej 29,95€ shpenzimet dhe rishikimi i aksesorëve
+        . Shuma totale e kredisë dhe e borxhit nga Konsumatori: 599€. IEBCC në
+        pikën e shitjes dhe online. Subjekt i miratimit nga Findomestic Banca
+        SpA për të cilën Mediamarket SpA con Socio Unico operon si një
+        ndërmjetës ekskluziv krediti. Për mbajtësit e linjës së kreditit
+        MediaWorld Smart Line është e mundur të pranohet kjo ofertë me të
         njëjtat kushte si kredia e përfunduar
       </p>
-      <p>MEDIAMARKET Spa me aksioner të vetëm - Selia e regjistruar dhe administrative në Via Furlanelli, 69 – 20843
-        Verano Brianza (MB) - Kapitali aksionar 2,000,000 € plotësisht i paguar - PI 02630120166, CCIAA Milan, Monza
-        REA44 MB Code, Monza Brianza 74 Regjistrohu Kompanitë 02180760965 - AEE Prod. Shitjet i nënshtrohen
-        artikujve. 45/67 "Të drejtat e konsumatorit" të Kodit të Konsumatorit (Dekreti Legjislativ 206/05)
+      <p>
+        FINANCIM ME INTERES ZERO PËR 20 MUAJ, FILLON NGA 199 €, PËR SERIA GOOGLE
+        PIXEL 9 | PIXEL 9 PRO | PIXEL 9 PRO XL TAN FIKSE 0% - PR 0%. Reklamë me
+        qëllime promovuese. Oferta e finalizuar e kredisë e vlefshme nga
+        13.08.2024 deri më 15.09.2024 në 20 muaj sipas shembullit përfaqësues:
+        Çmimi i aktivit 1,299 €, TAN fikse 0%, Prill 0%, në 20 këste prej 64,95
+        €, shpenzime dhe shtesë kostot e eliminuara. Shuma totale e kredisë së
+        konsumatorit: 1,299€. Afati mesatar i pagesës së këstit të parë prej 90
+        ditësh. IEBCC në rrugën online. Subjekt i miratimit nga Findomestic
+        Banca SpA për të cilën Mediamarket SpA me Aksioner të Vetëm operon si
+        ndërmjetës ekskluziv kredie. Për mbajtësit e linjës së kreditit
+        MediaWorld Smart Line është e mundur të pranohet kjo ofertë me të
+        njëjtat kushte si kredia e përfunduar
+      </p>
+      <p>
+        MEDIAMARKET Spa me aksioner të vetëm - Selia e regjistruar dhe
+        administrative në Via Furlanelli, 69 – 20843 Verano Brianza (MB) -
+        Kapitali aksionar 2,000,000 € plotësisht i paguar - PI 02630120166,
+        CCIAA Milan, Monza REA44 MB Code, Monza Brianza 74 Regjistrohu Kompanitë
+        02180760965 - AEE Prod. Shitjet i nënshtrohen artikujve. 45/67 "Të
+        drejtat e konsumatorit" të Kodit të Konsumatorit (Dekreti Legjislativ
+        206/05)
       </p>
     </section>
 
     <script src="/index.js"></script>
 
-      <script src="/javascript-pages/suportiKlientitn.js"></script>
-
-</body>
+    <script src="/javascript-pages/suportiKlientitn.js"></script>
+  </body>
 </html>

@@ -270,7 +270,12 @@ span {
 
 .image-container {
   display: flex;
+  gap: 10px;
   transition: transform 0.4s ease-in-out;
+}
+
+.image-container img {
+  width: 80%;
 }
 
 .btn {
@@ -285,15 +290,18 @@ span {
 
 .btn.prev {
   left: 10px;
+  color: black;
 }
 
 .btn.next {
   right: 10px;
+  color: black;
 }
 
 .btn:hover {
   opacity: 1;
 }
+/*              slideri i ri               */
 
 /* double landing page */
 

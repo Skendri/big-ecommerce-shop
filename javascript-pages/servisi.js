@@ -1,33 +1,35 @@
-   // Function to toggle visibility of content
-         function toggle(element) {
-            const content = element.nextElementSibling; // Get the content div
-            const icon = element.querySelector('i'); // Get the icon
+// Function to toggle visibility of content
+function toggle(element) {
+  const content = element.nextElementSibling; // Get the content div
+  const icon = element.querySelector("i"); // Get the icon
 
-            if (content.style.display === "block") {
-                content.style.display = "none"; // Hide the content
-                icon.classList.remove("open"); // Reset the icon rotation
-            } else {
-                content.style.display = "block"; // Show the content
-                icon.classList.add("open"); // Rotate the icon
-            }
-        }
-         // Function to toggle visibility of content
+  if (content.style.display === "block") {
+    content.style.display = "none"; // Hide the content
+    icon.classList.remove("open"); // Reset the icon rotation
+  } else {
+    content.style.display = "block"; // Show the content
+    icon.classList.add("open"); // Rotate the icon
+  }
+}
+// Function to toggle visibility of content
 
-
-         // ----------------------------------------------- KARTAT E MEDHA SLIDER DEKLARIMET te servisi ------------------------------------------------ /
-         const mbeshtjellesiKartaveServisi = document.querySelector("#mbeshtjellesi-kartaveServisi");
+// ----------------------------------------------- KARTAT E MEDHA SLIDER DEKLARIMET te servisi ------------------------------------------------ /
+const mbeshtjellesiKartaveServisi = document.querySelector(
+  "#mbeshtjellesi-kartaveServisi",
+);
 const kartatEMedhaServisi = document.querySelector("#kartat-e-medhaServisi");
 const butonatShigjetServisi = document.querySelectorAll(
-  "#butonat-e-kontrolluesit button"
+  "#butonat-e-kontrolluesit button",
 );
-const gjersiaKartesTePareServisi = document.querySelector(".kartaMadheServisi").offsetWidth;
+const gjersiaKartesTePareServisi =
+  document.querySelector(".kartaMadheServisi").offsetWidth;
 const FemijetKartaveTeMedhaServisi = [...kartatEMedhaServisi.children];
 
+// ------------------------------------------------- KARTAT E MEDHA SLIDER -------------------------------------------------------- /
 
-
-            // ------------------------------------------------- KARTAT E MEDHA SLIDER -------------------------------------------------------- /
-
-            let cardPerPamjeServisi = Math.round(kartatEMedhaServisi.offsetWidth / gjersiaKartesTePareServisi);
+let cardPerPamjeServisi = Math.round(
+  kartatEMedhaServisi.offsetWidth / gjersiaKartesTePareServisi,
+);
 
 FemijetKartaveTeMedhaServisi.slice(-cardPerPamjeServisi)
   .reverse()
@@ -47,7 +49,9 @@ let isDraggingServ = false,
 butonatShigjetServisi.forEach((btn) => {
   btn.addEventListener("click", () => {
     kartatEMedhaServisi.scrollLeft +=
-      btn.id === "majtas" ? -gjersiaKartesTePareServisi : gjersiaKartesTePareServisi;
+      btn.id === "majtas"
+        ? -gjersiaKartesTePareServisi
+        : gjersiaKartesTePareServisi;
   });
 });
 
@@ -60,7 +64,8 @@ const dragStartServis = (e) => {
 
 const draggingServis = (e) => {
   if (!isDraggingServ) return;
-  kartatEMedhaServisi.scrollLeft = rrotulloMajtasServis - (e.pageX - startXServis);
+  kartatEMedhaServisi.scrollLeft =
+    rrotulloMajtasServis - (e.pageX - startXServis);
 };
 
 const dragStopServisi = () => {
@@ -72,7 +77,7 @@ const autoPlayServisi = () => {
   if (window.innerWidth < 800) return;
   timeoutIDServis = setTimeout(
     () => (kartatEMedhaServisi.scrollLeft += gjersiaKartesTePareServisi),
-    1000
+    1000,
   );
 };
 autoPlayServisi();
@@ -100,10 +105,9 @@ kartatEMedhaServisi.addEventListener("mousemove", draggingServis);
 kartatEMedhaServisi.addEventListener("mouseup", dragStopServisi);
 kartatEMedhaServisi.addEventListener("scroll", infiniteScrollServisi);
 mbeshtjellesiKartaveServisi.addEventListener("mouseenter", () =>
-  clearTimeout(timeoutIDServis)
+  clearTimeout(timeoutIDServis),
 );
 mbeshtjellesiKartaveServisi.addEventListener("mouseleave", autoPlayServisi);
-
 
 //       kontenti dynamic
 const countersEl = document.querySelectorAll(".counter");
@@ -127,32 +131,31 @@ countersEl.forEach((counterEl) => {
 });
 
 // kontenti i dyte dinamik
-const itemsNumb = [...document.querySelectorAll('.number')];
+const itemsNumb = [...document.querySelectorAll(".number")];
 
- const updateCount = (el) => {
-      const value = parseInt(el.dataset.value);
-      const increment = Math.ceil(value / 1000);
-      let initialValue = 0;
-      const increaseCount = setInterval(() => {
-        initialValue += increment;
-        if (initialValue > value) {
-          el.textContent = `${value}+`;
-          clearInterval(increaseCount);
-          return;
-        }
-        el.textContent = `${initialValue}+`;
-      }, 1);
-    };
+const updateCount = (el) => {
+  const value = parseInt(el.dataset.value);
+  const increment = Math.ceil(value / 1000);
+  let initialValue = 0;
+  const increaseCount = setInterval(() => {
+    initialValue += increment;
+    if (initialValue > value) {
+      el.textContent = `${value}+`;
+      clearInterval(increaseCount);
+      return;
+    }
+    el.textContent = `${initialValue}+`;
+  }, 1);
+};
 
-    
-    itemsNumb.forEach((item) => {
-      updateCount(item);
-    });
+itemsNumb.forEach((item) => {
+  updateCount(item);
+});
 
-    // Observer to trigger count when in view
+// Observer to trigger count when in view
 const observer = new IntersectionObserver(
   (entries, observer) => {
-    entries.forEach(entry => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const el = entry.target;
         updateCount(el);
@@ -162,9 +165,9 @@ const observer = new IntersectionObserver(
   },
   {
     threshold: 1,
-  }
+  },
 );
 
-document.querySelectorAll('.number').forEach(el => {
+document.querySelectorAll(".number").forEach((el) => {
   observer.observe(el);
 });

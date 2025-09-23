@@ -1,845 +1,918 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/pages-css/products.css">
-  <link rel="stylesheet" href="/imported-links/navbar.css">
-  <link rel="stylesheet" href="/imported-links/footer.css">
-  <link rel="stylesheet" href="/responsiveIndex.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/pages-css/products.css" />
+    <link rel="stylesheet" href="/imported-links/navbar.css" />
+    <link rel="stylesheet" href="/imported-links/footer.css" />
+    <link rel="stylesheet" href="/responsiveIndex.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- menu anash full link -->
 
-     <!-- menu anash full link --> 
+    <div id="perdja-zeze-zgjidhDyqani" class="perdja-zeze-zgjidhDyqani" onclick=" hapPopUpDyqani()"></div>
+    <!-- <div id="mbeshtjellsi-gjithaKategorite" class="mbeshtjellsi-gjithaKategorite"> -->
 
-  <div id="perdja-zeze-zgjidhDyqani" class="perdja-zeze-zgjidhDyqani" onclick=" hapPopUpDyqani()"></div>
-  <!-- <div id="mbeshtjellsi-gjithaKategorite" class="mbeshtjellsi-gjithaKategorite"> -->
-   <div class="ZgjidhDyqanin" id="ZgjidhDyqanin">
-       <div class="ZgjidhDyqanin-Popup">
-           <p>Zgjidhni dyqanin</p>
-           <button onclick="hapPopUpDyqani()"><i class="ph ph-x"></i></button>
-       </div>
+    <div class="ZgjidhDyqanin" id="ZgjidhDyqanin">
+      <div class="ZgjidhDyqanin-Popup">
+        <p>Zgjidhni dyqanin</p>
+        <button onclick="hapPopUpDyqani()"><i class="ph ph-x"></i></button>
+      </div>
       <div class="ZgjidhDyqanin-input">
-       <p>
-       Fut kodin postar ose qytetin për të parë dyqanet pranë teje. Në këtë mënyrë do të 
-       mund të kontrolloni disponueshmërinë e produkteve në dyqan.</p>
-       <div class="kerko-dyqanin">
-       <input type="text" placeholder='Kerkoni sipas kodit postar ose qytetit'>
-       <button>Kerko</i></button>
-       </div>
-       
-       <hr class="hr-ZgjidhDyqanin">
-       <button class="dyqaniZgjedhur-btn">
-       Zgjidhni dyqanin
-       </button>
+        <p>
+          Fut kodin postar ose qytetin për të parë dyqanet pranë teje. Në këtë
+          mënyrë do të mund të kontrolloni disponueshmërinë e produkteve në
+          dyqan.
+        </p>
+        <div class="kerko-dyqanin">
+          <input
+            type="text"
+            placeholder="Kerkoni sipas kodit postar ose qytetit"
+          />
+          <button><i>Kerko</i></button>
+        </div>
+
+        <hr class="hr-ZgjidhDyqanin" />
+        <button class="dyqaniZgjedhur-btn">Zgjidhni dyqanin</button>
       </div>
-       
-   </div>
-</div>
+    </div>
 
-<!--                   pop upi i linqeve te mouse leave                  -->
-<div id="perdja-zeze" class="perdja-zeze" onclick=" hapPopUp()"></div>
-<ul class='kategori-GlobeShops-rekomandon' id="kategori-GlobeShops-rekomandonPopUp">
-   <p>GlobeShops Rekomandon</p>
-   <li>geri</li>
-   <li>Telefonia</li>
-   <li>Kompjuterë dhe tableta</li>
-   <li>Pajisjet periferike dhe aksesoret</li>
-   <li>TV dhe kinema në shtëpi</li>
-   <li>Pajisje të mëdha</li>
-   <li>Pajisje të vogla dhe kafe</li>
-   <li>Kujdesi Personal</li>
-   <li>Audio, kufje dhe navigatorë</li>
-</ul>
-
-<div id="mbeshtjellsi-gjithaKategorite" class="mbeshtjellsi-gjithaKategorite">
- <div class="listat-gjithaKategorite">
-   <div class="gjithaKategorite-logoBtn">
-     <img src="/images/amazon-logo-white.png" alt="">
-     <button onclick="hapPopUp()"><i class="ph ph-x"></i></button>
-   </div>
-   
-   <hr class="hr">
-   
-   <h4>Te gjitha Kategorite</h4>
-
-   <ul class="emri-lista">
-    <li class="kategoriPopUp"><a href="/html pages/product.html" >Product page</a>
-      <a href=""><svg width="32" height="32" viewBox="0 0 24 24">
-        <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path></svg>
-      </a>
-    </li>
-    
-    <li class="kategoriPopUp">
-      <a href="/html pages/products.html">ALL Products page</a>
-      <a href=""><svg width="32" height="32" viewBox="0 0 24 24">
-        <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path></svg>
-      </a>
-    </li>
-    
-    <li class="kategoriPopUp"><a href="/html pages/servisi.html">Servisi jone</a>
-      <a href=""><svg width="32" height="32" viewBox="0 0 24 24">
-        <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path></svg>
-      </a>
-    </li>
-    
-    <li class="kategoriPopUp"><a href="/html pages/suportiKlientit.html">Suproti Klinetit</a>
-      <a href=""><svg width="32" height="32" viewBox="0 0 24 24">
-        <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path></svg>
-      </a>
-    </li>
-    
-    <li class="kategoriPopUp"><a href="/html pages/faqjaKontakteve.html">Faqja e Kontakteve</a>
-      <a href=""><svg width="32" height="32" viewBox="0 0 24 24">
-        <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path></svg>
-      </a>
-    </li>
-    
-    <li class="kategoriPopUp"><a href="/html pages/dyqanetTona.html">Dyqanet Tona</a>
-      <a href=""><svg width="32" height="32" viewBox="0 0 24 24">
-        <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path></svg>
-      </a>
-    </li>
-    
-    <li class="kategoriPopUp"><a href="/html pages/livechat.html">Live Chati per pyetje</a>
-      <a href=""><svg width="32" height="32" viewBox="0 0 24 24">
-        <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path></svg>
-      </a>
-    </li>
-    
-     <li class="kategoriPopUp"><a href="/html pages/perKompanine.html">Per Kompanine</a>
-      <a href=""><svg width="32" height="32" viewBox="0 0 24 24">
-        <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path></svg>
-      </a>
-      </li>
-      
-      <!-- <li class="kategoriPopUp"><a href="">Lojera kompjuterike dhe komponentet</a>
-        <a href=""><svg width="32" height="32" viewBox="0 0 24 24">
-          <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path></svg>
-        </a>
-      </li>
-      
-      <li class="kategoriPopUp"><a href="">Konsolat dhe videolojerat</a>
-        <a href=""><svg width="32" height="32" viewBox="0 0 24 24">
-          <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path></svg>
-        </a>
-      </li>
-      
-      <li class="kategoriPopUp"><a href="">Audio, kufje dhe navigatore</a>
-        <a href=""><svg width="32" height="32" viewBox="0 0 24 24">
-          <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path></svg>
-        </a>
-      </li>
-      
-      <li class="kategoriPopUp"><a href="">Fotografi, Video dhe Drone</a>
-        <a href=""><svg width="32" height="32" viewBox="0 0 24 24">
-          <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path></svg>
-        </a>
-      </li>
-      
-      <li class="kategoriPopUp"><a href="">Klima dhe Ngrohja</a>
-        <a href=""><svg width="32" height="32" viewBox="0 0 24 24">
-          <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path></svg>
-        </a>
-      </li>
-      
-      <li class="kategoriPopUp"><a href="">Pastrim dhe hekurosje</a>
-        <a href=""><svg width="32" height="32" viewBox="0 0 24 24">
-          <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path></svg>
-        </a>
-      </li>
-      
-      <li class="kategoriPopUp"><a href="">Kujdesi personal</a>
-        <a href=""><svg width="32" height="32" viewBox="0 0 24 24">
-          <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path></svg>
-        </a>
-      </li>
-      
-      <li class="kategoriPopUp"><a href="">Shtepia e zgjuar dhe Automatizimi</a>
-        <a href=""><svg width="32" height="32" viewBox="0 0 24 24">
-          <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path></svg>
-        </a>
-      </li> -->
-
+    <!--                   pop upi i linqeve te mouse leave                  -->
+    <div id="perdja-zeze" class="perdja-zeze" onclick=" hapPopUp()"></div>
+    <ul
+      class="kategori-GlobeShops-rekomandon"
+      id="kategori-GlobeShops-rekomandonPopUp"
+    >
+      <p>GlobeShops Rekomandon</p>
+      <li>geri</li>
+      <li>Telefonia</li>
+      <li>Kompjuterë dhe tableta</li>
+      <li>Pajisjet periferike dhe aksesoret</li>
+      <li>TV dhe kinema në shtëpi</li>
+      <li>Pajisje të mëdha</li>
+      <li>Pajisje të vogla dhe kafe</li>
+      <li>Kujdesi Personal</li>
+      <li>Audio, kufje dhe navigatorë</li>
     </ul>
-   </div>
- </div>
 
-  <!-- menu anash full link --> 
- 
- <div class="navi">
-   <!-- Big Nav --> 
+    <div
+      id="mbeshtjellsi-gjithaKategorite"
+      class="mbeshtjellsi-gjithaKategorite"
+    >
+      <div class="listat-gjithaKategorite">
+        <div class="gjithaKategorite-logoBtn">
+          <img src="/images/amazon-logo-white.png" alt="" />
+          <button onclick="hapPopUp()"><i class="ph ph-x"></i></button>
+        </div>
 
-   <div class="naviLart">
-     <a href="#">KLUB GlobeShops</a>
-     <a href="#">APP MediaWorld</a>
-     <a href="#">Sherbimet</a>
-     <a href="#">Qendrueshmeria</a>
-     <a href="#">Dyqane</a>
-     <a href="#">Per Kompanite</a>
-     <a href="#">Porosite</a>
-     <a href="#">Mbeshtetja e klientit</a>
-     <a href="#">Na Kontaktoni</a>
-     <a href="#">Prize</a>
-     <a href="#">Ofertat</a>
-     <a href="#">Bisede Live</a>
-     <a href="#">Punoni me ne</a>
-     <a href="#">Revista & Guide</a>
-   </div>
-   <!-- listat e nav --> 
+        <hr class="hr" />
 
-   <div class="naviPosht" id="naviPosht">
-     <div class="responsive-row">
-       <a href="">
-         <img src="/images/amazon-logo-white.png" alt="logo-image">
-       </a>
-       <button class="navbarButoni" onclick="hapPopUp()">
-         <i class="fa-solid fa-bars"></i>
-         <!-- <i class="ph ph-list"></i> -->
-         <p> Te gjithe katergorite </p>
-       </button>
-     </div>
-     <div class="navbarKerkimi">
-       <button type="menu"><i class="ph ph-magnifying-glass"></i></button>
-       <input type="text" placeholder="Kerko produktin tend..." name="search">
-     </div>
-     <div class="zgjidhDyqanin">
-       <button  class="butoniDyqani" onclick="hapPopUpDyqani()" >
-         <span> Zgjidhni Dyqanin </br>
-           Fut koding postar ose
-         </span>
-         <i class="ph ph-caret-down"></i>
-       </button>
-     </div>
-     <div class="butonatDjathtas">
-       <button type="menu"><i class="fa-solid fa-user fa-flip"></i></button>
-       <a href="#"><i class="fa-solid fa-cart-shopping fa-bounce"></i></a>
-     </div>
-   </div>
-   <!-- navi poshte --> 
-   
-   <div class="baneri-zi">
-     <a href="">Shkarkoni APP-in</a>
-     <a href="">Financimi</a>
-     <a href="">Sherbimet</a>
-   </div>
-   
-   <div class="baneri-blu">
-     <div class="baneriBrendshem">
-       <i class="exclamation-mark">❗</i>
-       <a href="">MBLEDHJE FALAS gjithashtu në 30 MINUTA dhe Dorëzimi FALAS në 6000 produkte!</a>
-     </div>
-   </div>
-   <!-- Big Nav --> 
- </div>
-  
-  <!--                   PRODUCTS page                             -->
-  <div class="products-container" id="products-container">
-    <div class="marka-majtas">
-      <h3 class="titulli-perzgjedhjes">Ora inteligjente Xiaomi</h3>
-      <img class="imazhi-markes" src="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_96630724/mobilecms_x_72_png" alt="">
+        <h4>Te gjitha Kategorite</h4>
 
-      <hr/>
-      
-      <div id="kontenieri-filter">
-        <div class="products-row-btn" >
-          <button class="products-butonat" data-target="price-toggle-btn-1" >
-            <p>Cmimi</p>
-            <svg width="32" height="32" viewBox="0 0 24 24">
-              <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path>
-            </svg>
+        <ul class="emri-lista">
+          <li class="kategoriPopUp">
+            <a href="/html pages/product.html">Product page</a>
+            <a href=""
+              ><svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+
+          <li class="kategoriPopUp">
+            <a href="/html pages/products.html">ALL Products page</a>
+            <a href=""
+              ><svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+
+          <li class="kategoriPopUp">
+            <a href="/html pages/servisi.html">Servisi jone</a>
+            <a href=""
+              ><svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+
+          <li class="kategoriPopUp">
+            <a href="/html pages/suportiKlientit.html">Suproti Klinetit</a>
+            <a href=""
+              ><svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+
+          <li class="kategoriPopUp">
+            <a href="/html pages/faqjaKontakteve.html">Faqja e Kontakteve</a>
+            <a href=""
+              ><svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+
+          <li class="kategoriPopUp">
+            <a href="/html pages/dyqanetTona.html">Dyqanet Tona</a>
+            <a href=""
+              ><svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+
+          <li class="kategoriPopUp">
+            <a href="/html pages/livechat.html">Live Chati per pyetje</a>
+            <a href=""
+              ><svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+
+          <li class="kategoriPopUp">
+            <a href="/html pages/perKompanine.html">Per Kompanine</a>
+            <a href=""
+              ><svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- menu anash full link -->
+
+    <div class="navi">
+      <!-- Big Nav -->
+
+      <div class="naviLart">
+        <a href="#">KLUB GlobeShops</a>
+        <a href="#">APP MediaWorld</a>
+        <a href="#">Sherbimet</a>
+        <a href="#">Qendrueshmeria</a>
+        <a href="#">Dyqane</a>
+        <a href="#">Per Kompanite</a>
+        <a href="#">Porosite</a>
+        <a href="#">Mbeshtetja e klientit</a>
+        <a href="#">Na Kontaktoni</a>
+        <a href="#">Prize</a>
+        <a href="#">Ofertat</a>
+        <a href="#">Bisede Live</a>
+        <a href="#">Punoni me ne</a>
+        <a href="#">Revista & Guide</a>
+      </div>
+      <!-- listat e nav -->
+
+      <div class="naviPosht" id="naviPosht">
+        <div class="responsive-row">
+          <a href="">
+            <img src="/images/amazon-logo-white.png" alt="logo-image" />
+          </a>
+          <button class="navbarButoni" onclick="hapPopUp()">
+            <i class="fa-solid fa-bars"></i>
+            <!-- <i class="ph ph-list"></i> -->
+            <p>Te gjithe katergorite</p>
           </button>
         </div>
-        
-        <div id="price-toggle-btn-1"  class="toggle-section">
-          <div id="content-1" >
-            <div class="range">
-              <input class="range-min-input" type="number" placeholder="Nga 0 $">
-            </div>
-            
-            <div class="range" >
-              <input  type="number" class="range-max-input" placeholder="Te 200 $">
-            </div>
-          </div>
-          
-          <div class="kontenieri-filter2">
-            <div class="rreshkitesi">
-              <div class="progresi"></div>
-            </div>
-            
-            <div class="inputi-range">
-              <input type="range" class="range-min-input" min="0" max="200" value="0">
-              <input type="range" class="range-max-input" min="0" max="200" value="200">
-            </div>
-          </div>
+        <div class="navbarKerkimi">
+          <button type="menu"><i class="ph ph-magnifying-glass"></i></button>
+          <input
+            type="text"
+            placeholder="Kerko produktin tend..."
+            name="search"
+          />
         </div>
-      </div>
-      
-      <hr/>
-      
-      <div class="products-col-btn">
-        <button class="products-butonat" data-target="nismat-content">
-          <p>Nismat ne vazhdim</p>
-          <svg width="32" height="32" viewBox="0 0 24 24">
-            <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path>
-          </svg>
-        </button>
-        
-        <div id="nismat-content" class="toggle-section">
-          <div id="togle">
-            <label> <input type="checkbox"><p>Dorezimi FALAS</p> </label>
-            <label> <input type="checkbox"><p>KTHIMI NE SHKOLLE</p> </label>
-            <label> <input type="checkbox"><p>OUTLET</p> </label>
-          </div>
-        </div>
-      </div>
-      
-      <hr/>
-      
-      <div class="products-col-btn">
-        <button class="products-butonat" data-target="theksuar-content">
-          <p>E theksuar</p>
-          <svg width="32" height="32" viewBox="0 0 24 24">
-            <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path>
-          </svg>
-        </button>
-        
-        <div id="theksuar-content" class="toggle-section">
-          <div>
-            <label> <input type="checkbox"><p>ME TE SHITURAT</p> </label>
-            <label> <input type="checkbox"><p>GLOBESHOPS REKOMANDON</p> </label>
-          </div>
-        </div>
-      </div>
-      
-      <hr />
-      
-      <div class="products-col-btn">
-        <button class="products-butonat" data-target="rating-content">
-          <p>Rating</p>
-          <svg width="32" height="32" viewBox="0 0 24 24">
-            <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path>
-          </svg>
-        </button>
-        <div id="rating-content" class="toggle-section">
-          <div>
-            <label> <input type="checkbox"> &#11088; &#11088; &#11088; &#11088;  &#11088;  &#11088; </label>
-            <label> <input type="checkbox"> &#11088; &#11088; &#11088; &#11088;  &#11088; </label>
-            <label> <input type="checkbox"> &#11088; &#11088; &#11088; </label>
-            <label> <input type="checkbox"> <!--<img src="Assets/Icons/2-Star.webp" alt="2-star">-->&#11088;</label> 
-            <label> <input type="checkbox"><p> Te gjitha komentet</p> </label>
-          </div>
-        </div>
-      </div>
-      
-      <hr />
-      
-      <div id="kontenieri-filter">
-        <div class="products-row-btn" >
-          <button class="products-butonat" data-target="price-toggle-btn-2" >
-            <p>Cmimi</p>
-            <svg width="32" height="32" viewBox="0 0 24 24">
-              <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path>
-            </svg>
+        <div class="zgjidhDyqanin">
+          <button class="butoniDyqani" onclick="hapPopUpDyqani()">
+            <span>
+              Zgjidhni Dyqanin <br />
+              Fut koding postar ose
+            </span>
+            <i class="ph ph-caret-down"></i>
           </button>
         </div>
-        
-        <div id="price-toggle-btn-2"  class="toggle-section">
-          <div id="content-1" >
-            <div class="range">
-              <input class="range-min-input" type="number" placeholder="Nga 0 $">
-            </div>
-            
-            <div class="range" >
-              <input  type="number" class="range-max-input" placeholder="Te 200 $">
-            </div>
-          </div>
-          
-          <div class="kontenieri-filter2">
-            <div class="rreshkitesi">
-              <div class="progresi"></div>
-            </div>
-            
-            <div class="inputi-range">
-              <input type="range" class="range-min-input" min="0" max="200" value="0">
-              <input type="range" class="range-max-input" min="0" max="200" value="200">
-            </div>
-          </div>
+        <div class="butonatDjathtas">
+          <button type="menu"><i class="fa-solid fa-user fa-flip"></i></button>
+          <a href="#"><i class="fa-solid fa-cart-shopping fa-bounce"></i></a>
         </div>
       </div>
-      
-      <hr />
-      
-      <div class="products-col-btn">
-        <button class="products-butonat" data-target="color-content">
-          <p>Ngjyrat</p>
-          <svg width="32" height="32" viewBox="0 0 24 24">
-            <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path>
-          </svg>
-        </button>
-        <div id="color-content" class="toggle-section">
-          <div>
-            <div class="itemconfiguration">
-              <label> <input type="checkbox"><p>Argjendi</p> </label>
-              <label> <input type="checkbox"><p>Gri</p> </label>
-              <label> <input type="checkbox"><p>E zeze</p> </label>
-              <label> <input type="checkbox"><p>Roze</p> </label>
-              <label> <input type="checkbox"><p>Argjendi</p> </label>
-              <label> <input type="checkbox"><p>Gri</p> </label>
-              <label> <input type="checkbox"><p>E zeze</p> </label>
-              <label> <input type="checkbox"><p>Roze</p> </label>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <hr />
-      
-      <div id="kontenieri-filter">
-        <div class="products-row-btn" >
-          <button class="products-butonat" data-target="price-toggle-btn-3" >
-            <p>Cmimi</p>
-            <svg width="32" height="32" viewBox="0 0 24 24">
-              <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path>
-            </svg>
-          </button>
-        </div>
-        
-        <div id="price-toggle-btn-3"  class="toggle-section">
-          <div id="content-1" >
-            <div class="range">
-              <input class="range-min-input" type="number" placeholder="Nga 0 $">
-            </div>
-            <div class="range" >
-              <input  type="number" class="range-max-input" placeholder="Te 200 $">
-            </div>
-          </div>
-          
-          <div class="kontenieri-filter2">
-            <div class="rreshkitesi">
-              <div class="progresi"></div>
-            </div>
-            <div class="inputi-range">
-              <input type="range" class="range-min-input" min="0" max="200" value="0">
-              <input type="range" class="range-max-input" min="0" max="200" value="200">
-            </div>
-          </div>
-        </div>
+      <!-- navi poshte -->
+
+      <div class="baneri-zi">
+        <a href="">Shkarkoni APP-in</a>
+        <a href="">Financimi</a>
+        <a href="">Sherbimet</a>
       </div>
 
-      <!--                vazhdimi    i toggle          -->
-      <div class="products-col-btn">
-        <button class="products-butonat" data-target="telefonat">
-          <p>Telefonat</p>
-          <svg width="32" height="32" viewBox="0 0 24 24">
-            <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path>
-          </svg>
-        </button>
-        <div id="telefonat" class="toggle-section">
-          <div>
-            <div class="itemconfiguration">
-              <label> <input type="checkbox"><p>Iphone</p> </label>
-              <label> <input type="checkbox"><p>Samsung Galaxy</p> </label>
-              <label> <input type="checkbox"><p>XIAOMI</p> </label>
-              <label> <input type="checkbox"><p>Google</p> </label>
-              <label> <input type="checkbox"><p>OnePlus</p> </label>
-              <label> <input type="checkbox"><p>LG</p> </label>
-              <label> <input type="checkbox"><p>Sony</p> </label>
-              <label> <input type="checkbox"><p>BlackBerry</p> </label>
-            </div>
-          </div>
+      <div class="baneri-blu">
+        <div class="baneriBrendshem">
+          <i class="exclamation-mark">❗</i>
+          <a href=""
+            >MBLEDHJE FALAS gjithashtu në 30 MINUTA dhe Dorëzimi FALAS në 6000
+            produkte!</a
+          >
         </div>
       </div>
+      <!-- Big Nav -->
+    </div>
 
-      <hr>
+    <!--                   PRODUCTS page                             -->
+    <div class="products-container" id="products-container">
+      <div class="marka-majtas">
+        <h3 class="titulli-perzgjedhjes">Ora inteligjente Xiaomi</h3>
+        <img
+          class="imazhi-markes"
+          src="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_96630724/mobilecms_x_72_png"
+          alt=""
+        />
 
-    </div> <!--                divi madh fare i kontenierit anesore              -->
-    
-    <div class="products-djathtas-container">
-      <div class="products-rrezultate">
-        <div>
-          <h3>Rezultatet e kerkimit per oren inteligjente xiaomi</h3>
-          <p>Kerkoni ne vend te kesaj<a href="#"> ore inteligjente xiaomi</a></p>
-        </div>
-        
-        <div class=button-tabele>
-          <button id="toggleButton"> Rezultate me te mira 
-            <svg width="32" height="32" viewBox="0 0 24 24">
-              <path d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"></path>
-            </svg>
-          </button>
-          <div class="tabela">
-            <p>Best Product</p>
-            <p>Best Product</p>
-            <p>Best Product</p>
-            <p>Best Product</p>
-            <p>Best Product</p>
-          </div> 
-        </div>
-      </div>
-      
-      <img class="kategori-banner-card" src="./images/kategori-banner-card.gif">
-      <!--                cartat e produkteve djathtas          -->
-      <div class="products-card">
-        <div class="products-card-majtas">
-          <div class="kartaMadhe-info kartaGjere-info">
-            <p>Ne dyqan dhe online</p>
-          </div>
-          <h3>Ore inteligjente XIAOMI Redmi Ora 3 aktive, e zeze</h3>
-          <div class="products-card-product">
-            <img src="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_107996820?x=320&y=320&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=320&ey=320&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=320&cdy=320" >
-            <div class="informacioni-produktit">
-              <p>Lloji i pajisjes:</p>
-              <h4>SMARTWATCH</h4>
-              <p>Sisteme operative te pajtueshme:</p>
-              <h4>-</h4>
-              <p>Sensori i rrahjeve te zemres:</p>
-              <h4>po</h4>
-              <p>Jetegjatesia e baterise:</p>
-              <h4>288 ore</h4>
-            </div>
-          </div>
-          
-          <div class="products-card-reviewsIMG">
-            &#11088; &#11088; &#11088; &#11088; &#11088;
-            <p>32</p>
-          </div>
-        </div>
-        
-        <div class="products-card-djathtas">
-          <h4>E rekomanduar 39.99 €</h4>
-          <h3> 34,99 €</h3>
-          <a href="#">Informacion mbi: Financimi, Cmimi, Sasia, Koha e dorezimit dhe Marrja</a>
-          <p>Eko-kontributi i TVSH dhe WEEE i perfshire</p>
-          
-          <div class="opsionet-dorezimi">
-            <h4>Ofrohet dorezimi <span>+2,99 €</span></h4>
-            <p>Dorezimi i parashikuar 21.08.2024 - 23.08.2024(Ne shporte, shkruani kodin postar dhe do te keni nje date me te sakte) </p>
-          </div>
-          
-          <div class="opsionet-koleksioni-falas">
-            <h4>Koleksioni FALAS ne dyqan</h4>
-            <p>Kontrolloni koleksionin ne dyqan <span>Zgjidh Dyqanin ></span></p>
-          </div>
-          
-          <div class="opsionet-shto-shporte">
-            <button>Shto ne Shporte</button>
-            <button><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
-              <path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"> </path> </svg>
+        <hr />
+
+        <div id="kontenieri-filter">
+          <div class="products-row-btn">
+            <button class="products-butonat" data-target="price-toggle-btn-1">
+              <p>Cmimi</p>
+              <svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"
+                ></path>
+              </svg>
             </button>
           </div>
-        </div>
-      </div>
-      
-      <div class="products-card">
-        <div class="products-card-majtas">
-          <div class="kartaMadhe-info kartaGjere-info">
-            <p>Ne dyqan dhe online</p>
-          </div>
-          <h3>Ore inteligjente XIAOMI Redmi Ora 3 aktive, e zeze</h3>
-          <div class="products-card-product">
-            <img src="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_107996820?x=320&y=320&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=320&ey=320&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=320&cdy=320" >
-            <div class="informacioni-produktit">
-              <p>Lloji i pajisjes:</p>
-              <h4>SMARTWATCH</h4>
-              <p>Sisteme operative te pajtueshme:</p>
-              <h4>-</h4>
-              <p>Sensori i rrahjeve te zemres:</p>
-              <h4>po</h4>
-              <p>Jetegjatesia e baterise:</p>
-              <h4>288 ore</h4>
+
+          <div id="price-toggle-btn-1" class="toggle-section">
+            <div id="content-1">
+              <div class="range">
+                <input
+                  class="range-min-input"
+                  type="number"
+                  placeholder="Nga 0 $"
+                />
+              </div>
+
+              <div class="range">
+                <input
+                  type="number"
+                  class="range-max-input"
+                  placeholder="Te 200 $"
+                />
+              </div>
+            </div>
+
+            <div class="kontenieri-filter2">
+              <div class="rreshkitesi">
+                <div class="progresi"></div>
+              </div>
+
+              <div class="inputi-range">
+                <input
+                  type="range"
+                  class="range-min-input"
+                  min="0"
+                  max="200"
+                  value="0"
+                />
+                <input
+                  type="range"
+                  class="range-max-input"
+                  min="0"
+                  max="200"
+                  value="200"
+                />
+              </div>
             </div>
           </div>
-          
-          <div class="products-card-reviewsIMG">
-            &#11088; &#11088; &#11088; &#11088; &#11088;
-            <p>32</p>
-          </div>
         </div>
-        
-        <div class="products-card-djathtas">
-          <h4>E rekomanduar 39.99 €</h4>
-          <h3> 34,99 €</h3>
-          <a href="#">Informacion mbi: Financimi, Cmimi, Sasia, Koha e dorezimit dhe Marrja</a>
-          <p>Eko-kontributi i TVSH dhe WEEE i perfshire</p>
-          
-          <div class="opsionet-dorezimi">
-            <h4>Ofrohet dorezimi <span>+2,99 €</span></h4>
-            <p>Dorezimi i parashikuar 21.08.2024 - 23.08.2024
-              (Ne shporte, shkruani kodin postar
-              dhe do te keni nje date me te sakte)
-            </p>
-          </div>
-          
-          <div class="opsionet-koleksioni-falas">
-            <h4>Koleksioni FALAS ne dyqan</h4>
-            <p>Kontrolloni koleksionin ne dyqan <span>Zgjidh Dyqanin ></span></p>
-          </div>
-          <div class="opsionet-shto-shporte">
-            <button>Shto ne Shporte</button>
-            <button><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+
+        <hr />
+
+        <div class="products-col-btn">
+          <button class="products-butonat" data-target="nismat-content">
+            <p>Nismat ne vazhdim</p>
+            <svg width="32" height="32" viewBox="0 0 24 24">
               <path
-              d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"></path> </svg> 
-            </button>
-          </div>
-        </div>
-      </div>
-      
-      <div class="products-card">
-        <div class="products-card-majtas">
-          <div class="kartaMadhe-info kartaGjere-info">
-            <p>Ne dyqan dhe online</p>
-          </div>
-          <h3>Ore inteligjente XIAOMI Redmi Ora 3 aktive, e zeze</h3>
-          <div class="products-card-product">
-            <img src="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_107996820?x=320&y=320&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=320&ey=320&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=320&cdy=320" >
-            <div class="informacioni-produktit">
-              <p>Lloji i pajisjes:</p>
-              <h4>SMARTWATCH</h4>
-              <p>Sisteme operative te pajtueshme:</p>
-              <h4>-</h4>
-              <p>Sensori i rrahjeve te zemres:</p>
-              <h4>po</h4>
-              <p>Jetegjatesia e baterise:</p>
-              <h4>288 ore</h4>
-            </div>
-          </div>
-          
-          <div class="products-card-reviewsIMG">
-            &#11088; &#11088; &#11088; &#11088; &#11088;
-            <p>32</p>
-          </div>
-        </div>
-        
-        <div class="products-card-djathtas">
-          <h4>E rekomanduar 39.99 €</h4>
-          <h3> 34,99 €</h3>
-          <a href="#">Informacion mbi: Financimi, Cmimi, Sasia, Koha e dorezimit dhe Marrja</a>
-          <p>Eko-kontributi i TVSH dhe WEEE i perfshire</p>
-          <div class="opsionet-dorezimi">
-            <h4>Ofrohet dorezimi <span>+2,99 €</span></h4>
-            <p>Dorezimi i parashikuar 21.08.2024 - 23.08.2024
-              (Ne shporte, shkruani kodin postar
-              dhe do te keni nje date me te sakte)
-            </p>
-          </div>
-          <div class="opsionet-koleksioni-falas">
-            <h4>Koleksioni FALAS ne dyqan</h4>
-            <p>Kontrolloni koleksionin ne dyqan <span>Zgjidh Dyqanin ></span></p>
-          </div>
-          
-          <div class="opsionet-shto-shporte">
-            <button>Shto ne Shporte</button>
-            <button><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
-              <path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70 103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"> </path></svg>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="products-card">
-        <div class="products-card-majtas">
-          <div class="kartaMadhe-info kartaGjere-info">
-            <p>Ne dyqan dhe online</p>
-          </div>
-          <h3>Ore inteligjente XIAOMI Redmi Ora 3 aktive, e zeze</h3>
-          <div class="products-card-product">
-            <img src="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_107996820?x=320&y=320&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=320&ey=320&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=320&cdy=320" >
-            <div class="informacioni-produktit">
-              <p>Lloji i pajisjes:</p>
-              <h4>SMARTWATCH</h4>
-              <p>Sisteme operative te pajtueshme:</p>
-              <h4>-</h4>
-              <p>Sensori i rrahjeve te zemres:</p>
-              <h4>po</h4>
-              <p>Jetegjatesia e baterise:</p>
-              <h4>288 ore</h4>
-            </div>
-          </div>
-          
-          <div class="products-card-reviewsIMG">
-            &#11088; &#11088; &#11088; &#11088; &#11088;
-            <p>32</p>
-          </div>
-        </div>
-        
-        <div class="products-card-djathtas">
-          <h4>E rekomanduar 39.99 €</h4>
-          <h3> 34,99 €</h3>
-          <a href="#">Informacion mbi: Financimi, Cmimi, Sasia, Koha e dorezimit dhe Marrja</a>
-          <p>Eko-kontributi i TVSH dhe WEEE i perfshire</p>
-          <div class="opsionet-dorezimi">
-            <h4>Ofrohet dorezimi <span>+2,99 €</span></h4>
-            <p>Dorezimi i parashikuar 21.08.2024 - 23.08.2024
-              (Ne shporte, shkruani kodin postar
-              dhe do te keni nje date me te sakte)
-            </p>
-          </div>
-          
-          <div class="opsionet-koleksioni-falas">
-            <h4>Koleksioni FALAS ne dyqan</h4>
-            <p>Kontrolloni koleksionin ne dyqan <span>Zgjidh Dyqanin ></span></p>
-          </div>
-          
-          <div class="opsionet-shto-shporte">
-            <button>Shto ne Shporte</button>
-            <button><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
-              <path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"></path> </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-      <img class="kategori-banner-card" src="https://cms-images.mmst.eu/hzxov1nxpus5/iONRY5GwPN6LbTspzKJzS/16b63feb18b5eac64f1dc1e3bcabfbc2/Banner_MW_ESPORTA_Home_Teaser_Carousel_Orizz_Desk_1200x900.jpg?q=92&w=890">
-    </div>
-  </div>
-  <!--                          end off      PRODUCTS page                   -->
+                d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"
+              ></path>
+            </svg>
+          </button>
 
-
-  
-  
-  <!-- footer -->
-  <section class="fundi faqjaPare">
-    <h3>Cmimet tona</h3>
-    <h3>TRUSTPILOT</h3>
-    <div class="fundi-menu">
-        <div class="fundi-rreshti">
-            <h3>NA KONTAKTONI</h3>
-            <br>Mbeshtetja e klientit </br>
-            <a href="#">Lexoni te gjitha pyetjet e shpeshta</a></p>
-            <p>Na shkruani </br>
-                <a href="#">Formulari i kontaktit</a>
-            </p>
-            <div class="fundi-socials">
-                <p>ig</p>
-                <p>fcb</p>
-                <p>yt</p>
+          <div id="nismat-content" class="toggle-section">
+            <div id="togle">
+              <label>
+                <input type="checkbox" />
+                <p>Dorezimi FALAS</p>
+              </label>
+              <label>
+                <input type="checkbox" />
+                <p>KTHIMI NE SHKOLLE</p>
+              </label>
+              <label>
+                <input type="checkbox" />
+                <p>OUTLET</p>
+              </label>
             </div>
+          </div>
         </div>
-        <div class="fundi-rreshti">
-            <h3>KATALOG</h3>
-            <a href="">Telefonia</a>
-            <a href="">Kompjuter</a>
-            <a href="">Konsolat dhe videolojerat</a>
-            <a href="">TV dhe kinema ne shtepi</a>
-            <a href="">Pajisje te medha</a>
-            <a href="">Klima dhe ngrohja</a>
-            <a href="">Levizshmeria elektrike</a>
-            <a href="">Kujdesi personal</a>
-            <a href="">Te gjitha Ofertat</a>
-            <a href="">Produkte te rinovuara</a>
+
+        <hr />
+
+        <div class="products-col-btn">
+          <button class="products-butonat" data-target="theksuar-content">
+            <p>E theksuar</p>
+            <svg width="32" height="32" viewBox="0 0 24 24">
+              <path
+                d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"
+              ></path>
+            </svg>
+          </button>
+
+          <div id="theksuar-content" class="toggle-section">
+            <div>
+              <label>
+                <input type="checkbox" />
+                <p>ME TE SHITURAT</p>
+              </label>
+              <label>
+                <input type="checkbox" />
+                <p>GLOBESHOPS REKOMANDON</p>
+              </label>
+            </div>
+          </div>
         </div>
-        <div class="fundi-rreshti">
-            <h3>BLINI ONLINE</h3>
-            <a href="">Menyrat e pageses</a>
-            <a href="">Kostot dhe metodat e dorezimit</a>
-            <a href="">Merrni ne dyqan</a>
-            <a href="">Emri i perdoruesit dhe fjalekalimi</a>
-            <a href="">Na kontaktoni</a>
-            <a href="">Kushtet e pergjithshme te shitjes</a>
-            <a href="">Cmimet dhe zbritjet e shfaqura</a>
-            <a href="">Kufijte e blerjeve</a>
-            <a href="">Revista</a>
+
+        <hr />
+
+        <div class="products-col-btn">
+          <button class="products-butonat" data-target="rating-content">
+            <p>Rating</p>
+            <svg width="32" height="32" viewBox="0 0 24 24">
+              <path
+                d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"
+              ></path>
+            </svg>
+          </button>
+          <div id="rating-content" class="toggle-section">
+            <div>
+              <label>
+                <input type="checkbox" /> &#11088; &#11088; &#11088; &#11088;
+                &#11088; &#11088;
+              </label>
+              <label>
+                <input type="checkbox" /> &#11088; &#11088; &#11088; &#11088;
+                &#11088;
+              </label>
+              <label>
+                <input type="checkbox" /> &#11088; &#11088; &#11088;
+              </label>
+              <label>
+                <input type="checkbox" />
+                <!--<img src="Assets/Icons/2-Star.webp" alt="2-star">-->&#11088;</label
+              >
+              <label>
+                <input type="checkbox" />
+                <p>Te gjitha komentet</p>
+              </label>
+            </div>
+          </div>
         </div>
-        <div class="fundi-rreshti">
-            <h3>TREG</h3>
-            <a href="">Per konsumatoret</a>
-            <a href=""> Per shitesit </a>
-            <a href="">Pika e kontaktit sipas nenit. 11 Akti i sherbimit digjital</a>
+
+        <hr />
+
+        <div id="kontenieri-filter">
+          <div class="products-row-btn">
+            <button class="products-butonat" data-target="price-toggle-btn-2">
+              <p>Cmimi</p>
+              <svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <div id="price-toggle-btn-2" class="toggle-section">
+            <div id="content-1">
+              <div class="range">
+                <input
+                  class="range-min-input"
+                  type="number"
+                  placeholder="Nga 0 $"
+                />
+              </div>
+
+              <div class="range">
+                <input
+                  type="number"
+                  class="range-max-input"
+                  placeholder="Te 200 $"
+                />
+              </div>
+            </div>
+
+            <div class="kontenieri-filter2">
+              <div class="rreshkitesi">
+                <div class="progresi"></div>
+              </div>
+
+              <div class="inputi-range">
+                <input
+                  type="range"
+                  class="range-min-input"
+                  min="0"
+                  max="200"
+                  value="0"
+                />
+                <input
+                  type="range"
+                  class="range-max-input"
+                  min="0"
+                  max="200"
+                  value="200"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="fundi-rreshti">
-            <h3>SHERBIMET PER KLIENTET DHE KOMPANITE</h3>
-            <a href="">Zgjidhje per KOPMANITE</a>
-            <a href="">Financim</a>
-            <a href="">Instalim</a>
-            <a href="">Sherbimet e Sigurimeve</a>
-            <a href="">Shkoni te indeksi i Sherbimeve</a>
+
+        <hr />
+
+        <div class="products-col-btn">
+          <button class="products-butonat" data-target="color-content">
+            <p>Ngjyrat</p>
+            <svg width="32" height="32" viewBox="0 0 24 24">
+              <path
+                d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"
+              ></path>
+            </svg>
+          </button>
+          <div id="color-content" class="toggle-section">
+            <div>
+              <div class="itemconfiguration">
+                <label>
+                  <input type="checkbox" />
+                  <p>Argjendi</p>
+                </label>
+                <label>
+                  <input type="checkbox" />
+                  <p>Gri</p>
+                </label>
+                <label>
+                  <input type="checkbox" />
+                  <p>E zeze</p>
+                </label>
+                <label>
+                  <input type="checkbox" />
+                  <p>Roze</p>
+                </label>
+                <label>
+                  <input type="checkbox" />
+                  <p>Argjendi</p>
+                </label>
+                <label>
+                  <input type="checkbox" />
+                  <p>Gri</p>
+                </label>
+                <label>
+                  <input type="checkbox" />
+                  <p>E zeze</p>
+                </label>
+                <label>
+                  <input type="checkbox" />
+                  <p>Roze</p>
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="fundi-rreshti">
-            <h3>KOMPANIA DHE PUNA ME NE</h3>
-            <a href="">Kush jemi ne</a>
-            <a href="">Punoni me ne</a>
-            <a href="">Kodi i Etikes</a>
-            <a href="">MediaWorld Club</a>
-            <a href="">Reklamim me pakice ne media</a>
-            <a href="">Programi per zbulimin e dobesive</a>
+
+        <hr />
+
+        <div id="kontenieri-filter">
+          <div class="products-row-btn">
+            <button class="products-butonat" data-target="price-toggle-btn-3">
+              <p>Cmimi</p>
+              <svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <div id="price-toggle-btn-3" class="toggle-section">
+            <div id="content-1">
+              <div class="range">
+                <input
+                  class="range-min-input"
+                  type="number"
+                  placeholder="Nga 0 $"
+                />
+              </div>
+              <div class="range">
+                <input
+                  type="number"
+                  class="range-max-input"
+                  placeholder="Te 200 $"
+                />
+              </div>
+            </div>
+
+            <div class="kontenieri-filter2">
+              <div class="rreshkitesi">
+                <div class="progresi"></div>
+              </div>
+              <div class="inputi-range">
+                <input
+                  type="range"
+                  class="range-min-input"
+                  min="0"
+                  max="200"
+                  value="0"
+                />
+                <input
+                  type="range"
+                  class="range-max-input"
+                  min="0"
+                  max="200"
+                  value="200"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="fundi-rreshti">
-            <h3>FUSHATA DHE INICIATIVA</h3>
-            <a href="">Dita e Babait</a>
-            <a href="">Dhurata e Krishtlindjeve</a>
-            <a href="">Nen kosto</a>
-            <a href="">E Premte e Zeze</a>
-            <a href="">E hene kibernetike</a>
-            <a href="">Kthehu ne shkolle</a>
-            <a href="">Dita e beqareve</a>
-            <a href="">Shen Valentini</a>
-            <a href="">Bonuset televizive</a>
-            <a href="">E Premte e Kuqe</a>
-            <a href="">XDay</a>
-            <a href="">Karta e mesuesit</a>
-            <a href="">Bonusi i Kultures</a>
+
+        <!--                vazhdimi    i toggle          -->
+        <div class="products-col-btn">
+          <button class="products-butonat" data-target="telefonat">
+            <p>Telefonat</p>
+            <svg width="32" height="32" viewBox="0 0 24 24">
+              <path
+                d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"
+              ></path>
+            </svg>
+          </button>
+          <div id="telefonat" class="toggle-section">
+            <div>
+              <div class="itemconfiguration">
+                <label>
+                  <input type="checkbox" />
+                  <p>Iphone</p>
+                </label>
+                <label>
+                  <input type="checkbox" />
+                  <p>Samsung Galaxy</p>
+                </label>
+                <label>
+                  <input type="checkbox" />
+                  <p>XIAOMI</p>
+                </label>
+                <label>
+                  <input type="checkbox" />
+                  <p>Google</p>
+                </label>
+                <label>
+                  <input type="checkbox" />
+                  <p>OnePlus</p>
+                </label>
+                <label>
+                  <input type="checkbox" />
+                  <p>LG</p>
+                </label>
+                <label>
+                  <input type="checkbox" />
+                  <p>Sony</p>
+                </label>
+                <label>
+                  <input type="checkbox" />
+                  <p>BlackBerry</p>
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="fundi-rreshti">
-            <h3>TERHEQJA, GARANCI dhe PRIVATESIA</h3>
-            <a href="">E drejta e terheqjes</a>
-            <a href="">Garanci ligjore</a>
-            <a href="">Politika e privatesise e bere pas regjistrimit</a>
-            <a href="">Politika e privatesise</a>
+
+        <hr />
+      </div>
+      <!--                divi madh fare i kontenierit anesore              -->
+
+      <div class="products-djathtas-container">
+        <div class="products-rrezultate">
+          <div>
+            <h3>Rezultatet e kerkimit per oren inteligjente xiaomi</h3>
+            <p>
+              Kerkoni ne vend te kesaj<a href="#"> ore inteligjente xiaomi</a>
+            </p>
+          </div>
+
+          <div class="button-tabele">
+            <button id="toggleButton">
+              Rezultate me te mira
+              <svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  d="M15.78 11.28a.75.75 0 0 1 .22.53v.38a.77.77 0 0 1-.22.53l-5.14 5.13a.5.5 0 0 1-.71 0l-.71-.71a.49.49 0 0 1 0-.7L13.67 12 9.22 7.56a.5.5 0 0 1 0-.71l.71-.7a.5.5 0 0 1 .71 0Z"
+                ></path>
+              </svg>
+            </button>
+            <div class="tabela">
+              <p>Best Product</p>
+              <p>Best Product</p>
+              <p>Best Product</p>
+              <p>Best Product</p>
+              <p>Best Product</p>
+            </div>
+          </div>
         </div>
+
+        <img
+          class="kategori-banner-card"
+          src="../images/kategori-banner-card.gif"
+        />
+        <!--                cartat e produkteve djathtas          -->
+
+        <div class="kontenieri-kartes" style="display: flex; flex-direction: column " >
+          <div id="kartateveta">
+              <!-- <div class="products-card">
+              <div class="products-card-majtas">
+                <div class="kartaMadhe-info kartaGjere-info">
+                  <p>Ne dyqan dhe online</p>
+                </div>
+                <h3>Ore inteligjente XIAOMI Redmi Ora 3 aktive, e zeze</h3>
+                <div class="products-card-product">
+                  <img
+                    src="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_107996820?x=320&y=320&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=320&ey=320&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=320&cdy=320"
+                  />
+                  <div class="informacioni-produktit">
+                    <p>Lloji i pajisjes:</p>
+                    <h4>SMARTWATCH</h4>
+                    <p>Sisteme operative te pajtueshme:</p>
+                    <h4>-</h4>
+                    <p>Sensori i rrahjeve te zemres:</p>
+                    <h4>po</h4>
+                    <p>Jetegjatesia e baterise:</p>
+                    <h4>288 ore</h4>
+                  </div>
+                </div>
+
+                <div class="products-card-reviewsIMG">
+                  &#11088; &#11088; &#11088; &#11088; &#11088;
+                  <p>32</p>
+                </div>
+              </div>
+
+              <div class="products-card-djathtas">
+                <h4>E rekomanduar 39.99 €</h4>
+                <h3>34,99 €</h3>
+                <a href="#"
+                  >Informacion mbi: Financimi, Cmimi, Sasia, Koha e dorezimit dhe
+                  Marrja</a
+                >
+                <p>Eko-kontributi i TVSH dhe WEEE i perfshire</p>
+
+                <div class="opsionet-dorezimi">
+                  <h4>Ofrohet dorezimi <span>+2,99 €</span></h4>
+                  <p>
+                    Dorezimi i parashikuar 21.08.2024 - 23.08.2024(Ne shporte,
+                    shkruani kodin postar dhe do te keni nje date me te sakte)
+                  </p>
+                </div>
+
+                <div class="opsionet-koleksioni-falas">
+                  <h4>Koleksioni FALAS ne dyqan</h4>
+                  <p>
+                    Kontrolloni koleksionin ne dyqan <span>Zgjidh Dyqanin ></span>
+                  </p>
+                </div>
+
+                <div class="opsionet-shto-shporte">
+                  <button>Shto ne Shporte</button>
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      fill="#000000"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <img
+          class="kategori-banner-card"
+          src="https://cms-images.mmst.eu/hzxov1nxpus5/iONRY5GwPN6LbTspzKJzS/16b63feb18b5eac64f1dc1e3bcabfbc2/Banner_MW_ESPORTA_Home_Teaser_Carousel_Orizz_Desk_1200x900.jpg?q=92&w=890"
+        />
+      </div>
     </div>
-    <div class="revista">
+    <!--                          end off      PRODUCTS page                   -->
+
+    <!-- footer -->
+    <section class="fundi faqjaPare">
+      <h3>Cmimet tona</h3>
+      <h3>TRUSTPILOT</h3>
+      <div class="fundi-menu">
+        <div class="fundi-rreshti">
+          <h3>NA KONTAKTONI</h3>
+          <br />Mbeshtetja e klientit <br />
+          <a href="#">Lexoni te gjitha pyetjet e shpeshta</a>
+          <p>
+            Na shkruani <br />
+            <a href="#">Formulari i kontaktit</a>
+          </p>
+          <div class="fundi-socials">
+            <p>ig</p>
+            <p>fcb</p>
+            <p>yt</p>
+          </div>
+        </div>
+        <div class="fundi-rreshti">
+          <h3>KATALOG</h3>
+          <a href="">Telefonia</a>
+          <a href="">Kompjuter</a>
+          <a href="">Konsolat dhe videolojerat</a>
+          <a href="">TV dhe kinema ne shtepi</a>
+          <a href="">Pajisje te medha</a>
+          <a href="">Klima dhe ngrohja</a>
+          <a href="">Levizshmeria elektrike</a>
+          <a href="">Kujdesi personal</a>
+          <a href="">Te gjitha Ofertat</a>
+          <a href="">Produkte te rinovuara</a>
+        </div>
+        <div class="fundi-rreshti">
+          <h3>BLINI ONLINE</h3>
+          <a href="">Menyrat e pageses</a>
+          <a href="">Kostot dhe metodat e dorezimit</a>
+          <a href="">Merrni ne dyqan</a>
+          <a href="">Emri i perdoruesit dhe fjalekalimi</a>
+          <a href="">Na kontaktoni</a>
+          <a href="">Kushtet e pergjithshme te shitjes</a>
+          <a href="">Cmimet dhe zbritjet e shfaqura</a>
+          <a href="">Kufijte e blerjeve</a>
+          <a href="">Revista</a>
+        </div>
+        <div class="fundi-rreshti">
+          <h3>TREG</h3>
+          <a href="">Per konsumatoret</a>
+          <a href=""> Per shitesit </a>
+          <a href=""
+            >Pika e kontaktit sipas nenit. 11 Akti i sherbimit digjital</a
+          >
+        </div>
+        <div class="fundi-rreshti">
+          <h3>SHERBIMET PER KLIENTET DHE KOMPANITE</h3>
+          <a href="">Zgjidhje per KOPMANITE</a>
+          <a href="">Financim</a>
+          <a href="">Instalim</a>
+          <a href="">Sherbimet e Sigurimeve</a>
+          <a href="">Shkoni te indeksi i Sherbimeve</a>
+        </div>
+        <div class="fundi-rreshti">
+          <h3>KOMPANIA DHE PUNA ME NE</h3>
+          <a href="">Kush jemi ne</a>
+          <a href="">Punoni me ne</a>
+          <a href="">Kodi i Etikes</a>
+          <a href="">MediaWorld Club</a>
+          <a href="">Reklamim me pakice ne media</a>
+          <a href="">Programi per zbulimin e dobesive</a>
+        </div>
+        <div class="fundi-rreshti">
+          <h3>FUSHATA DHE INICIATIVA</h3>
+          <a href="">Dita e Babait</a>
+          <a href="">Dhurata e Krishtlindjeve</a>
+          <a href="">Nen kosto</a>
+          <a href="">E Premte e Zeze</a>
+          <a href="">E hene kibernetike</a>
+          <a href="">Kthehu ne shkolle</a>
+          <a href="">Dita e beqareve</a>
+          <a href="">Shen Valentini</a>
+          <a href="">Bonuset televizive</a>
+          <a href="">E Premte e Kuqe</a>
+          <a href="">XDay</a>
+          <a href="">Karta e mesuesit</a>
+          <a href="">Bonusi i Kultures</a>
+        </div>
+        <div class="fundi-rreshti">
+          <h3>TERHEQJA, GARANCI dhe PRIVATESIA</h3>
+          <a href="">E drejta e terheqjes</a>
+          <a href="">Garanci ligjore</a>
+          <a href="">Politika e privatesise e bere pas regjistrimit</a>
+          <a href="">Politika e privatesise</a>
+        </div>
+      </div>
+      <div class="revista">
         <h3>REVISTA dhe GUIDA</h3>
         <div class="revista-guida">
-            <a href="">Revista</a>
-            <a href="">Blerja e udhezuesve</a>
+          <a href="">Revista</a>
+          <a href="">Blerja e udhezuesve</a>
         </div>
-    </div>
-    <div class="dergesa-paga-flex">
+      </div>
+      <div class="dergesa-paga-flex">
         <div>
-            <h3>Ne dergojme me</h3>
-            <div class="dergojme">
-                <img src="https://cms-images.mmst.eu/hzxov1nxpus5/4qXgDEqtsdZ6n11yVxnJxA/b546fb7fc6cac564deac26acf5776210/logo-poste-italiane-bw.svg?q=80"
-                     alt="">
-                <img src="https://cms-images.mmst.eu/hzxov1nxpus5/4qXgDEqtsdZ6n11yVxnJxA/b546fb7fc6cac564deac26acf5776210/logo-poste-italiane-bw.svg?q=80"
-                     alt="">
-                <img src="https://cms-images.mmst.eu/hzxov1nxpus5/4qXgDEqtsdZ6n11yVxnJxA/b546fb7fc6cac564deac26acf5776210/logo-poste-italiane-bw.svg?q=80"
-                     alt="">
-            </div>
+          <h3>Ne dergojme me</h3>
+          <div class="dergojme">
+            <img
+              src="https://cms-images.mmst.eu/hzxov1nxpus5/4qXgDEqtsdZ6n11yVxnJxA/b546fb7fc6cac564deac26acf5776210/logo-poste-italiane-bw.svg?q=80"
+              alt=""
+            />
+            <img
+              src="https://cms-images.mmst.eu/hzxov1nxpus5/4qXgDEqtsdZ6n11yVxnJxA/b546fb7fc6cac564deac26acf5776210/logo-poste-italiane-bw.svg?q=80"
+              alt=""
+            />
+            <img
+              src="https://cms-images.mmst.eu/hzxov1nxpus5/4qXgDEqtsdZ6n11yVxnJxA/b546fb7fc6cac564deac26acf5776210/logo-poste-italiane-bw.svg?q=80"
+              alt=""
+            />
+          </div>
         </div>
         <div>
-            <h3>Pagesa</h3>
+          <h3>Pagesa</h3>
 
-            <div class="pagesa">
-                <img src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80"
-                     alt="">
-                <img src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80"
-                     alt="">
-                <img src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80"
-                     alt="">
-                <img src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80"
-                     alt="">
-                <img src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80"
-                     alt="">
-                <img src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80"
-                     alt="">
-                <img src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80"
-                     alt="">
-            </div>
+          <div class="pagesa">
+            <img
+              src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80"
+              alt=""
+            />
+            <img
+              src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80"
+              alt=""
+            />
+            <img
+              src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80"
+              alt=""
+            />
+            <img
+              src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80"
+              alt=""
+            />
+            <img
+              src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80"
+              alt=""
+            />
+            <img
+              src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80"
+              alt=""
+            />
+            <img
+              src="https://cms-images.mmst.eu/hzxov1nxpus5/6qlKtuDBbGWoyIFtYqcNiC/3c854243d06ff997762ab77e7d1d8d77/logo-paypal-bw.svg?q=80"
+              alt=""
+            />
+          </div>
         </div>
-    </div>
-    <h3>Aplikacioni GlobeShops</h3>
-    <div class="aplikacioni-GlobeShops">
-        <img src="https://cms-images.mmst.eu/hzxov1nxpus5/Nke1b40tgIZ4cEd81r4SZ/184507693030fe65d6e02d313c972aeb/GoogleAppStoreEn.svg?q=80"
-             alt="">
-        <img src="https://cms-images.mmst.eu/hzxov1nxpus5/Nke1b40tgIZ4cEd81r4SZ/184507693030fe65d6e02d313c972aeb/GoogleAppStoreEn.svg?q=80"
-             alt="">
-        <img src="https://cms-images.mmst.eu/hzxov1nxpus5/Nke1b40tgIZ4cEd81r4SZ/184507693030fe65d6e02d313c972aeb/GoogleAppStoreEn.svg?q=80"
-             alt="">
-    </div>
-</section>
-<section class="fundiDy">
-    <div class="fundiDy-flex">
+      </div>
+      <h3>Aplikacioni GlobeShops</h3>
+      <div class="aplikacioni-GlobeShops">
+        <img
+          src="https://cms-images.mmst.eu/hzxov1nxpus5/Nke1b40tgIZ4cEd81r4SZ/184507693030fe65d6e02d313c972aeb/GoogleAppStoreEn.svg?q=80"
+          alt=""
+        />
+        <img
+          src="https://cms-images.mmst.eu/hzxov1nxpus5/Nke1b40tgIZ4cEd81r4SZ/184507693030fe65d6e02d313c972aeb/GoogleAppStoreEn.svg?q=80"
+          alt=""
+        />
+        <img
+          src="https://cms-images.mmst.eu/hzxov1nxpus5/Nke1b40tgIZ4cEd81r4SZ/184507693030fe65d6e02d313c972aeb/GoogleAppStoreEn.svg?q=80"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <section class="fundiDy">
+      <div class="fundiDy-flex">
         <a href="">Aksesueshmeria</a>
         <a href="">Kodi i Etikes</a>
         <a href="">Politika e kukive</a>
@@ -847,83 +920,114 @@
         <a href="">Politika e privatesise</a>
         <a href="">Rregulloret e Kartes se Klubit GlobeShops</a>
         <a href="">Te gjitha informacionet</a>
-    </div>
-    <p>FINANCIMI PËR TË GJITHA BLERJET QË FILLON NGA 199€
-
-        Reklamë me qëllime promovuese. Oferta e finalizuar e kredisë e vlefshme nga 01/08/2024 deri më 31/08/2024
-        nga 12 deri në 48 muaj sipas shembullit përfaqësues: Çmimi i aktivit 789 €, TAN fiks 11,94%, Prill 12,61%,
-        në 20 këste nga 43,70 €, shpenzimet dhe kostot shtesë eliminohen. Shuma totale e kredisë: 789 € Shuma totale
-        e borxhit nga Konsumatori: 874,00 €. IEBCC në pikën e shitjes dhe online. Subjekt i miratimit nga
-        Findomestic Banca SpA për të cilën Mediamarket SpA con Socio Unico operon si një ndërmjetës ekskluziv
-        krediti. Për mbajtësit e Linjës së Kreditit MediaWorld Smart Line është e mundur të pranohet kjo ofertë me
+      </div>
+      <p>
+        FINANCIMI PËR TË GJITHA BLERJET QË FILLON NGA 199€ Reklamë me qëllime
+        promovuese. Oferta e finalizuar e kredisë e vlefshme nga 01/08/2024 deri
+        më 31/08/2024 nga 12 deri në 48 muaj sipas shembullit përfaqësues: Çmimi
+        i aktivit 789 €, TAN fiks 11,94%, Prill 12,61%, në 20 këste nga 43,70 €,
+        shpenzimet dhe kostot shtesë eliminohen. Shuma totale e kredisë: 789 €
+        Shuma totale e borxhit nga Konsumatori: 874,00 €. IEBCC në pikën e
+        shitjes dhe online. Subjekt i miratimit nga Findomestic Banca SpA për të
+        cilën Mediamarket SpA con Socio Unico operon si një ndërmjetës ekskluziv
+        krediti. Për mbajtësit e Linjës së Kreditit MediaWorld Smart Line është
+        e mundur të pranohet kjo ofertë me të njëjtat kushte si kredia e
+        finalizuar.
+      </p>
+      <p>
+        FINANCIM ME INTERES HERO ME 20 KËSTE PËR MOTOROLA RAZR 50 ULTRA duke
+        filluar nga 199 € TAN FIKS 0% - PR 0%. Reklamë me qëllime promovuese.
+        Oferta e finalizuar e kredisë e vlefshme nga 27.06.2024 deri më
+        31.08.2024 në 20 muaj sipas shembullit përfaqësues: Çmimi i aktivit
+        1,198 €, TAN fiks 0% Prill 0%, në 20 këste prej 59,90 € shpenzimet dhe
+        aksesorët rishikohen . Shuma totale e kredisë dhe e borxhit nga
+        Konsumatori: 1,198€. IEBCC në pikën e shitjes dhe online. Subjekt i
+        miratimit nga Findomestic Banca SpA për të cilën Mediamarket SpA con
+        Socio Unico operon si një ndërmjetës ekskluziv krediti. Për mbajtësit e
+        Linjës së Kreditit MediaWorld Smart Line është e mundur të pranohet kjo
+        ofertë me të njëjtat kushte si kredia e finalizuar.
+      </p>
+      <p>
+        FINANCIM ZERO INTERES ME 20 KËSTE PËR REALME 12 PRO, REALME 12 PRO+ DHE
+        REALME GT6 5G 512 GB duke filluar nga 199 € TAN FIKS 0% - PR 0%. Reklamë
+        me qëllime promovuese. Oferta e finalizuar e kredisë e vlefshme nga
+        01/08/2024 deri më 31/08/2024 në 20 muaj sipas shembullit përfaqësues:
+        Çmimi i aktivit 458,99 € TAN fiks 0% Prill 0%, në 20 këste prej 22,95 €,
+        shpenzimet dhe kostot shtesë të eliminuara . Shuma totale e kredisë dhe
+        e borxhit të Konsumatorit: 458,99 €. IEBCC në pikën e shitjes dhe
+        online. Subjekt i miratimit nga Findomestic Banca SpA për të cilën
+        Mediamarket SpA con Socio Unico operon si një ndërmjetës ekskluziv
+        krediti. Për mbajtësit e Linjës së Kreditit MediaWorld Smart Line është
+        e mundur të pranohet kjo ofertë me të njëjtat kushte si kredia e
+        finalizuar.
+      </p>
+      <p>
+        FINANCIM ME INTERES ZERO 20 KËSTE PER SAMSUNG GALAXY Z FOLD6 EZ FLIP6
+        duke filluar nga 199 € TAN FIKS 0% - PR 0% Reklamë me qëllime
+        promovuese. Oferta e finalizuar e kredisë e vlefshme nga 10/07/2024 deri
+        më 18/08/2024 në 20 muaj sipas shembullit përfaqësues: Çmimi i aktivit
+        1,279 € TAN fiks 0%, Prill 0%, në 20 këste prej 63,95 € shpenzimet dhe
+        aksesorët rishikohen . Shuma totale e kredisë së konsumatorit: 1,279€.
+        Afati mesatar i pagesës së këstit të parë prej 90 ditësh. IEBCC në pikën
+        e shitjes dhe online. Subjekt i miratimit nga Findomestic Banca SpA për
+        të cilën Mediamarket SpA me Aksioner të Vetëm operon si ndërmjetës
+        ekskluziv kredie. Për mbajtësit e Linjës së Kreditit MediaWorld Smart
+        Line është e mundur të pranojnë këtë ofertë në të njëjtat kushte si
+        kredia e përfunduar.
+      </p>
+      <p>
+        FINANCIM ZERO INTERES NE 20 KASTE PER NENDETESEN DYSON V15 DETECT DUKE
+        FILLUAR NGA 199 € TAN FIKS 0% - APR 0% Reklamë me qëllime promovuese.
+        Oferta e finalizuar e kredisë e vlefshme nga 01/08/2024 deri më
+        25/08/2024 në 20 muaj sipas shembullit përfaqësues: Çmimi i aktivit
+        949€, TAN fikse 0%, Prill 0%, në 20 këste prej 47,45€, shpenzime dhe
+        shtesë kostot e eliminuara. Shuma totale e kredisë dhe borxh nga
+        Konsumatori: 949€. Afati mesatar i pagesës së këstit të parë prej 90
+        ditësh. IEBCC në pikën e shitjes dhe online. Subjekt i miratimit nga
+        Findomestic Banca SpA për të cilën Mediamarket SpA con Socio Unico
+        operon si një ndërmjetës ekskluziv krediti. Për mbajtësit e Linjës së
+        Kreditit MediaWorld Smart Line është e mundur të pranohet kjo ofertë me
         të njëjtat kushte si kredia e finalizuar.
+      </p>
+      <p>
+        FINANCIM ME INTERES ZERO NË 20 KËSTE PËR ZTE NUBIA FLIP 5G duke filluar
+        nga 199 € TAN FIKS 0% - PR 0%. Reklamë me qëllime promovuese. Oferta e
+        finalizuar e kredisë e vlefshme nga 05/08/2024 deri më 31/08/2024 në 20
+        muaj sipas shembullit përfaqësues: Çmimi i aktivit 599€, TAN fiks 0%
+        Prill 0%, në 20 këste prej 29,95€ shpenzimet dhe rishikimi i aksesorëve
+        . Shuma totale e kredisë dhe e borxhit nga Konsumatori: 599€. IEBCC në
+        pikën e shitjes dhe online. Subjekt i miratimit nga Findomestic Banca
+        SpA për të cilën Mediamarket SpA con Socio Unico operon si një
+        ndërmjetës ekskluziv krediti. Për mbajtësit e linjës së kreditit
+        MediaWorld Smart Line është e mundur të pranohet kjo ofertë me të
+        njëjtat kushte si kredia e përfunduar
+      </p>
+      <p>
+        FINANCIM ME INTERES ZERO PËR 20 MUAJ, FILLON NGA 199 €, PËR SERIA GOOGLE
+        PIXEL 9 | PIXEL 9 PRO | PIXEL 9 PRO XL TAN FIKSE 0% - PR 0%. Reklamë me
+        qëllime promovuese. Oferta e finalizuar e kredisë e vlefshme nga
+        13.08.2024 deri më 15.09.2024 në 20 muaj sipas shembullit përfaqësues:
+        Çmimi i aktivit 1,299 €, TAN fikse 0%, Prill 0%, në 20 këste prej 64,95
+        €, shpenzime dhe shtesë kostot e eliminuara. Shuma totale e kredisë së
+        konsumatorit: 1,299€. Afati mesatar i pagesës së këstit të parë prej 90
+        ditësh. IEBCC në rrugën online. Subjekt i miratimit nga Findomestic
+        Banca SpA për të cilën Mediamarket SpA me Aksioner të Vetëm operon si
+        ndërmjetës ekskluziv kredie. Për mbajtësit e linjës së kreditit
+        MediaWorld Smart Line është e mundur të pranohet kjo ofertë me të
+        njëjtat kushte si kredia e përfunduar
+      </p>
+      <p>
+        MEDIAMARKET Spa me aksioner të vetëm - Selia e regjistruar dhe
+        administrative në Via Furlanelli, 69 – 20843 Verano Brianza (MB) -
+        Kapitali aksionar 2,000,000 € plotësisht i paguar - PI 02630120166,
+        CCIAA Milan, Monza REA44 MB Code, Monza Brianza 74 Regjistrohu Kompanitë
+        02180760965 - AEE Prod. Shitjet i nënshtrohen artikujve. 45/67 "Të
+        drejtat e konsumatorit" të Kodit të Konsumatorit (Dekreti Legjislativ
+        206/05)
+      </p>
+    </section>
 
-    </p>
-    <p>
-
-        FINANCIM ME INTERES HERO ME 20 KËSTE PËR MOTOROLA RAZR 50 ULTRA duke filluar nga 199 € TAN FIKS 0% - PR 0%.
-
-        Reklamë me qëllime promovuese. Oferta e finalizuar e kredisë e vlefshme nga 27.06.2024 deri më 31.08.2024 në
-        20 muaj sipas shembullit përfaqësues: Çmimi i aktivit 1,198 €, TAN fiks 0% Prill 0%, në 20 këste prej 59,90
-        € shpenzimet dhe aksesorët rishikohen . Shuma totale e kredisë dhe e borxhit nga Konsumatori: 1,198€. IEBCC
-        në pikën e shitjes dhe online. Subjekt i miratimit nga Findomestic Banca SpA për të cilën Mediamarket SpA
-        con Socio Unico operon si një ndërmjetës ekskluziv krediti. Për mbajtësit e Linjës së Kreditit MediaWorld
-        Smart Line është e mundur të pranohet kjo ofertë me të njëjtat kushte si kredia e finalizuar.</p>
-    <p>FINANCIM ZERO INTERES ME 20 KËSTE PËR REALME 12 PRO, REALME 12 PRO+ DHE REALME GT6 5G 512 GB duke filluar nga
-        199 € TAN FIKS 0% - PR 0%.
-
-        Reklamë me qëllime promovuese. Oferta e finalizuar e kredisë e vlefshme nga 01/08/2024 deri më 31/08/2024 në
-        20 muaj sipas shembullit përfaqësues: Çmimi i aktivit 458,99 € TAN fiks 0% Prill 0%, në 20 këste prej 22,95
-        €, shpenzimet dhe kostot shtesë të eliminuara . Shuma totale e kredisë dhe e borxhit të Konsumatorit: 458,99
-        €. IEBCC në pikën e shitjes dhe online. Subjekt i miratimit nga Findomestic Banca SpA për të cilën
-        Mediamarket SpA con Socio Unico operon si një ndërmjetës ekskluziv krediti. Për mbajtësit e Linjës së
-        Kreditit MediaWorld Smart Line është e mundur të pranohet kjo ofertë me të njëjtat kushte si kredia e
-        finalizuar.</p>
-    <p>FINANCIM ME INTERES ZERO 20 KËSTE PER SAMSUNG GALAXY Z FOLD6 EZ FLIP6 duke filluar nga 199 € TAN FIKS 0% - PR
-        0%
-
-        Reklamë me qëllime promovuese. Oferta e finalizuar e kredisë e vlefshme nga 10/07/2024 deri më 18/08/2024 në
-        20 muaj sipas shembullit përfaqësues: Çmimi i aktivit 1,279 € TAN fiks 0%, Prill 0%, në 20 këste prej 63,95
-        € shpenzimet dhe aksesorët rishikohen . Shuma totale e kredisë së konsumatorit: 1,279€. Afati mesatar i
-        pagesës së këstit të parë prej 90 ditësh. IEBCC në pikën e shitjes dhe online. Subjekt i miratimit nga
-        Findomestic Banca SpA për të cilën Mediamarket SpA me Aksioner të Vetëm operon si ndërmjetës ekskluziv
-        kredie. Për mbajtësit e Linjës së Kreditit MediaWorld Smart Line është e mundur të pranojnë këtë ofertë në
-        të njëjtat kushte si kredia e përfunduar.</p>
-    <p>FINANCIM ZERO INTERES NE 20 KASTE PER NENDETESEN DYSON V15 DETECT DUKE FILLUAR NGA 199 € TAN FIKS 0% - APR 0%
-
-        Reklamë me qëllime promovuese. Oferta e finalizuar e kredisë e vlefshme nga 01/08/2024 deri më 25/08/2024 në
-        20 muaj sipas shembullit përfaqësues: Çmimi i aktivit 949€, TAN fikse 0%, Prill 0%, në 20 këste prej 47,45€,
-        shpenzime dhe shtesë kostot e eliminuara. Shuma totale e kredisë dhe borxh nga Konsumatori: 949€. Afati
-        mesatar i pagesës së këstit të parë prej 90 ditësh. IEBCC në pikën e shitjes dhe online. Subjekt i miratimit
-        nga Findomestic Banca SpA për të cilën Mediamarket SpA con Socio Unico operon si një ndërmjetës ekskluziv
-        krediti. Për mbajtësit e Linjës së Kreditit MediaWorld Smart Line është e mundur të pranohet kjo ofertë me
-        të njëjtat kushte si kredia e finalizuar.</p>
-    <p>FINANCIM ME INTERES ZERO NË 20 KËSTE PËR ZTE NUBIA FLIP 5G duke filluar nga 199 € TAN FIKS 0% - PR 0%.
-
-        Reklamë me qëllime promovuese. Oferta e finalizuar e kredisë e vlefshme nga 05/08/2024 deri më 31/08/2024 në
-        20 muaj sipas shembullit përfaqësues: Çmimi i aktivit 599€, TAN fiks 0% Prill 0%, në 20 këste prej 29,95€
-        shpenzimet dhe rishikimi i aksesorëve . Shuma totale e kredisë dhe e borxhit nga Konsumatori: 599€. IEBCC në
-        pikën e shitjes dhe online. Subjekt i miratimit nga Findomestic Banca SpA për të cilën Mediamarket SpA con
-        Socio Unico operon si një ndërmjetës ekskluziv krediti. Për mbajtësit e linjës së kreditit MediaWorld Smart
-        Line është e mundur të pranohet kjo ofertë me të njëjtat kushte si kredia e përfunduar</p>
-    <p>FINANCIM ME INTERES ZERO PËR 20 MUAJ, FILLON NGA 199 €, PËR SERIA GOOGLE PIXEL 9 | PIXEL 9 PRO | PIXEL 9 PRO
-        XL TAN FIKSE 0% - PR 0%.
-
-        Reklamë me qëllime promovuese. Oferta e finalizuar e kredisë e vlefshme nga 13.08.2024 deri më 15.09.2024 në
-        20 muaj sipas shembullit përfaqësues: Çmimi i aktivit 1,299 €, TAN fikse 0%, Prill 0%, në 20 këste prej
-        64,95 €, shpenzime dhe shtesë kostot e eliminuara. Shuma totale e kredisë së konsumatorit: 1,299€. Afati
-        mesatar i pagesës së këstit të parë prej 90 ditësh. IEBCC në rrugën online. Subjekt i miratimit nga
-        Findomestic Banca SpA për të cilën Mediamarket SpA me Aksioner të Vetëm operon si ndërmjetës ekskluziv
-        kredie. Për mbajtësit e linjës së kreditit MediaWorld Smart Line është e mundur të pranohet kjo ofertë me të
-        njëjtat kushte si kredia e përfunduar</p>
-    <p>MEDIAMARKET Spa me aksioner të vetëm - Selia e regjistruar dhe administrative në Via Furlanelli, 69 – 20843
-        Verano Brianza (MB) - Kapitali aksionar 2,000,000 € plotësisht i paguar - PI 02630120166, CCIAA Milan, Monza
-        REA44 MB Code, Monza Brianza 74 Regjistrohu Kompanitë 02180760965 - AEE Prod. Shitjet i nënshtrohen
-        artikujve. 45/67 "Të drejtat e konsumatorit" të Kodit të Konsumatorit (Dekreti Legjislativ 206/05)</p>
-</section>
-
-  
-  <script src="/index.js"></script>
-  <script src="/javascript-pages/products.js"></script>
-</body>
+    <script src="/index.js"></script>
+    <script src="/javascript-pages/products.js" type="module" ></script>
+  </body>
 </html>
