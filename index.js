@@ -1,3 +1,5 @@
+
+
 // ---------------------------- INFO PRODUKTIT DEKLARIMET ---------------------------------------------------------- /
 const infoProduktit = document.getElementsByClassName("info-produktit");
 const pershkrimiProduktitBtn = document.getElementsByClassName(
@@ -149,9 +151,10 @@ function hapPopUpDyqani() {
   }
 }
 
+
 // ---------------------------------------- HAP POP UP ------------------------------------------------------------- /
 
-function hapPopUp() {
+ function hapPopUp() {
   mbeshtjellsiGjithaKategorite.classList.toggle("hapPopUpMbeshtjellsi");
   perdjaZeze.classList.toggle("hapPopUpPerdja");
   if (perdjaZeze === true) {
