@@ -1,6 +1,6 @@
 
 
-// ---------------------------- INFO PRODUKTIT DEKLARIMET ---------------------------------------------------------- /
+// ----------------------------
 const infoProduktit = document.getElementsByClassName("info-produktit");
 const pershkrimiProduktitBtn = document.getElementsByClassName(
   "pershkrimi-produktit"
