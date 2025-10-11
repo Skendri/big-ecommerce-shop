@@ -129,7 +129,99 @@ kartatRreshkitese.forEach((kartat, id) => {
     </div> `;
     
     kontainerKartat.appendChild(diviKartave)
-})
+});
+
+// ---------------------------------- KARTAT E MEDHA SLIDER DEKLARIMET ---------------------------------------------- /
+const mbeshtjellesiKartave = document.querySelector("#mbeshtjellesi-kartave");
+const kartatEMedha = document.querySelector("#kartat-e-medha");
+const butonatShigjet = document.querySelectorAll(
+  "#butonat-e-kontrolluesit button"
+);
+const gjersiaKartesTePare = document.querySelector(".kartaMadhe").offsetWidth;
+const FemijetKartaveTeMedha = [...kartatEMedha.children];
+
+
+// ---------------------------------- KARTAT E MEDHA SLIDER -------------------------------------------------------- /
+
+let cardPerPamje = Math.round(kartatEMedha.offsetWidth / gjersiaKartesTePare);
+
+FemijetKartaveTeMedha.slice(-cardPerPamje)
+  .reverse()
+  .forEach((card) => {
+    kartatEMedha.insertAdjacentHTML("afterbegin", card.outerHTML);
+  });
+
+FemijetKartaveTeMedha.slice(0, -cardPerPamje).forEach((card) => {
+  kartatEMedha.insertAdjacentHTML("beforeend", card.outerHTML);
+});
+
+let isDragging = false,
+  startX,
+  rrotulloMajtas,
+  timeoutID;
+
+butonatShigjet.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    kartatEMedha.scrollLeft +=
+      btn.id === "majtas" ? -gjersiaKartesTePare : gjersiaKartesTePare;
+  });
+});
+
+const dragStart = (e) => {
+  isDragging = true;
+  kartatEMedha.classList.add("terheqje");
+  startX = e.pageX;
+  rrotulloMajtas = kartatEMedha.scrollLeft;
+};
+
+const dragging = (e) => {
+  if (!isDragging) return;
+  kartatEMedha.scrollLeft = rrotulloMajtas - (e.pageX - startX);
+};
+
+const dragStop = () => {
+  isDragging = false;
+  kartatEMedha.classList.remove("terheqje");
+};
+
+const autoPlay = () => {
+  if (window.innerWidth < 800) return;
+  timeoutID = setTimeout(
+    () => (kartatEMedha.scrollLeft += gjersiaKartesTePare),
+    1000
+  );
+};
+autoPlay();
+
+const infiniteScroll = () => {
+  if (kartatEMedha.scrollLeft === 0) {
+    kartatEMedha.classList.add("jo-transition");
+    kartatEMedha.scrollLeft =
+      kartatEMedha.scrollWidth - 2 * kartatEMedha.offsetWidth;
+    kartatEMedha.classList.remove("jo-transition");
+  } else if (
+    Math.ceil(kartatEMedha.scrollLeft) ===
+    kartatEMedha.scrollWidth - kartatEMedha.offsetWidth
+  ) {
+    kartatEMedha.classList.add("jo-transition");
+    kartatEMedha.scrollLeft = kartatEMedha.offsetWidth;
+    kartatEMedha.classList.remove("jo-transition");
+  }
+  clearTimeout(timeoutID);
+  if (mbeshtjellesiKartave.matches(":hover")) autoPlay();
+};
+
+kartatEMedha.addEventListener("mousedown", dragStart);
+kartatEMedha.addEventListener("mousemove", dragging);
+kartatEMedha.addEventListener("mouseup", dragStop);
+kartatEMedha.addEventListener("scroll", infiniteScroll);
+mbeshtjellesiKartave.addEventListener("mouseenter", () =>
+  clearTimeout(timeoutID)
+);
+mbeshtjellesiKartave.addEventListener("mouseenter", autoPlay);
+
+
+
 
 // HTML e kompnentit te sliderit te pare te kartave te index.html
 

@@ -67,6 +67,103 @@ productKarta += `
 wallKartat.innerHTML = productKarta;
 
 
+
+
+
+
+ // ---------------------------- KARTAT E PLANIT TE PARE DEKLARIMET ------------------------------------------------ //
+const mbeshtjellesiGjere = document.querySelector(
+  "#mbeshtjellesi-gjere-kartave-klub"
+);
+const kartaGjereKlub = document.querySelector("#kartat-e-gjera-klub");
+const butonatShigjetGjere = document.querySelectorAll(
+  "#butonat-e-kontrolluesit-teGjere-klub"
+);
+const gjersiaKartesGjere = document.querySelector("#kartaMadheID").offsetWidth;
+const FemijetKartaveTeGjere = [...kartaGjereKlub.children];
+
+// --------------------------------------------------------------------  KARTAT E GJERA  ---------------------//
+let cardEGjere = Math.round(kartaGjereKlub.offsetWidth / gjersiaKartesGjere);
+
+FemijetKartaveTeGjere.slice(-cardEGjere)
+  .reverse()
+  .forEach((card) => {
+    kartaGjereKlub.insertAdjacentHTML("afterbegin", card.outerHTML);
+  });
+
+FemijetKartaveTeGjere.slice(0, -cardEGjere).forEach((card) => {
+  kartaGjereKlub.insertAdjacentHTML("beforeend", card.outerHTML);
+});
+
+let isDraggingKartaGjere = false,
+  startXKartaGjere,
+  rrotulloMajtasKartaGjere,
+  timeoutIDKartaGjere;
+
+butonatShigjetGjere.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    kartaGjereKlub.scrollLeft +=
+      btn.id === "majtas-kontrolluesi-gjere-klub"
+        ? -gjersiaKartesGjere
+        : gjersiaKartesGjere;
+  });
+});
+
+const dragStartKartaGjere = (g) => {
+  isDraggingKartaGjere = true;
+  kartaGjereKlub.classList.add("terheqje");
+  startXKartaGjere = g.pageX;
+  rrotulloMajtasKartaGjere = kartaGjereKlub.scrollLeft;
+};
+
+const draggingKartaGjere = (g) => {
+  if (!isDraggingKartaGjere) return;
+  kartaGjereKlub.scrollLeft =
+    rrotulloMajtasKartaGjere - (g.pageX - startXKartaGjere);
+};
+
+const dragStopKartaGjere = () => {
+  isDraggingKartaGjere = false;
+  kartaGjereKlub.classList.remove("terheqje");
+};
+
+const autoPlayKartaGjere = () => {
+  if (window.innerWidth < 800) return;
+  timeoutIDKartaGjere = setTimeout(
+    () => (kartaGjereKlub.scrollLeft += gjersiaKartesGjere),
+    2500
+  );
+};
+autoPlayKartaGjere();
+
+const infiniteScrollKartaGjere = () => {
+  if (kartaGjereKlub.scrollLeft === 0) {
+    kartaGjereKlub.classList.add("jo-transition");
+    kartaGjereKlub.scrollLeft =
+      kartaGjereKlub.scrollWidth - 1 * kartaGjereKlub.offsetWidth;
+    kartaGjereKlub.classList.remove("jo-transition");
+  } else if (
+    Math.ceil(kartaGjereKlub.scrollLeft) ===
+    kartaGjereKlub.scrollWidth - kartaGjereKlub.offsetWidth
+  ) {
+    kartaGjereKlub.classList.add("jo-transition");
+    kartaGjereKlub.scrollLeft = kartaGjereKlub.offsetWidth;
+    kartaGjereKlub.classList.remove("jo-transition");
+  }
+  clearTimeout(timeoutIDKartaGjere);
+  if (mbeshtjellesiGjere.matches(":hover")) autoPlayKartaGjere();
+};
+
+kartaGjereKlub.addEventListener("mousedown", dragStartKartaGjere);
+kartaGjereKlub.addEventListener("mousemove", draggingKartaGjere);
+kartaGjereKlub.addEventListener("mouseup", dragStopKartaGjere);
+kartaGjereKlub.addEventListener("scroll", infiniteScrollKartaGjere);
+mbeshtjellesiGjere.addEventListener("mouseenter", () =>
+  clearTimeout(timeoutIDKartaGjere)
+);
+mbeshtjellesiGjere.addEventListener("mouseenter", autoPlayKartaGjere);
+
+
 // html e kartave te medha render me javascript te index.html
 
     // <div id="kartaMadheID" class="kartaMadhe">

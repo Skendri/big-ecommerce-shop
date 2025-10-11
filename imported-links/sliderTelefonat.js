@@ -118,10 +118,101 @@ export const sliderTelefonat = [
             </div>`;
 
             kontenieriTelefonat.appendChild(diviTelefonat);
-    })
+    });
 
 
+    // ---------------------------- KARTAT E PLANIT TE PARE DEKLARIMET ------------------------------------------------ //
+const seksioniPlaniPare = document.querySelector("#seksioni-plani-pare");
+const kartatPlaniPare = document.querySelector("#kartat-plan-pare");
+const PlaniButonatShigjet = document.querySelectorAll(
+  "#butonat-e-planit button"
+);
+const gjersiaKartesTePlanit =
+  document.querySelector(".karta-plan-pare").offsetWidth;
+const FemijetKartaveTePlanit = [...kartatPlaniPare.children];
+let planiCardPerPamje = Math.round(
+  kartatPlaniPare.offsetWidth / gjersiaKartesTePlanit
+);
 
+
+    //-------------------------------------- KARTAT E PLANIT TE PARE ------------------------------------------------ //
+
+FemijetKartaveTePlanit.slice(-planiCardPerPamje)
+  .reverse()
+  .forEach((card) => {
+    kartatPlaniPare.insertAdjacentHTML("afterbegin", card.outerHTML);
+  });
+
+FemijetKartaveTePlanit.slice(0, -planiCardPerPamje).forEach((card) => {
+  kartatPlaniPare.insertAdjacentHTML("beforeend", card.outerHTML);
+});
+
+let isDraggingPlani = false,
+  startXPlani,
+  rrotulloMajtasPlani,
+  timeoutIDPlani;
+
+PlaniButonatShigjet.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    kartatPlaniPare.scrollLeft +=
+      btn.id === "majtas-plani-pare"
+        ? -gjersiaKartesTePlanit
+        : gjersiaKartesTePlanit;
+  });
+});
+
+const dragStartPlani = (p) => {
+  isDraggingPlani = true;
+  kartatPlaniPare.classList.add("terheqje");
+  startXPlani = p.pageX;
+  rrotulloMajtasPlani = kartatPlaniPare.scrollLeft;
+};
+
+const draggingPlani = (p) => {
+  if (!isDraggingPlani) return;
+  kartatPlaniPare.scrollLeft = rrotulloMajtasPlani - (p.pageX - startXPlani);
+};
+
+const dragStopPlani = () => {
+  isDraggingPlani = false;
+  kartatPlaniPare.classList.remove("terheqje");
+};
+
+const autoPlayPlani = () => {
+  if (window.innerWidth < 1000) return;
+  timeoutIDPlani = setTimeout(
+    () => (kartatPlaniPare.scrollLeft += gjersiaKartesTePlanit),
+    1000
+  );
+};
+autoPlayPlani();
+
+const infiniteScrollPlani = () => {
+  if (kartatPlaniPare.scrollLeft === 0) {
+    kartatPlaniPare.classList.add("jo-transition");
+    kartatPlaniPare.scrollLeft =
+      kartatPlaniPare.scrollWidth - 2 * kartatPlaniPare.offsetWidth;
+    kartatPlaniPare.classList.remove("jo-transition");
+  } else if (
+    Math.ceil(kartatPlaniPare.scrollLeft) ===
+    kartatPlaniPare.scrollWidth - kartatPlaniPare.offsetWidth
+  ) {
+    kartatPlaniPare.classList.add("jo-transition");
+    kartatPlaniPare.scrollLeft = kartatPlaniPare.offsetWidth;
+    kartatPlaniPare.classList.remove("jo-transition");
+  }
+  clearTimeout(timeoutIDPlani);
+  if (seksioniPlaniPare.matches(":hover")) autoPlayPlani();
+};
+
+kartatPlaniPare.addEventListener("mousedown", dragStartPlani);
+kartatPlaniPare.addEventListener("mousemove", draggingPlani);
+kartatPlaniPare.addEventListener("mouseup", dragStopPlani);
+kartatPlaniPare.addEventListener("scroll", infiniteScrollPlani);
+seksioniPlaniPare.addEventListener("mouseenter", () =>
+  clearTimeout(timeoutIDPlani)
+);
+seksioniPlaniPare.addEventListener("mouseenter", autoPlayPlani);
 
 
 
