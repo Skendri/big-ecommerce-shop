@@ -1,4 +1,5 @@
-export const kartatRreshkitese = [
+
+export const sliderPurple = [
     {
         id: 0,
         img: "https://cms-images.mmst.eu/hzxov1nxpus5/278L0ptpEu27yrj4qm4yc6/b236a4aba8cfb8c25410d4a7ff9f26b1/visual-principale-lp-foldable-desk-centrato.jpg?q=70&fm=webp",
@@ -98,158 +99,169 @@ export const kartatRreshkitese = [
     }
 ];
 
+const kontainerDiv = document.getElementById("kartat-e-dyta-klub");
+kontainerDiv.innerHTML = " ";
 
-const kontainerKartat = document.getElementById("kartat-e-medha");
-kontainerKartat.innerHTML = " ";
+sliderPurple.forEach((kartatPurple, id) => {
 
-kartatRreshkitese.forEach((kartat, id) => {
-    const diviKartave = document.createElement("div");
-    diviKartave.className = "kartaMadhe";
+    const kartElement = document.createElement("div");
+    kartElement.classList.add("kartaMadhe");
+    kartElement.id = id;
 
-    diviKartave.innerHTML += `
-    <div class="kartaMadhe-foto">
-        <img src="${kartat.img}" alt="" draggable="false" />
-    </div>
-    
-    <div class="kartaMadhe-kutiaInfos">
-        <div class="kartaMadhe-info">
-            <p>${kartat.paragrafi1}</p>
-            <p>${kartat.paragrafi2}</p>
-        </div>
-        
-        <div class="kartaMadhe-infoDyte">
-            <h4>${kartat.header1}</h4>
-            <h3>${kartat.header2}</h3>
-            <p>${kartat.paragrafi3}</p>
-            
-            <div class="kartaMadhe-info">
-                <p>${kartat.paragrafi4}</p>
-            </div>
-        </div>
-    </div> `;
-    
-    kontainerKartat.appendChild(diviKartave)
+    const diviImage = document.createElement("div");
+    diviImage.classList.add("kartaMadhe-foto");
+
+    const img = document.createElement("img");
+    img.src = kartatPurple.img;
+    img.alt = " ";
+    img.draggable = false;
+    diviImage.appendChild(img);
+
+    const kutiaInfos = document.createElement("div");
+    kutiaInfos.classList.add("kartaMadhe-kutiaInfos");
+
+    const infoPare = document.createElement("div");
+    infoPare.classList.add("kartaMadhe-info");
+    infoPare.innerHTML = `<p>${kartatPurple.paragrafi1}</p> <p>${kartatPurple.paragrafi2}</p> `
+
+    const infoDyte = document.createElement("div");
+    infoDyte.classList.add("kartaMadhe-infoDyte");
+    infoDyte.innerHTML = `
+    <h4>${kartatPurple.header1}</h4>
+    <h3>${kartatPurple.header2}</h3>
+    <p>${kartatPurple.paragrafi3}</p>
+    <div clas="kartaMadhe-info">${kartatPurple.paragrafi4}</div>
+    `;
+    kutiaInfos.appendChild(infoPare);
+    kutiaInfos.appendChild(infoDyte);
+    kartElement.appendChild(diviImage);
+    kartElement.appendChild(kutiaInfos);
+    kontainerDiv.append(kartElement);
 });
 
-// ---------------------------------- KARTAT E MEDHA SLIDER DEKLARIMET ---------------------------------------------- /
-const mbeshtjellesiKartave = document.querySelector("#mbeshtjellesi-kartave");
-const kartatEMedha = document.querySelector("#kartat-e-medha");
-const butonatShigjet = document.querySelectorAll(
-  "#butonat-e-kontrolluesit button"
+// ------------------------------------------------------------- fillimi KARTAT KLUB background purple  ---------------------//
+
+const mbeshtjellesiDyteKartaveKlub = document.querySelector(
+  "#mbeshtjellesi-dyte-kartave-klub"
 );
-export const gjersiaKartesTePare = document.querySelector(".kartaMadhe").offsetWidth;
-export const FemijetKartaveTeMedha = [...kartatEMedha.children];
+const kartatEDytaKlub = document.querySelector("#kartat-e-dyta-klub");
+const butonatShigjetKlubDy = document.querySelectorAll(
+  "#butonat-e-kontrolluesit-teDyte-klub button"
+);
+const gjersiaKartesTeKlubDy = document.querySelector(".kartaMadhe").offsetWidth;
+const FemijetKartaveTeKlubDy = [...kartatEDytaKlub.children];
 
+let cardPerKlubDy = Math.round(
+  kartatEDytaKlub.offsetWidth / gjersiaKartesTeKlubDy
+);
 
-// ---------------------------------- KARTAT E MEDHA SLIDER -------------------------------------------------------- /
-
-let cardPerPamje = Math.round(kartatEMedha.offsetWidth / gjersiaKartesTePare);
-
-FemijetKartaveTeMedha.slice(-cardPerPamje)
+FemijetKartaveTeKlubDy.slice(-cardPerKlubDy)
   .reverse()
   .forEach((card) => {
-    kartatEMedha.insertAdjacentHTML("afterbegin", card.outerHTML);
+    kartatEDytaKlub.insertAdjacentHTML("afterbegin", card.outerHTML);
   });
 
-FemijetKartaveTeMedha.slice(0, -cardPerPamje).forEach((card) => {
-  kartatEMedha.insertAdjacentHTML("beforeend", card.outerHTML);
+FemijetKartaveTeKlubDy.slice(0, -cardPerKlubDy).forEach((card) => {
+  kartatEDytaKlub.insertAdjacentHTML("beforeend", card.outerHTML);
 });
 
-let isDragging = false,
-  startX,
-  rrotulloMajtas,
-  timeoutID;
+let isDraggingKlubDy = false,
+  startXKlubDy,
+  rrotulloMajtasKlubDy,
+  timeoutIDKlubDy;
 
-butonatShigjet.forEach((btn) => {
+butonatShigjetKlubDy.forEach((btn) => {
   btn.addEventListener("click", () => {
-    kartatEMedha.scrollLeft +=
-      btn.id === "majtas" ? -gjersiaKartesTePare : gjersiaKartesTePare;
+    kartatEDytaKlub.scrollLeft +=
+      btn.id === "majtas-kontrolluesi-klubDy"
+        ? -gjersiaKartesTeKlubDy
+        : gjersiaKartesTeKlubDy;
   });
 });
 
-const dragStart = (e) => {
-  isDragging = true;
-  kartatEMedha.classList.add("terheqje");
-  startX = e.pageX;
-  rrotulloMajtas = kartatEMedha.scrollLeft;
+const dragStartKlubDy = (d) => {
+  isDraggingKlubDy = true;
+  kartatEDytaKlub.classList.add("terheqje");
+  startXKlubDy = d.pageX;
+  rrotulloMajtasKlubDy = kartatEDytaKlub.scrollLeft;
 };
 
-const dragging = (e) => {
-  if (!isDragging) return;
-  kartatEMedha.scrollLeft = rrotulloMajtas - (e.pageX - startX);
+const draggingKlubDy = (d) => {
+  if (!isDraggingKlubDy) return;
+  kartatEDytaKlub.scrollLeft = rrotulloMajtasKlubDy - (d.pageX - startXKlubDy);
 };
 
-const dragStop = () => {
-  isDragging = false;
-  kartatEMedha.classList.remove("terheqje");
+const dragStopKlubDy = () => {
+  isDraggingKlubDy = false;
+  kartatEDytaKlub.classList.remove("terheqje");
 };
 
-const autoPlay = () => {
+const autoPlayKlubDy = () => {
   if (window.innerWidth < 800) return;
-  timeoutID = setTimeout(
-    () => (kartatEMedha.scrollLeft += gjersiaKartesTePare),
+  timeoutIDKlubDy = setTimeout(
+    () => (kartatEDytaKlub.scrollLeft += gjersiaKartesTeKlubDy),
     1000
   );
 };
-autoPlay();
+autoPlayKlubDy();
 
-const infiniteScroll = () => {
-  if (kartatEMedha.scrollLeft === 0) {
-    kartatEMedha.classList.add("jo-transition");
-    kartatEMedha.scrollLeft =
-      kartatEMedha.scrollWidth - 2 * kartatEMedha.offsetWidth;
-    kartatEMedha.classList.remove("jo-transition");
+const infiniteScrollKlubDy = () => {
+  if (kartatEDytaKlub.scrollLeft === 0) {
+    kartatEDytaKlub.classList.add("jo-transition");
+    kartatEDytaKlub.scrollLeft =
+      kartatEDytaKlub.scrollWidth - 2 * kartatEDytaKlub.offsetWidth;
+    kartatEDytaKlub.classList.remove("jo-transition");
   } else if (
-    Math.ceil(kartatEMedha.scrollLeft) ===
-    kartatEMedha.scrollWidth - kartatEMedha.offsetWidth
+    Math.ceil(kartatEDytaKlub.scrollLeft) ===
+    kartatEDytaKlub.scrollWidth - kartatEDytaKlub.offsetWidth
   ) {
-    kartatEMedha.classList.add("jo-transition");
-    kartatEMedha.scrollLeft = kartatEMedha.offsetWidth;
-    kartatEMedha.classList.remove("jo-transition");
+    kartatEDytaKlub.classList.add("jo-transition");
+    kartatEDytaKlub.scrollLeft = kartatEDytaKlub.offsetWidth;
+    kartatEDytaKlub.classList.remove("jo-transition");
   }
-  clearTimeout(timeoutID);
-  if (mbeshtjellesiKartave.matches(":hover")) autoPlay();
+  clearTimeout(timeoutIDKlubDy);
+  if (mbeshtjellesiDyteKartaveKlub.matches(":hover")) autoPlayKlubDy();
 };
 
-kartatEMedha.addEventListener("mousedown", dragStart);
-kartatEMedha.addEventListener("mousemove", dragging);
-kartatEMedha.addEventListener("mouseup", dragStop);
-kartatEMedha.addEventListener("scroll", infiniteScroll);
-mbeshtjellesiKartave.addEventListener("mouseenter", () =>
-  clearTimeout(timeoutID)
+kartatEDytaKlub.addEventListener("mousedown", dragStartKlubDy);
+kartatEDytaKlub.addEventListener("mousemove", draggingKlubDy);
+kartatEDytaKlub.addEventListener("mouseup", dragStopKlubDy);
+kartatEDytaKlub.addEventListener("scroll", infiniteScrollKlubDy);
+mbeshtjellesiDyteKartaveKlub.addEventListener("mouseenter", () =>
+  clearTimeout(timeoutIDKlubDy)
 );
-mbeshtjellesiKartave.addEventListener("mouseenter", autoPlay);
+mbeshtjellesiDyteKartaveKlub.addEventListener("mouseenter", autoPlayKlubDy);
+
+// ------------------------------------------------------------- fillimi KARTAT KLUB background purple  ---------------------//
 
 
 
+                // <div class="kartaMadhe">
+                //   <div class="kartaMadhe-foto">
+                //     <img
+                //       src="https://cms-images.mmst.eu/hzxov1nxpus5/6LOtx4dBZJnt70DN0H6YWK/178be9dc02ae49d31fbd9b15f32968a8/643925917-trade_samsung_cashback_agosto_htc_mobile.jpg?q=88&w=658"
+                //       alt=""
+                //       draggable="false"
+                //     />
+                //   </div>
 
-// HTML e kompnentit te sliderit te pare te kartave te index.html
+                //   <div class="kartaMadhe-kutiaInfos">
+                //     <div class="kartaMadhe-info">
+                //       <p>Ne dyqan dhe online</p>
+                //       <p>Deri me 9 gusht</p>
+                //     </div>
 
-    // <div class="kartaMadhe" id="kartaMadhe">
-    //     <div class="kartaMadhe-foto">
-    //         <img src="https://cms-images.mmst.eu/hzxov1nxpus5/278L0ptpEu27yrj4qm4yc6/b236a4aba8cfb8c25410d4a7ff9f26b1/visual-principale-lp-foldable-desk-centrato.jpg?q=70&fm=webp"
-    //         alt=""
-    //         draggable="false" />
-    //     </div>
-        
-    //     <div class="kartaMadhe-kutiaInfos">
-    //         <div class="kartaMadhe-info">
-    //             <p>Ne dyqan dhe online</p>
-    //             <p>Deri me 9 gusht</p>
-    //         </div>
-            
-    //         <div class="kartaMadhe-infoDyte">
-    //             <h4>PSE TE ZGJIDHNI SAMSUNG AI PER SHTEPIN TUAJ?</h4>
-    //             <h3>PERFITO 10'000 LEKE ULJE!!</h3>
-    //             <p>
-    //                 Per cdo blerje Samsung Galaxy Z FOLD6/ Z FLIP6 Lorem ipsum dolor
-    //                 sit, amet consectetur adipisicing elit. Debitis quos eum
-    //                 voluptatum molestias delectus
-    //             </p>
-                
-    //             <div class="kartaMadhe-info">
-    //                 <p>Zgjidhni nga 12 deri ne 48 keste</p>
-    //             </div>
-    //         </div>
-    //     </div>
-    // </div> 
+                //     <div class="kartaMadhe-infoDyte">
+                //       <h4>PSE TE ZGJIDHNI SAMSUNG AI PER SHTEPIN TUAJ?</h4>
+                //       <h3>PERFITO 10'000 LEKE ULJE!!</h3>
+                //       <p>
+                //         Per cdo blerje Samsung Galaxy Z FOLD6/ Z FLIP6 Lorem
+                //         ipsum dolor sit, amet consectetur adipisicing elit.
+                //         Debitis quos eum voluptatum molestias delectus
+                //       </p>
+                //       <div class="kartaMadhe-info">
+                //         <p>Zgjidhni nga 12 deri ne 48 keste</p>
+                //       </div>
+                //     </div>
+                //   </div>
+                // </div>

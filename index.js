@@ -27,19 +27,7 @@ const mbeshtjellsiGjithaKategorite = document.getElementById(
 
 
 
-// -----------------------------------  KARTAT KLUB DEKLARIMET -----------------------------------------------------//
-const mbeshtjellesiKartaveKlub = document.querySelector(
-  "#mbeshtjellesi-kartave-klub"
-);
-const kartatEMedhaKlub = document.querySelector("#kartat-e-medha-klub");
-const butonatShigjetKlub = document.querySelectorAll(
-  "#butonat-e-kontrolluesit-klub button"
-);
-const gjersiaKartesTeKlub = document.querySelector(".kartaMadhe").offsetWidth;
-const FemijetKartaveTeKlub = [...kartatEMedhaKlub.children];
-let cardPerKlub = Math.round(
-  kartatEMedhaKlub.offsetWidth / gjersiaKartesTeKlub
-);
+
 
 // ------------------------------------------ KATEGORI POPUP -------------------------------------------------------- //
 
@@ -145,175 +133,9 @@ function hapPopUpDyqani() {
 
 
 
-// ---------------------------------------  KARTAT KLUB  ----------------------------------------------------------//
 
-FemijetKartaveTeKlub.slice(-cardPerKlub)
-  .reverse()
-  .forEach((card) => {
-    kartatEMedhaKlub.insertAdjacentHTML("afterbegin", card.outerHTML);
-  });
 
-FemijetKartaveTeKlub.slice(0, -cardPerKlub).forEach((card) => {
-  kartatEMedhaKlub.insertAdjacentHTML("beforeend", card.outerHTML);
-});
 
-let isDraggingKlub = false,
-  startXKlub,
-  rrotulloMajtasKlub,
-  timeoutIDKlub;
-
-butonatShigjetKlub.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    kartatEMedhaKlub.scrollLeft +=
-      btn.id === "majtas-klub" ? -gjersiaKartesTePare : gjersiaKartesTePare;
-  });
-});
-
-const dragStartKlub = (e) => {
-  isDraggingKlub = true;
-  kartatEMedhaKlub.classList.add("terheqje");
-  startXKlub = e.pageX;
-  rrotulloMajtasKlub = kartatEMedhaKlub.scrollLeft;
-};
-
-const draggingKlub = (k) => {
-  if (!isDraggingKlub) return;
-  kartatEMedhaKlub.scrollLeft = rrotulloMajtasKlub - (k.pageX - startXKlub);
-};
-
-const dragStopKlub = () => {
-  isDraggingKlub = false;
-  kartatEMedhaKlub.classList.remove("terheqje");
-};
-
-const autoPlayKlub = () => {
-  if (window.innerWidth < 800) return;
-  timeoutIDKlub = setTimeout(
-    () => (kartatEMedhaKlub.scrollLeft += gjersiaKartesTeKlub),
-    1000
-  );
-};
-autoPlayKlub();
-
-const infiniteScrollKlub = () => {
-  if (kartatEMedhaKlub.scrollLeft === 0) {
-    kartatEMedhaKlub.classList.add("jo-transition");
-    kartatEMedhaKlub.scrollLeft =
-      kartatEMedhaKlub.scrollWidth - 2 * kartatEMedhaKlub.offsetWidth;
-    kartatEMedhaKlub.classList.remove("jo-transition");
-  } else if (
-    Math.ceil(kartatEMedhaKlub.scrollLeft) ===
-    kartatEMedhaKlub.scrollWidth - kartatEMedhaKlub.offsetWidth
-  ) {
-    kartatEMedhaKlub.classList.add("jo-transition");
-    kartatEMedhaKlub.scrollLeft = kartatEMedhaKlub.offsetWidth;
-    kartatEMedhaKlub.classList.remove("jo-transition");
-  }
-  clearTimeout(timeoutIDKlub);
-  if (mbeshtjellesiKartaveKlub.matches(":hover")) autoPlayKlub();
-};
-
-kartatEMedhaKlub.addEventListener("mousedown", dragStartKlub);
-kartatEMedhaKlub.addEventListener("mousemove", draggingKlub);
-kartatEMedhaKlub.addEventListener("mouseup", dragStopKlub);
-kartatEMedhaKlub.addEventListener("scroll", infiniteScrollKlub);
-mbeshtjellesiKartaveKlub.addEventListener("mouseenter", () =>
-  clearTimeout(timeoutIDKlub)
-);
-mbeshtjellesiKartaveKlub.addEventListener("mouseenter", autoPlayKlub);
-
-// -------------------------------------------------------------  KARTAT KLUB  ---------------------//
-
-const mbeshtjellesiDyteKartaveKlub = document.querySelector(
-  "#mbeshtjellesi-dyte-kartave-klub"
-);
-const kartatEDytaKlub = document.querySelector("#kartat-e-dyta-klub");
-const butonatShigjetKlubDy = document.querySelectorAll(
-  "#butonat-e-kontrolluesit-teDyte-klub button"
-);
-const gjersiaKartesTeKlubDy = document.querySelector(".kartaMadhe").offsetWidth;
-const FemijetKartaveTeKlubDy = [...kartatEDytaKlub.children];
-
-let cardPerKlubDy = Math.round(
-  kartatEDytaKlub.offsetWidth / gjersiaKartesTeKlubDy
-);
-
-FemijetKartaveTeKlubDy.slice(-cardPerKlubDy)
-  .reverse()
-  .forEach((card) => {
-    kartatEDytaKlub.insertAdjacentHTML("afterbegin", card.outerHTML);
-  });
-
-FemijetKartaveTeKlubDy.slice(0, -cardPerKlubDy).forEach((card) => {
-  kartatEDytaKlub.insertAdjacentHTML("beforeend", card.outerHTML);
-});
-
-let isDraggingKlubDy = false,
-  startXKlubDy,
-  rrotulloMajtasKlubDy,
-  timeoutIDKlubDy;
-
-butonatShigjetKlubDy.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    kartatEDytaKlub.scrollLeft +=
-      btn.id === "majtas-kontrolluesi-klubDy"
-        ? -gjersiaKartesTeKlubDy
-        : gjersiaKartesTeKlubDy;
-  });
-});
-
-const dragStartKlubDy = (d) => {
-  isDraggingKlubDy = true;
-  kartatEDytaKlub.classList.add("terheqje");
-  startXKlubDy = d.pageX;
-  rrotulloMajtasKlubDy = kartatEDytaKlub.scrollLeft;
-};
-
-const draggingKlubDy = (d) => {
-  if (!isDraggingKlubDy) return;
-  kartatEDytaKlub.scrollLeft = rrotulloMajtasKlubDy - (d.pageX - startXKlubDy);
-};
-
-const dragStopKlubDy = () => {
-  isDraggingKlubDy = false;
-  kartatEDytaKlub.classList.remove("terheqje");
-};
-
-const autoPlayKlubDy = () => {
-  if (window.innerWidth < 800) return;
-  timeoutIDKlubDy = setTimeout(
-    () => (kartatEDytaKlub.scrollLeft += gjersiaKartesTeKlubDy),
-    1000
-  );
-};
-autoPlayKlubDy();
-
-const infiniteScrollKlubDy = () => {
-  if (kartatEDytaKlub.scrollLeft === 0) {
-    kartatEDytaKlub.classList.add("jo-transition");
-    kartatEDytaKlub.scrollLeft =
-      kartatEDytaKlub.scrollWidth - 2 * kartatEDytaKlub.offsetWidth;
-    kartatEDytaKlub.classList.remove("jo-transition");
-  } else if (
-    Math.ceil(kartatEDytaKlub.scrollLeft) ===
-    kartatEDytaKlub.scrollWidth - kartatEDytaKlub.offsetWidth
-  ) {
-    kartatEDytaKlub.classList.add("jo-transition");
-    kartatEDytaKlub.scrollLeft = kartatEDytaKlub.offsetWidth;
-    kartatEDytaKlub.classList.remove("jo-transition");
-  }
-  clearTimeout(timeoutIDKlubDy);
-  if (mbeshtjellesiDyteKartaveKlub.matches(":hover")) autoPlayKlubDy();
-};
-
-kartatEDytaKlub.addEventListener("mousedown", dragStartKlubDy);
-kartatEDytaKlub.addEventListener("mousemove", draggingKlubDy);
-kartatEDytaKlub.addEventListener("mouseup", dragStopKlubDy);
-kartatEDytaKlub.addEventListener("scroll", infiniteScrollKlubDy);
-mbeshtjellesiDyteKartaveKlub.addEventListener("mouseenter", () =>
-  clearTimeout(timeoutIDKlubDy)
-);
-mbeshtjellesiDyteKartaveKlub.addEventListener("mouseenter", autoPlayKlubDy);
 
 // --------------------------------------------------------------------  KARTAT E GJERA  ---------------------//
 
@@ -502,7 +324,7 @@ mbeshtjellesiSherbimit.addEventListener("mouseenter", () =>
 );
 mbeshtjellesiSherbimit.addEventListener("mouseenter", autoPlayKartaSherbimit);
 
-// Dark Mode Toggle button
+// fillimi Dark Mode Toggle button
 
 const inputEl = document.querySelector(".input");
 
@@ -529,4 +351,22 @@ function updateLocalStorage() {
   localStorage.setItem("darkmode", JSON.stringify(inputEl.checked));
 }
 
-// Dark Mode Toggle button
+// fundi Dark Mode Toggle button
+
+// fillimi i elementit draggable
+
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("Text", ev.target.id);
+}
+
+function drop(ev) {
+  let data = ev.dataTransfer.getData("Text");
+  ev.target.appendChild(document.getElementById(data));
+  ev.preventDefault();
+}
+
+// fundi i elementit draggable
