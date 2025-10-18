@@ -1,6 +1,12 @@
 import { cardsElements } from "../imported-links/productsCards.js";
 console.log(cardsElements);
 
+console.log(document.documentElement.clientWidth);
+console.log(document.documentElement.clientHeight);
+console.log(window.innerWidth);
+console.log(window.innerHeight);
+console.log(document.documentElement);
+
 // range selector te products.php
 
 const rangeSliders = document.querySelectorAll("#kontenieri-filter");

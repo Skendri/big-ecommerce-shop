@@ -438,13 +438,19 @@ body.darkmode .dyqaniZgjedhur-btn {
   padding: 1% 3%;
 }
 
-#kartat-e-gjera-klub {
+#kartat-e-gjera-klub-home {
   grid-auto-columns: calc((100% / 1.01) - 0%);
 }
 
-#kartaMadheID {
+#kartaMadheID-home {
   overflow: hidden;
   flex-direction: row;
+  height: 400px;
+}
+
+#kartaMadheID-home .active {
+  overflow: hidden;
+  flex-direction: row-reverse;
   height: 400px;
 }
 

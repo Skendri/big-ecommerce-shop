@@ -31,14 +31,14 @@ export const kartatMedha = [
     },
 ];
 
-const wallKartat = document.getElementById("kartat-e-gjera-klub");
+const wallKartat = document.getElementById("kartat-e-gjera-klub-home");
 
 
 let productKarta = " ";
 
 kartatMedha.forEach((kartaMadhe, id) => {
 productKarta += `
-    <div id="kartaMadheID" class="kartaMadhe">
+    <div id="kartaMadheID-home" class="kartaMadhe">
         <div class="kartaMadhe-kutiaInfos kartaGjere-kutia">
             <div class="kartaMadhe-info kartaGjere-info">
                 <p>${kartaMadhe.paragrafi1}</p>
@@ -75,11 +75,11 @@ wallKartat.innerHTML = productKarta;
 const mbeshtjellesiGjere = document.querySelector(
   "#mbeshtjellesi-gjere-kartave-klub"
 );
-const kartaGjereKlub = document.querySelector("#kartat-e-gjera-klub");
+const kartaGjereKlub = document.querySelector("#kartat-e-gjera-klub-home");
 const butonatShigjetGjere = document.querySelectorAll(
   "#butonat-e-kontrolluesit-teGjere-klub"
 );
-const gjersiaKartesGjere = document.querySelector("#kartaMadheID").offsetWidth;
+const gjersiaKartesGjere = document.querySelector("#kartaMadheID-home").offsetWidth;
 const FemijetKartaveTeGjere = [...kartaGjereKlub.children];
 
 // --------------------------------------------------------------------  KARTAT E GJERA  ---------------------//
