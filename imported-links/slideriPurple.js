@@ -130,7 +130,9 @@ sliderPurple.forEach((kartatPurple, id) => {
     <h4>${kartatPurple.header1}</h4>
     <h3>${kartatPurple.header2}</h3>
     <p>${kartatPurple.paragrafi3}</p>
-    <div clas="kartaMadhe-info">${kartatPurple.paragrafi4}</div>
+    <div class="kartaMadhe-info">
+      <p>${kartatPurple.paragrafi4}</p>
+      </div>
     `;
     kutiaInfos.appendChild(infoPare);
     kutiaInfos.appendChild(infoDyte);

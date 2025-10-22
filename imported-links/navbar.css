@@ -4,8 +4,9 @@
 
 .naviLart {
   display: flex;
-  gap: 10px;
-  padding: 10px 0 15px 11%;
+  justify-content: center;
+  gap: 3%;
+  padding: 10px 40px 10px 40px;
 }
 
 .naviLart>a {
@@ -23,8 +24,9 @@
 .naviPosht {
   display: flex;
   align-items: center;
-  padding: 0 0 7px 11%;
-  gap: 2%;
+  padding: 10px 40px 10px 40px;
+  gap: 3%;
+  justify-content: center;
 }
 
 .responsive-row {

@@ -1,3 +1,11 @@
+
+// ---------------------------- info produktit open, close -------------------------- //
+const infoProduktit = document.getElementsByClassName("info-produktit");
+const pershkrimiProduktitBtn = document.getElementsByClassName(
+  "pershkrimi-produktit"
+);
+let infoProduktitDukshme = false;
+
 // image slider at product.php
 // Array to store image sources
 const images = [
@@ -86,7 +94,8 @@ const nextEl = document.querySelector(".next");
 
 const prevEl = document.querySelector(".prev");
 
-const imgsEl = document.querySelectorAll("img");
+const imgsEl = document.querySelectorAll(".image-container img");
+console.log(imgsEl.length);
 
 const imageContainerEl = document.querySelector(".image-container");
 
@@ -106,15 +115,15 @@ prevEl.addEventListener("click", () => {
   updateImg();
 });
 
-// updateImg();
+updateImg();
 
 function updateImg() {
-  if (currentImg > imageContainerEl.children.length) {
+  if (currentImg > imgsEl.children) {
     currentImg = 1;
   } else if (currentImg < 1) {
-    currentImg = imageContainerEl.children.length;
+    currentImg = imgsEl.children;
   }
-  imageContainerEl.style.transform = `translateX(-${(currentImg - 1) * 700}px)`;
+  currentImg.style.transform = `translateX(-${(currentImg - 1) * 700}px)`;
   timeout = setTimeout(() => {
     currentImg++;
     updateImg();

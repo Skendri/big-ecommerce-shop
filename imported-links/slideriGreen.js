@@ -1,8 +1,8 @@
 import {gjersiaKartesTePare} from './sliderKartat.js';
 
-export const kartatGreen = [
+ const kartatGreen = [
     {
-        id: Math.floor(Math.random() * 4),
+        id: 0,
         img: "https://cms-images.mmst.eu/hzxov1nxpus5/71nYeekJh3cEIXITzylCen/2d4a6375488efbaf7e0d52b1a1e13d3d/teaser_web.jpg?q=88&w=658",
         paragraf1: "Ne dyqan dhe online",
         paragraf2: "Deri me 9 gusht",
@@ -12,87 +12,87 @@ export const kartatGreen = [
         paragraf4: "Zgjidhni nga 12 deri ne 48 keste"
     },
     {
-        id: Math.floor(Math.random() * 4),
+        id: 1,
         img: "https://cms-images.mmst.eu/hzxov1nxpus5/71nYeekJh3cEIXITzylCen/2d4a6375488efbaf7e0d52b1a1e13d3d/teaser_web.jpg?q=88&w=658",
         paragraf1: "Ne dyqan dhe online",
         paragraf2: "Deri me 9 gusht",
         header1: "PSE TE ZGJIDHNI SAMSUNG AI PER SHTEPIN TUAJ?",
-        header2: "PERFITO 10'000 LEKE ULJE!!",
+        header2: "PERFITO 20'000 LEKE ULJE!!",
         paragraf3: "Per cdo blerje Samsung Galaxy Z FOLD6/ Z FLIP6 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis quos eum voluptatum molestias delectus",
         paragraf4: "Zgjidhni nga 12 deri ne 48 keste"
     },
     {
-        id: Math.floor(Math.random() * 4),
+        id:2,
         img: "https://cms-images.mmst.eu/hzxov1nxpus5/71nYeekJh3cEIXITzylCen/2d4a6375488efbaf7e0d52b1a1e13d3d/teaser_web.jpg?q=88&w=658",
         paragraf1: "Ne dyqan dhe online",
         paragraf2: "Deri me 9 gusht",
         header1: "PSE TE ZGJIDHNI SAMSUNG AI PER SHTEPIN TUAJ?",
-        header2: "PERFITO 10'000 LEKE ULJE!!",
+        header2: "PERFITO 30'000 LEKE ULJE!!",
         paragraf3: "Per cdo blerje Samsung Galaxy Z FOLD6/ Z FLIP6 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis quos eum voluptatum molestias delectus",
         paragraf4: "Zgjidhni nga 12 deri ne 48 keste"
     },
     {
-        id: Math.floor(Math.random() * 4),
+        id: 3,
         img: "https://cms-images.mmst.eu/hzxov1nxpus5/71nYeekJh3cEIXITzylCen/2d4a6375488efbaf7e0d52b1a1e13d3d/teaser_web.jpg?q=88&w=658",
         paragraf1: "Ne dyqan dhe online",
         paragraf2: "Deri me 9 gusht",
         header1: "PSE TE ZGJIDHNI SAMSUNG AI PER SHTEPIN TUAJ?",
-        header2: "PERFITO 10'000 LEKE ULJE!!",
+        header2: "PERFITO 40'000 LEKE ULJE!!",
         paragraf3: "Per cdo blerje Samsung Galaxy Z FOLD6/ Z FLIP6 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis quos eum voluptatum molestias delectus",
         paragraf4: "Zgjidhni nga 12 deri ne 48 keste"
     },
     {
-        id: Math.floor(Math.random() * 4),
+        id: 4,
         img: "https://cms-images.mmst.eu/hzxov1nxpus5/71nYeekJh3cEIXITzylCen/2d4a6375488efbaf7e0d52b1a1e13d3d/teaser_web.jpg?q=88&w=658",
         paragraf1: "Ne dyqan dhe online",
         paragraf2: "Deri me 9 gusht",
         header1: "PSE TE ZGJIDHNI SAMSUNG AI PER SHTEPIN TUAJ?",
-        header2: "PERFITO 10'000 LEKE ULJE!!",
+        header2: "PERFITO 50'000 LEKE ULJE!!",
         paragraf3: "Per cdo blerje Samsung Galaxy Z FOLD6/ Z FLIP6 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis quos eum voluptatum molestias delectus",
         paragraf4: "Zgjidhni nga 12 deri ne 48 keste"
     },
     {
-        id: Math.floor(Math.random() * 4),
+        id: 5,
         img: "https://cms-images.mmst.eu/hzxov1nxpus5/71nYeekJh3cEIXITzylCen/2d4a6375488efbaf7e0d52b1a1e13d3d/teaser_web.jpg?q=88&w=658",
         paragraf1: "Ne dyqan dhe online",
         paragraf2: "Deri me 9 gusht",
         header1: "PSE TE ZGJIDHNI SAMSUNG AI PER SHTEPIN TUAJ?",
-        header2: "PERFITO 10'000 LEKE ULJE!!",
+        header2: "PERFITO 60'000 LEKE ULJE!!",
         paragraf3: "Per cdo blerje Samsung Galaxy Z FOLD6/ Z FLIP6 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis quos eum voluptatum molestias delectus",
         paragraf4: "Zgjidhni nga 12 deri ne 48 keste"
     },
     {
-        id: Math.floor(Math.random() * 4),
+        id: 6,
         img: "https://cms-images.mmst.eu/hzxov1nxpus5/71nYeekJh3cEIXITzylCen/2d4a6375488efbaf7e0d52b1a1e13d3d/teaser_web.jpg?q=88&w=658",
         paragraf1: "Ne dyqan dhe online",
         paragraf2: "Deri me 9 gusht",
         header1: "PSE TE ZGJIDHNI SAMSUNG AI PER SHTEPIN TUAJ?",
-        header2: "PERFITO 10'000 LEKE ULJE!!",
+        header2: "PERFITO 70'000 LEKE ULJE!!",
         paragraf3: "Per cdo blerje Samsung Galaxy Z FOLD6/ Z FLIP6 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis quos eum voluptatum molestias delectus",
         paragraf4: "Zgjidhni nga 12 deri ne 48 keste"
     },
     {
-        id: Math.floor(Math.random() * 4),
+        id: 7,
         img: "https://cms-images.mmst.eu/hzxov1nxpus5/71nYeekJh3cEIXITzylCen/2d4a6375488efbaf7e0d52b1a1e13d3d/teaser_web.jpg?q=88&w=658",
         paragraf1: "Ne dyqan dhe online",
         paragraf2: "Deri me 9 gusht",
         header1: "PSE TE ZGJIDHNI SAMSUNG AI PER SHTEPIN TUAJ?",
-        header2: "PERFITO 10'000 LEKE ULJE!!",
+        header2: "PERFITO 80'000 LEKE ULJE!!",
         paragraf3: "Per cdo blerje Samsung Galaxy Z FOLD6/ Z FLIP6 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis quos eum voluptatum molestias delectus",
         paragraf4: "Zgjidhni nga 12 deri ne 48 keste"
     },
     {
-        id: Math.floor(Math.random() * 4),
+        id: 8,
         img: "https://cms-images.mmst.eu/hzxov1nxpus5/71nYeekJh3cEIXITzylCen/2d4a6375488efbaf7e0d52b1a1e13d3d/teaser_web.jpg?q=88&w=658",
         paragraf1: "Ne dyqan dhe online",
         paragraf2: "Deri me 9 gusht",
         header1: "PSE TE ZGJIDHNI SAMSUNG AI PER SHTEPIN TUAJ?",
-        header2: "PERFITO 10'000 LEKE ULJE!!",
+        header2: "PERFITO 90'000 LEKE ULJE!!",
         paragraf3: "Per cdo blerje Samsung Galaxy Z FOLD6/ Z FLIP6 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis quos eum voluptatum molestias delectus",
         paragraf4: "Zgjidhni nga 12 deri ne 48 keste"
     },
     {
-        id: Math.floor(Math.random() * 4),
+        id: 9,
         img: "https://cms-images.mmst.eu/hzxov1nxpus5/71nYeekJh3cEIXITzylCen/2d4a6375488efbaf7e0d52b1a1e13d3d/teaser_web.jpg?q=88&w=658",
         paragraf1: "Ne dyqan dhe online",
         paragraf2: "Deri me 9 gusht",
@@ -150,7 +150,9 @@ kartatGreen.forEach((greenKart, id) => {
     <h4>${greenKart.header1}</h4> 
     <h3>${greenKart.header2}</h3>  
     <p>${greenKart.paragraf3}</p>
-    <div class="kartaMadhe-info">${greenKart.paragraf4}</div>
+    <div class="kartaMadhe-info">
+      <p>${greenKart.paragraf4}</p>
+    </div>
     `;
 
     kutiaInfosDiv.appendChild(infoDiv);
@@ -165,15 +167,15 @@ kartatGreen.forEach((greenKart, id) => {
 
 // ---------------------------------------  KARTAT KLUB bacgroundi jeshil  ----------------------------------------------------------//
 
-FemijetKartaveTeKlub.slice(-cardPerKlub)
-  .reverse()
-  .forEach((card) => {
-    kartatEMedhaKlub.insertAdjacentHTML("afterbegin", card.outerHTML);
-  });
+// FemijetKartaveTeKlub.slice(-cardPerKlub)
+//   .reverse()
+//   .forEach((card) => {
+//     kartatEMedhaKlub.insertAdjacentHTML("afterbegin", card.outerHTML);
+//   });
 
-FemijetKartaveTeKlub.slice(0, -cardPerKlub).forEach((card) => {
-  kartatEMedhaKlub.insertAdjacentHTML("beforeend", card.outerHTML);
-});
+// FemijetKartaveTeKlub.slice(0, -cardPerKlub).forEach((card) => {
+//   kartatEMedhaKlub.insertAdjacentHTML("beforeend", card.outerHTML);
+// });
 
 let isDraggingKlub = false,
   startXKlub,

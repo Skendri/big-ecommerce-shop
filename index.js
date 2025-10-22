@@ -1,12 +1,5 @@
 
 
-// ----------------------------
-const infoProduktit = document.getElementsByClassName("info-produktit");
-const pershkrimiProduktitBtn = document.getElementsByClassName(
-  "pershkrimi-produktit"
-);
-let infoProduktitDukshme = false;
-
 // -------------------------- KATEGORI POPUP DEKLARIMET ----------------------------------------------------------- /
 const listaItems = document.querySelectorAll(".kategoriPopUp");
 const popupGlobeShopsRekomandon = document.getElementById("kategori-GlobeShops-rekomandonPopUp");

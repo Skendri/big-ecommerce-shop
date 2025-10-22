@@ -36,7 +36,7 @@ const wallKartat = document.getElementById("kartat-e-gjera-klub-home");
 
 let productKarta = " ";
 
-kartatMedha.forEach((kartaMadhe, id) => {
+kartatMedha.forEach((kartaMadhe) => {
 productKarta += `
     <div id="kartaMadheID-home" class="kartaMadhe">
         <div class="kartaMadhe-kutiaInfos kartaGjere-kutia">

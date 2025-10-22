@@ -126,7 +126,7 @@ sliderSherbimet.forEach((sliderSherbime, id) => {
   diviImage.classList.add("kartaMadhe-foto");
 
   const img = document.createElement("img");
-  img.src = kartatPurple.img;
+  img.src = sliderSherbime.img;
   img.alt = " ";
   img.draggable = false;
   diviImage.appendChild(img);
@@ -136,7 +136,8 @@ sliderSherbimet.forEach((sliderSherbime, id) => {
 
   const infoPare = document.createElement("div");
   infoPare.classList.add("kartaMadhe-info");
-  infoPare.innerHTML = `<p>${sliderSherbime.paragrafi1}</p> <p>${sliderSherbime.paragrafi2}</p> `;
+  infoPare.innerHTML = `<p>${sliderSherbime.paragrafi1}</p> 
+                        <p>${sliderSherbime.paragrafi2}</p> `;
 
   const infoDyte = document.createElement("div");
   infoDyte.classList.add("kartaMadhe-infoDyte");
@@ -144,26 +145,28 @@ sliderSherbimet.forEach((sliderSherbime, id) => {
     <h4>${sliderSherbime.header1}</h4>
     <h3>${sliderSherbime.header2}</h3>
     <p>${sliderSherbime.paragrafi3}</p>
-    <div clas="kartaMadhe-info">${sliderSherbime.paragrafi4}</div>
+    <div class="kartaMadhe-info">
+      <p>${sliderSherbime.paragrafi4}</p>
+    </div>
     `;
   kutiaInfos.appendChild(infoPare);
   kutiaInfos.appendChild(infoDyte);
   kartElement.appendChild(diviImage);
   kartElement.appendChild(kutiaInfos);
-  kontainerDiv.append(kartElement);
+  containerSherbimet.append(kartElement);
 });
 
 // ---------------------------------------------------------------------- KARTAT E SHERBIMIT ---------------- //
 
 const mbeshtjellesiSherbimit = document.querySelector(
-  "#mbeshtjellesi-gjere-kartave-klub",
+  "#mbeshtjellesi-kartave-sherbimi",
 );
 const kartaSherbimit = document.querySelector("#kartat-e-sherbimi");
 const butonatShigjetSherbimit = document.querySelectorAll(
   "#butonat-e-kontrolluesit-sherbimit",
 );
 const gjersiaKartesSherbimit =
-  document.querySelector("#kartaMadheID").offsetWidth;
+  document.querySelector(".kartaMadhe").offsetWidth;
 const FemijetKartaveTeSherbimit = [...kartaSherbimit.children];
 
 let cardSherbimit = Math.round(
@@ -235,8 +238,8 @@ const infiniteScrollKartaSherbimit = () => {
     kartaSherbimit.scrollLeft = kartaSherbimit.offsetWidth;
     kartaSherbimit.classList.remove("jo-transition");
   }
-  clearTimeout(timeoutIDKartaGjere);
-  if (mbeshtjellesiGjere.matches(":hover")) autoPlayKartaGjere();
+  clearTimeout(timeoutIDKartaSherbimit);
+  if (kartaSherbimit.matches(":hover")) autoPlayKartaSherbimit();
 };
 
 kartaSherbimit.addEventListener("mousedown", dragStartKartaSherbimit);
