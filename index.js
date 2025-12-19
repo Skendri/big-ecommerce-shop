@@ -1,5 +1,6 @@
 
 
+
 // -------------------------- KATEGORI POPUP DEKLARIMET ----------------------------------------------------------- /
 const listaItems = document.querySelectorAll(".kategoriPopUp");
 const popupGlobeShopsRekomandon = document.getElementById("kategori-GlobeShops-rekomandonPopUp");

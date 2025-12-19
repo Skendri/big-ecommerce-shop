@@ -95,9 +95,9 @@ const nextEl = document.querySelector(".next");
 const prevEl = document.querySelector(".prev");
 
 const imgsEl = document.querySelectorAll(".image-container img");
-console.log(imgsEl.length);
+console.log(imgsEl.children);
 
-const imageContainerEl = document.querySelector(".image-container");
+// const imageContainerEl = document.querySelector(".image-container");
 
 let currentImg = 0;
 
@@ -115,7 +115,7 @@ prevEl.addEventListener("click", () => {
   updateImg();
 });
 
-updateImg();
+
 
 function updateImg() {
   if (currentImg > imgsEl.children) {
@@ -123,12 +123,14 @@ function updateImg() {
   } else if (currentImg < 1) {
     currentImg = imgsEl.children;
   }
-  currentImg.style.transform = `translateX(-${(currentImg - 1) * 700}px)`;
+
+  imgsEl.style.transform = `translateX(-${(currentImg - 1) * 700}px)`;
   timeout = setTimeout(() => {
     currentImg++;
     updateImg();
   }, 3000);
 }
+  updateImg();
 
 //         doubel landing page
 
