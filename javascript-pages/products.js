@@ -7,6 +7,45 @@ console.log(window.innerWidth);
 console.log(window.innerHeight);
 console.log(document.documentElement);
 
+// load more button functionalities
+const loadMoreButton = document.getElementById("load-more");
+const productsContainer = document.getElementById("kartateveta");
+let eachProduct = document.querySelectorAll(".products-card");
+console.log(eachProduct);
+
+// sa karta do te shfaqen ne fillim
+let visibleCards = 4;
+
+let loadItem = visibleCards;
+
+// sa karta do shfaqen pa e shtyp butonin load more
+eachProduct.forEach((card, index) => {
+  if (index >= visibleCards) {
+    card.style.display = "none";
+  }
+});
+
+// funcksioni per te shfaqur me shume karta kur te shtypet butoni load more
+function loadMOre() {
+  loadItem += visibleCards;
+
+  eachProduct.forEach((card, index) => {
+    if (index < loadItem) {
+      // nuk japim asnje vlere sepse e kemi style te file products.css class products-card
+      card.style.display = "";
+    }
+  });
+
+  // nese loadItem eshte me i madh se numri total i kartave ose i barabarte, heq butonin load more
+  if (loadItem >= eachProduct.length) {
+    loadMoreButton.style.display = "none";
+  }
+};
+
+loadMoreButton.addEventListener("click", loadMOre);
+
+// perfundimi load more button functionalities
+
 // range selector te products.php
 
 const rangeSliders = document.querySelectorAll("#kontenieri-filter");
@@ -94,5 +133,3 @@ toggleButtons.forEach((button) => {
     }
   });
 });
-
-
